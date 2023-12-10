@@ -43,7 +43,7 @@ text-align: left;
         }
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
 
         footer {
@@ -150,7 +150,7 @@ iframe {
 .uhf-container {
 }
 .padding-block-lg {
-    padding-block: 3rem!important;
+    padding-block: 2rem!important;
 }
 .is-reading-width {
     max-width: 50rem!important;
@@ -167,9 +167,7 @@ iframe {
     max-width: 100%;
 }
 
-.details>summary {
-    list-style: none;
-}
+
 .details-summary, .details-summary-reverse {
     background-color: #f2f2f2;
     border-bottom: 1px solid #000;
@@ -183,11 +181,21 @@ iframe {
     outline-offset: -.125rem!important;
 }
 
+details > summary:first-of-type {
+    display: list-item;
+    counter-increment: list-item 0;
+    list-style: inside disclosure-closed;
+}
+
+details[open] > summary:first-of-type {
+    list-style-type: disclosure-open;
+}
 .details-content {
     background-color: #727272;
     border-bottom: 1px solid #000;
     margin: 0;
     padding: 1.5rem;
+
 }
 
     </style>
@@ -228,6 +236,10 @@ iframe {
             <p>JDConf 2024 isn't just another event; it's a platform where you can elevate your Java expertise, explore cutting-edge developments in the Java ecosystem, and connect with fellow Java professionals. Get ready to join us for two days packed with insights and advancements that will empower you as a Java developer.</p>
         </section>
 
+
+<section id="agenda">
+    <h2>2024 Event agenda will be live soon...</h2>
+ </section>
 
 <!-- Existing content -->
 
@@ -304,7 +316,25 @@ iframe {
                 </div>
             </div>
         </div>
-
+        <div id="text-section-4" class="padding-block-lg">
+            <div class="uhf-container">
+                <div class="is-reading-width">
+                <h2 id="code-of-conduct" class="title is-2 is-responsive">Code of Conduct</h2>
+        
+                        <div>
+                            <p class="margin-top-xs">We seek to provide a respectful, friendly, professional experience for everyone, regardless of gender, sexual orientation, physical appearance, disability, age, race or religion. We do not tolerate any behavior that is degrading to any gender, race, sexual orientation, or disability, or any behavior that would be deemed harassment or discrimination. Individuals are responsible for knowing and abiding by our standards and we encourage everyone to assist in creating a welcoming and safe environment. Additionally, we strive to treat our shared planet with the same amount of respect. Please report any questions, concerns, or disruptive activity or behavior to the organizing team, so that we can address the issue immediately.</p>
+                        </div>
+        
+        
+                        <div class="margin-top-xs">
+            <div class="buttons margin-top-xxs">
+                    <a href="https://docs.microsoft.com/legal/learntv/codeofconduct" class="button" data-linktype="external">Learn TV Code of Conduct</a>
+            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
 
     <footer>
