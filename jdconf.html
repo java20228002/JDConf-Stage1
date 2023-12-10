@@ -12,24 +12,22 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
+            background-color: #f2f2f2;
             <!-- background-color: #1E1E1E; -->
             color: #fff;
 text-align: left;
         }
 
         header {
-            background-color: #0078D4;
+            background-color: #000;
             color: white;
-            padding:10px;
+            padding:15px;
             text-align: center;
         }
 
         .main-image {
             width: 100%;
-            max-width: 800px;
             display: block;
-            margin: 20px auto;
         }
 
         main {
@@ -40,7 +38,7 @@ text-align: left;
         /* Media query for screens wider than a specific width, e.g., 768px */
         @media screen and (min-width: 768px) {
         main {
-            padding: 0 15vw; /* Responsive padding for desktop screens */
+            padding: 0 7vw; /* Responsive padding for desktop screens */
             }
         }
 
@@ -68,7 +66,7 @@ text-align: left;
             display: inline-block;
             padding: 10px 20px;
             margin: 0px;
-            background-color: #0078D4;
+            background-color: #0067b8;
             color: white;
             text-decoration: none;
             border-radius: 4px;
@@ -80,60 +78,143 @@ text-align: left;
         }
 
 /* Default style for mobile devices */
+
 #conference-title {
     display: block;
     font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
+ 
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
 }
+
 
 /* Style for tablets, laptops, and desktops */
 @media screen and (min-width: 768px) {
     #conference-title {
         display: block;
     font-size: 2em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
+   
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
     }
 }
 
-<!--
 
-.scrolling-text {
-    white-space: nowrap;
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.video-column {
+    flex: 1;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     overflow: hidden;
-    display: block;
-    animation: scrollText 15s linear infinite;
-    font-size: 20px;
-    color: #ffc113; /* Change to any shade of yellow */
 }
 
-@keyframes scrollText {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
 }
--->
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+    .video-column {
+        flex-basis: 48%; /* Adjust to 48% to fit two columns in smaller devices */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .video-column {
+        flex-basis: 100%; /* Stacks the videos vertically on small screens */
+    }
+}
+
+.uhf-container:not(.has-padding) {
+    max-width: calc(100% - 48px);
+    width: calc(100% - 48px);
+}
+.uhf-container {
+}
+.padding-block-lg {
+    padding-block: 3rem!important;
+}
+.is-reading-width {
+    max-width: 50rem!important;
+}
+
+.padding-bottom-md {
+    padding-block-end: 2rem!important;
+}
+
+.details:first-of-type {
+    border-top: 1px solid #000;
+}
+.details {
+    max-width: 100%;
+}
+
+.details>summary {
+    list-style: none;
+}
+.details-summary, .details-summary-reverse {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    padding: 1.5rem;
+    padding-left: 0px;
+    padding-inline-end: 4.5rem;
+    font-weight: 600;
+    display: block;
+    position: relative;
+    outline-offset: -.125rem!important;
+}
+
+.details-content {
+    background-color: #727272;
+    border-bottom: 1px solid #000;
+    margin: 0;
+    padding: 1.5rem;
+}
+
     </style>
 </head>
+
 <body>
 
 <header>
     <div id="conference-title">Microsoft Java Developer Conference (JDConf) is back in 2024!</div>
+
 </header>
 
-    <!-- <img src="images/JDConf2024Hero.png" alt="JDConf 2024 Main Image" class="main-image"> -->
-    <img src="images/duke.png" alt="JDConf 2024 Main Image" class="main-image">
+    <!-- <img src="images/JDConf2024-hero-2.png" alt="JDConf 2024 Main Image" class="main-image"> -->
+    <!--<img src="images/JDConf2024-hero.png" alt="JDConf 2024 Main Image" class="main-image"> -->
+    
+    <picture>
+        <source media="(min-width: 768px)" srcset="images/JDConf2024-hero.png">
+        <source media="(min-width: 480px)" srcset="images/duke.png">
+        <img src="images/duke.png" alt="Hero Image" class="hero-image">
+    </picture>
+
     <main>
         <section id="about">
             <h2>JDConf will be hosted online</h2>
             <p>March 27-28, 2024</p>
             <a href="https://sessionize.com/microsoft-jdconf-2024" class="button">Call for participation is open!</a>
+
         </section>
 
         <section id="event">
@@ -153,7 +234,22 @@ text-align: left;
 <section id="previous-events">
     <h2>Explore previous JDConf event</h2>
     <p>Interested in what we've discussed in the past? Take a look at the highlights and sessions from JDConf 2022.</p>
-    <a href="https://learn.microsoft.com/en-us/events/learn-events/jdconf-2022/?WT.mc_id=jdconf-56324-jemorg" class="button">JDConf 2022 highlights</a>
+   
+
+    <div class="video-grid">
+        <div class="video-column">
+            <iframe src="https://www.youtube.com/embed/fHO4N2VBiyw?si=jHkBZOvzuJ41jND6" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-column">
+            <iframe src="https://www.youtube.com/embed/hdt_B1-75lU?si=ykMDlQ15zhU6lSLg" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-column">
+            <iframe src="https://www.youtube.com/embed/Ns7TXrm4bP0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <a href="https://learn.microsoft.com/en-us/events/learn-events/jdconf-2022/?WT.mc_id=jdconf-56324-jemorg" class="button">More JDConf 2022 sessions</a>
+
 </section>
 
         <section id="stay-connected">
@@ -161,6 +257,54 @@ text-align: left;
 <p>Follow the <a href="https://devblogs.microsoft.com/java/">Microsoft for Java developers blog</a> and <a href="https://twitter.com/JavaAtMicrosoft">Java at Microsoft</a> for the latest news and updates about JDConf.</p>
 <p>Follow the event at <a href="https://x.com/hashtag/jdconf">#JDConf</a></p>
         </section>
+   
+        <div id="faq-section-3" class="padding-block-lg">
+            <div class="uhf-container">
+                <div class="  is-reading-width ">
+                    <div class="   padding-bottom-md ">
+                <h2 id="frequently-asked-questions" class="title is-2 is-responsive">Frequently Asked Questions</h2>
+                    </div>
+                    <div class="">
+                        <details class="details">
+                            <summary class="details-summary">Is there a cost to attend the event?</summary>
+                            <div class="details-content content">
+                                <p>The event is free! You can join <a href="https://aka.ms/jdconf-live" data-linktype="external">Learn TV</a> anytime to stream content for free!</p>
+        
+                            </div>
+                        </details>
+                        <details class="details">
+                            <summary class="details-summary">When does the event take place?</summary>
+                            <div class="details-content content">
+                                <p>We will be streaming three unique and live virtual events around the globe. Starting on May 4, 2022 at 8:30 AM – 12:00 PM PDT / 3:30 PM – 7:00 PM UTC (Americas), continuing on May 4, 2022 at 7:00 PM – 10:30 PM PDT / May 4, 2022 2:00 AM – 5:30 AM UTC (Asia-Pacific-Australia), and concluding on May 5, 2022 at 2:00 AM – 5:30 AM PDT / 9:00 AM – 12:30 PM UTC. Over ten total hours of live, original content! More content will be available on-demand the day of the event as well!</p>
+        
+                            </div>
+                        </details>
+                        <details class="details">
+                            <summary class="details-summary">Where does the event take place?</summary>
+                            <div class="details-content content">
+                                <p>The JDConf is virtual! Join us and thousands of others to enjoy the experience from the comfort of your own home, office, or device. The content will be streamed on <a href="https://aka.ms/jdconf-live" data-linktype="external">Learn TV</a>.</p>
+        
+                            </div>
+                        </details>
+                        <details class="details">
+                            <summary class="details-summary">Will this event be available on-demand?</summary>
+                            <div class="details-content content">
+                                <p>Yes! You can stream our past events and JDConf 2020 anytime! Visit <a href="/en-us/events/java-jdconf-2020/?WT.mc_id=jdconf-56324-jemorg" data-linktype="absolute-path">On-Demand Events</a> to stream anytime.</p>
+        
+                            </div>
+                        </details>
+                        <details class="details">
+                            <summary class="details-summary">By registering, what communications will I receive?</summary>
+                            <div class="details-content content">
+                                <p>Your privacy is important to us and we encourage you to review the <a href="https://privacy.microsoft.com/privacystatement" data-linktype="external">Microsoft Privacy Statement</a> for additional information.</p>
+        
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
