@@ -33,7 +33,10 @@ main {
 section {
     margin-bottom: 60px;
 }
-
+section {
+    margin-bottom: 20px; /* Increased spacing between sections */
+    padding-bottom: 20px;
+}
 footer {
     background-color: #333;
     color: white;
@@ -63,6 +66,11 @@ a:hover {
 
 .button:hover {
     background-color: #0056b3;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Hover effect for buttons */
+    color: white;
 }
 
 /* Default style for mobile devices */
@@ -172,5 +180,17 @@ details[open] > summary:first-of-type {
     border-bottom: 1px solid #000;
     margin: 0;
     padding: 1.5rem;
+}
 
+.full-width-wrapper {
+    width: 100vw; /* 100% of the viewport width */
+    margin-left: calc(-50vw + 50%); /* Centering the wrapper */
+    background-color: #dfe9f5 /* Replace with your desired color */
+}
+
+#previous-events {
+    margin: 0 auto; /* Centering the content within the wrapper */
+    padding: 0 7.5vw; /* Padding as needed */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
