@@ -185,7 +185,8 @@ details[open] > summary:first-of-type {
 .full-width-wrapper {
     width: 100vw; /* 100% of the viewport width */
     margin-left: calc(-50vw + 50%); /* Centering the wrapper */
-    background-color: #dfe9f5 /* Replace with your desired color */
+    background-color: #cbe9b7; /* Replace with your desired color */
+    background: linear-gradient(to right, #cbe9b7, #f7f9b5);
 }
 
 #previous-events {
