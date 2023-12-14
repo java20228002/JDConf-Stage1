@@ -11,6 +11,11 @@ body {
     background-position: center; /* Center the image */
 }
 
+
+h2 {
+    color: navy; /* This sets the color to navy blue */
+}
+
 header {
     background-color: #000;
     color: white;
