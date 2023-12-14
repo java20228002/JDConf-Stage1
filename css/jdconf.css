@@ -201,7 +201,13 @@ details[open] > summary:first-of-type {
 
 #previous-events {
     margin: 0 auto; /* Centering the content within the wrapper */
-    padding: 0 7.3vw; /* Padding as needed */
     padding-top: 20px;
     padding-bottom: 30px;
+    padding: 0 7.3vw; /* Padding as needed */
+}
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+    #previous-events {
+        padding: 0 7.1vw; /* Padding as needed */
+    }
 }
