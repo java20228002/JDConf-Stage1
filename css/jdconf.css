@@ -4,6 +4,11 @@ body {
     padding: 0;
     background-color: #f2f2f2;
     text-align: left;
+
+    background-image: url('images/jdconf-background-1.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
 }
 
 header {
