@@ -208,6 +208,6 @@ details[open] > summary:first-of-type {
 /* Media query for tablets and smaller devices */
 @media (max-width: 768px) {
     #previous-events {
-        padding-left: 6vw; /* Padding as needed */
+        padding-left: 6vw !important; /* Padding as needed */
     }
 }
