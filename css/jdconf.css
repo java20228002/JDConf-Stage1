@@ -207,9 +207,7 @@ details[open] > summary:first-of-type {
 
 @media screen and (min-width: 768px) {
     #previous-events { 
-       margin: 0 auto; /* Centering the content within the wrapper */
-       padding: 0 7.4vw !important; /* Padding as needed */
-       padding-bottom: 30px !important;
+       padding: 0 7.4vw !important; 
     }
 }
 
