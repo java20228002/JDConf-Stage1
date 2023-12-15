@@ -201,7 +201,7 @@ details[open] > summary:first-of-type {
 
 #previous-events {
     margin: 0 auto; /* Centering the content within the wrapper */
-    padding-top: 20px;
+ /*   padding-top: 20px;  */
     padding-bottom: 30px;
     padding: 0 7.3vw; /* Padding as needed */
 }
