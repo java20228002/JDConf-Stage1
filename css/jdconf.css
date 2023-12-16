@@ -12,6 +12,29 @@ body {
 }
 
 
+/* Hide the mobile section by default */
+#about-mobile {
+    display: none;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+    #about-mobile {
+        display: block;
+    }
+    #about-desktop {
+        display: none;
+    }
+}
+
+/* Media query for desktop devices */
+@media screen and (min-width: 768px) {
+    #about-desktop {
+        display: block;
+    }
+}
+
+
 h2 {
     color: #0067b8; /* This sets the color to navy blue */
 }
