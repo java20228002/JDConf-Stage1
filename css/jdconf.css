@@ -51,7 +51,7 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding-top:20px;
 }
 
 a {
@@ -211,3 +211,18 @@ details[open] > summary:first-of-type {
     }
 }
 
+
+a.social {
+    color: var(--type-primary);
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  a.social:hover {
+    color: var(--type-primary);
+  }
+  
+  a.social:visited {
+    color: var(--type-primary);
+  }
+  
