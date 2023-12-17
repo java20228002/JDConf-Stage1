@@ -231,7 +231,7 @@ details[open] > summary:first-of-type {
 
 @media screen and (min-width: 768px) {
     #previous-events { 
-       padding: 0 7.0vw !important; 
+       padding: 0 6.0vw !important; 
     }
 }
 
