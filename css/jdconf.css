@@ -224,7 +224,7 @@ details[open] > summary:first-of-type {
 }
 
 #previous-events {
-        padding: 0 20px; /* Padding as needed */
+        padding: 0 18px; /* Padding as needed */
         padding-bottom: 30px !important;    
         margin: 0 auto;
 }
