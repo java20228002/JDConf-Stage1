@@ -1,5 +1,5 @@
 
-function getTimeZoneInfo2() {
+function getTimeZoneInfo() {
   // Get the current date and time
   const now = luxon.DateTime.now();
 
@@ -26,7 +26,7 @@ function getTimeZoneInfo2() {
 }
 
 
-function getTimeZoneInfo() {
+function getTimeZoneInfo2() {
   // Get the current date and time
   const now = luxon.DateTime.now();
 
