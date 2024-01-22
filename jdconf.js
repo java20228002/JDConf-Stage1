@@ -1,3 +1,25 @@
+function getTimeZoneInfo() {
+  // Get the current date and time
+  const now = luxon.DateTime.now();
+
+  // Get the current time zone offset in minutes
+  const timeZoneOffsetMinutes = now.offset;
+
+  // Calculate the UTC time difference in hours and minutes
+  const hoursDiff = Math.floor(timeZoneOffsetMinutes / 60);
+  const minutesDiff = timeZoneOffsetMinutes % 60;
+
+  // Create a string for the UTC time difference
+  const utcDiffString = `UTC${hoursDiff >= 0 ? '+' : '-'}${Math.abs(hoursDiff).toString().padStart(2, '0')}:${Math.abs(minutesDiff).toString().padStart(2, '0')}`;
+
+  // Get the IANA time zone name (e.g., "America/Chicago")
+  const timeZoneName = now.zoneName;
+
+  // Create the HTML string with the desired format
+  const timeZoneInfoHTML = `All times in - (${utcDiffString}) ${timeZoneName}`;
+
+  return timeZoneInfoHTML;
+}
 
 function convertToUserDate() {
     // Get all elements with class 'session-time'
