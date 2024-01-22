@@ -224,14 +224,14 @@ details[open] > summary:first-of-type {
 }
 
 #previous-events {
-        padding: 0 19px; /* Padding as needed */
+        padding: 0 20px; /* Padding as needed */
         padding-bottom: 30px !important;    
         margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
     #previous-events { 
-       padding: 0 7.0vw !important; 
+       padding: 0 7.4vw !important; 
     }
 }
 
@@ -257,4 +257,173 @@ a.social {
     padding-top: 20px; 
     padding-bottom: 0px !important; 
 }
+
+/* Agenda section */
+#agenda {
+    border: 2px solid #004A7F;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .agenda {
+    /* No need for display: flex; here anymore */
+  }
+  
+  .region-column {
+    margin-bottom: 20px; /* Adds space between each region section */
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 10px; /* Padding inside each region for content spacing */
+  }
+  
+  /* Ensure table layout is still responsive within each region */
+  .agenda-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .agenda-table th, .agenda-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .agenda-table th {
+    background-color: #004A7F;
+    color: white;
+  }
+  
+  .agenda-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .agenda-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Responsive behavior for smaller screens */
+  @media (max-width: 768px) {
+    .agenda-table, .agenda-table table {
+      width: auto; /* Allows table to scroll horizontally on small screens */
+    }
+  }
+  
+
+#sectionToHide {
+    display: none;
+}
+
+/* Speaker section */
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  
+  .speaker {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .speaker img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px; /* Adjust this value to control the roundness */
+  }
+    
+  .speaker img:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon-info {
+    cursor: pointer;
+    color: #007bff;
+    margin-left: 5px;
+  }
+  
+  .bio {
+    display: none;
+  }
+  
+  .speaker:hover .bio {
+    display: block;
+    background-color: #f8f9fa;
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .speakers-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .speakers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+/* Menu section */
+.navbar {
+    background-color: #000; /* Change as per your color scheme */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .navbar-logo {
+    flex: 1; /* Logo takes 1/4 of the space */
+  }
+  
+  .navbar-logo img {
+    height: 50px; /* Adjust as per your logo's size */
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 4; /* Menu takes 3/4 of the space */
+  }
+
+  
+  .nav-menu li {
+    margin-left: 20px;
+  }
+  
+  .nav-menu li a {
+    display: block;
+    color: white; /* Change as per your color scheme */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav-menu li a:hover {
+    background-color: #ddd; /* Change for hover effect */
+    color: black;
+  }
+  
+  .timezone-notice {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-style: italic;
+    color: #555;
+  }
   
