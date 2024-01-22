@@ -75,3 +75,12 @@ function convertToUserDate() {
         convertToUserTimeZone(); // Call the first function
         convertToUserDate(); // Call the second function
     };
+
+// Call the function to get the HTML
+const timeZoneInfoHTML = getTimeZoneInfo();
+
+// Get the div element by its id
+const timeZoneInfoDiv = document.getElementById('timeZoneInfoDiv');
+
+// Set the inner HTML of the div to display the result
+timeZoneInfoDiv.innerHTML = timeZoneInfoHTML;
