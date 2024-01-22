@@ -45,7 +45,7 @@ function convertToUserDate() {
         timeZone = localDate.offsetNameShort;
         
         // Update the text with the user's local time
-        times[i].innerText = localDateTimeString1 + " - " + localDateTimeString2;
+        times[i].innerText = localDateTimeString1;
     }
     }
     // Call the functions when the page loads
