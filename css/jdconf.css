@@ -425,7 +425,8 @@ a.social {
   .nav-menu li {
     margin-left: 20px;
   }
-  
+
+   
   .nav-menu li a {
     display: block;
     color: white; /* Change as per your color scheme */
@@ -433,6 +434,13 @@ a.social {
     padding: 14px 16px;
     text-decoration: none;
   }
+
+  /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  .nav-menu li a {
+    padding: 14px 10px;
+  }
+}
   
   .nav-menu li a:hover {
     background-color: #ddd; /* Change for hover effect */
