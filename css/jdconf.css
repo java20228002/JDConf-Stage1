@@ -311,7 +311,10 @@ a.social {
     }
   }
   
-
+  .jdconflogo {
+    width: auto; /* or any size you prefer */
+    height: 30px !important; /* keeps the aspect ratio intact */
+}
 
 
 /* Speaker section */
@@ -380,7 +383,7 @@ a.social {
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 80px;
   }
   
   .navbar-logo {
