@@ -84,3 +84,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const timeZoneInfoDiv = document.getElementById('timeZoneInfoDiv');
   timeZoneInfoDiv.innerHTML = timeZoneInfoHTML;
 });
+
+
+function toggleMenu() {
+  var menuItems = document.getElementById("menuItems");
+  menuItems.classList.toggle("active");
+}

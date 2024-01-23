@@ -311,10 +311,7 @@ a.social {
     }
   }
   
-  .jdconflogo {
-    width: auto; /* or any size you prefer */
-    height: 30px !important; /* keeps the aspect ratio intact */
-}
+ 
 
 
 /* Speaker section */
@@ -383,8 +380,30 @@ a.social {
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 0 80px;
+    padding: 0 30px;
   }
+
+  /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 10px; /* Adjust padding for mobile devices */
+  }
+}
+
+/* Default styles for the logo */
+.jdconflogo {
+  width: auto; /* Set the default width for larger screens */
+  height: 20px !important;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  .jdconflogo {
+    width: auto;/* Reduce the width for mobile devices */
+    height: 10px !important;
+  }
+}
+
   
   .navbar-logo {
     flex: 1; /* Logo takes 1/4 of the space */
@@ -431,4 +450,43 @@ a.social {
 
 #timeZoneInfoDiv {
     padding-bottom: 10px;
+}
+
+/* Style for the mobile menu */
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+/* Style for the hamburger icon */
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Style for the menu items */
+.menu-items {
+  list-style: none;
+  padding: 0;
+  display: none;
+}
+
+.menu-items li {
+  margin: 10px 0;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .menu-items {
+    display: block;
+  }
+
+  .menu-items.active {
+    display: flex;
+    flex-direction: column;
+  }
 }
