@@ -43,7 +43,8 @@ header {
     background-color: #000;
     color: white;
     padding:15px;
-    text-align: center;
+    /*text-align: center;*/
+    padding-left: 50px;
 }
 
 .main-image {
@@ -273,8 +274,8 @@ a.social {
   
   .region-column {
     margin-bottom: 20px; /* Adds space between each region section */
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /*background-color: white;*/
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.09);
     padding: 10px; /* Padding inside each region for content spacing */
   }
   
@@ -293,15 +294,19 @@ a.social {
   
   .agenda-table th {
     background-color: #004A7F;
-    color: white;
+    color: #fff;
+  }
+
+  .agenda-table tr:nth-child(odd) {
+    background-color: #B0E0E6; /* Ice Blue for odd rows */
   }
   
   .agenda-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #e2f4f6;
   }
   
   .agenda-table tr:hover {
-    background-color: #ddd;
+    background-color: #fff;
   }
   
   /* Responsive behavior for smaller screens */
@@ -394,6 +399,7 @@ a.social {
 .jdconflogo {
   width: auto; /* Set the default width for larger screens */
   height: 20px !important;
+  display: none;
 }
 
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
@@ -423,7 +429,7 @@ a.social {
 
   
   .nav-menu li {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
    
@@ -443,8 +449,9 @@ a.social {
 }
   
   .nav-menu li a:hover {
-    background-color: #ddd; /* Change for hover effect */
-    color: black;
+    /*background-color: #ddd; */ /* Change for hover effect */
+    color: #0067b8;
+    
   }
   
   .timezone-notice {
