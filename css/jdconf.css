@@ -390,6 +390,12 @@ a.social {
     border: 1px solid #ccc;
   }
   
+  /* Media query for mobile devices */
+@media (max-width: 768px) {
+  .speaker:hover .bio {
+      font-size: 12px; /* Set font size to 10px for mobile devices */
+  }
+}
   @media (max-width: 768px) {
     .speakers-grid {
       grid-template-columns: repeat(2, 1fr);
