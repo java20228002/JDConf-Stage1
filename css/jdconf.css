@@ -22,7 +22,7 @@ body {
       /*background-image: url('../images/jdconf-background-mobile-9.jpg');*/ /* mobile-specific background image */
       /*background-image: url('../images/jdconf-background-desktop-1.png');*/
       /*background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(135, 225, 236, 0.637)),  url('../images/jdconf-background-desktop-1.png');*/
-      background: linear-gradient(circle, rgb(255, 255, 255) 30%, rgba(135, 225, 236, 0.637)),  url('../images/jdconf-background-mobile-4.jpg');
+      background: linear-gradient(bottom, rgb(255, 255, 255) 30%, rgba(135, 225, 236, 0.637)),  url('../images/jdconf-background-mobile-4.jpg');
       /* additional mobile-specific styles if needed */
   }
 }
