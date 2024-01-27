@@ -4,14 +4,27 @@ body {
     padding: 0;
     background-color: #f2f2f2;
     text-align: left;
-
-    background-image: url('../images/jdconf-background-1.png');
-    /*background-image: url(https://eventtools.event.microsoft.com/ignite2023/FY24_Ignite_Ph3_Homepage_Hero_Desktop_1920x2400%20copy.webp);*/
-    background-size: cover; /* Cover the entire viewport */
+      
+    /*background-image: url('../images/jdconf-background-desktop-1.png');*/
+    background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(135, 225, 236, 0.637)),  url('../images/jdconf-background-mobile-4.jpg');
+    /*background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(135, 225, 236, 0.637)),  url('../images/jdconf-background-desktop-1.png');*/
+    background-size:cover; /* Cover the entire viewport */
     /*background-attachment: fixed;*/
     background-repeat: no-repeat; /* Do not repeat the image */
     background-position: center; /* Center the image */
     /*background-color: rgba(104, 228, 208, 1);  */
+   
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  body {
+      /*background-image: url('../images/jdconf-background-mobile-9.jpg');*/ /* mobile-specific background image */
+      /*background-image: url('../images/jdconf-background-desktop-1.png');*/
+      /*background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(135, 225, 236, 0.637)),  url('../images/jdconf-background-desktop-1.png');*/
+      background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(135, 225, 236, 0.637)),  url('../images/jdconf-background-mobile-4.jpg');
+      /* additional mobile-specific styles if needed */
+  }
 }
 
 
@@ -47,7 +60,14 @@ header {
     color: white;
     padding:15px;
     /*text-align: center;*/
+    padding-left: 70px;
+}
+
+/* Media query for desktop devices */
+@media screen and (max-width: 767px) {
+  header {
     padding-left: 20px;
+}
 }
 
 .main-image {
