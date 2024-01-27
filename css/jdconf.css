@@ -6,9 +6,12 @@ body {
     text-align: left;
 
     background-image: url('../images/jdconf-background-1.png');
+    /*background-image: url(https://eventtools.event.microsoft.com/ignite2023/FY24_Ignite_Ph3_Homepage_Hero_Desktop_1920x2400%20copy.webp);*/
     background-size: cover; /* Cover the entire viewport */
+    /*background-attachment: fixed;*/
     background-repeat: no-repeat; /* Do not repeat the image */
     background-position: center; /* Center the image */
+    /*background-color: rgba(104, 228, 208, 1);  */
 }
 
 
@@ -44,7 +47,7 @@ header {
     color: white;
     padding:15px;
     /*text-align: center;*/
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 .main-image {
@@ -385,13 +388,13 @@ a.social {
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 0 30px;
+    padding: 0px;
   }
 
   /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
   .navbar {
-    padding: 0 10px; /* Adjust padding for mobile devices */
+    padding: 0px; /* Adjust padding for mobile devices */
   }
 }
 
