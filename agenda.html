@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/jdconf-favicon.png" type="image/x-icon">
-    <title>Microsoft JDConf 2024</title>
-    <link rel="stylesheet" href="css/jdconf.css?v=1.3">
-    <link rel="stylesheet" href="css/dotnetconf.css?v=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/jdconf-favicon.png" type="image/x-icon">
+  <title>Microsoft JDConf 2024</title>
+  <link rel="stylesheet" href="css/jdconf.css?v=1.3">
+  <link rel="stylesheet" href="css/dotnetconf.css?v=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
 </head>
 
 <body>
-    <script src="js/jdconf.js"></script>  
-    <header>
-        <!-- <div id="conference-title">Microsoft JDConf is back in 2024!</div> -->
-        <nav class="navbar">
-            <ul class="nav-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="agenda.html">Agenda</a></li>
-              <li><a href="speakers.html">Speakers</a></li>
-              <!-- Add other menu items here -->
-            </ul>
-          </nav>
-    </header>
-  
-    <!-- <picture>
+  <script src="js/jdconf.js"></script>
+  <header>
+    <!-- <div id="conference-title">Microsoft JDConf is back in 2024!</div> -->
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <!-- Add other menu items here -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- <picture>
       <source media="(min-width: 768px)" srcset="images/banners/JDConf2024-hero-landscape.png">
       <source media="(min-width: 480px)" srcset="images/banners/JDConf2024-hero-portrait.png">
       <img src="images/banners/JDConf2024-hero-portrait.png" alt="Hero Image" class="hero-image">
   </picture> -->
 
-<main>
-<!-- Mobile Section -->
+  <main>
+    <!-- Mobile Section -->
     <!-- <section id="about-mobile">
       <h4>JDConf 2024 will livestream on Microsoft Reactor: Sign-up today for exclusive updates, 
           networking opportunities, and resources. <a href="https://aka.ms/JDConf24/RSVP">Learn more.</a>
@@ -50,412 +51,529 @@
       <a href="https://aka.ms/JDConf24/RSVP" class="button">Sign-up now</a>
     </section>
      -->
-    <h1 class="font-display-3 vertical-gap text-center-agenda">Stay tuned! Our exciting agenda is coming your way shortly.</h1>
+    <h1 class="font-display-3 vertical-gap text-center-agenda">Stay tuned! Our exciting agenda is coming your way
+      shortly.</h1>
     <h2 class="font-title-2 vertical-gap">Americas - Live stream schedule</h2>
     <h2 id="timeZoneInfoDiv" class="font-subtitle-1"></h2>
     <section class="agenda-container vertical-gap">
-        <!-- Day -->
-        <!--<div data-date='11/14/2023 08:00:00 PST' data-day="1">
+      <!-- Day -->
+      <!--<div data-date='11/14/2023 08:00:00 PST' data-day="1">
             <h2 class="font-large-title">Day 1</h2>
             <p class="font-title-1">Tuesday, November 14</p>
         </div>-->
-          <!-- Session -->
-        <section class="agenda-group grid vertical-gap" data-daysection="1">
-                <p class="agenda-group-title font-title-2">
-                    <span class="session-time">27-Mar-24 08:30 08:35 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                    <section id="{speakername}-session" class="agenda-session">
-                        <p class="agenda-title font-title-2">Welcome to JDConf Americas</p>
-                        <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                        <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">27-Mar-24 08:35 09:00 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                    <section id="{speakername}-session" class="agenda-session">
-                        <p class="agenda-title font-title-2">JDConf Americas Keynote</p>
-                        <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                        <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">27-Mar-24 09:00 09:30 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                      <p class="agenda-title font-title-2">Session Title</p>
-                      <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                      <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">27-Mar-24 09:30 10:00 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                    <section id="{speakername}-session" class="agenda-session">
-                        <p class="agenda-title font-title-2">Session Title</p>
-                        <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                        <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">27-Mar-24 10:00 10:30 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                      <p class="agenda-title font-title-2">Session Title</p>
-                      <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                      <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">27-Mar-24 10:30 11:00 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                    <p class="agenda-title font-title-2">Session Title</p>
-                    <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                    <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                <span class="session-time">27-Mar-24 11:00 11:30 AM</span>
-              </p>
-              <div role="presentation" class="agenda-group-gradient-line"></div>
-              <!-- Session Details -->
-              <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                      <p class="agenda-title font-title-2">Session Title</p>
-                      <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                      <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-              </div>
-              <p class="agenda-group-title font-title-2">
-                <span class="session-time">27-Mar-24 11:30 11:55 AM</span>
-              </p>
-              <div role="presentation" class="agenda-group-gradient-line"></div>
-              <!-- Session Details -->
-              <div class="agenda-group-sessions-container">
-                <section id="{speakername}-session" class="agenda-session">
-                    <p class="agenda-title font-title-2">Session Title</p>
-                    <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                    <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </section>
-              </div>
-              <p class="agenda-group-title font-title-2">
-                <span class="session-time">27-Mar-24 11:55 11:59 AM</span>
-              </p>
-              <div role="presentation" class="agenda-group-gradient-line"></div>
-              <!-- Session Details -->
-              <div class="agenda-group-sessions-container">
-                <section id="{speakername}-session" class="agenda-session">
-                  <p class="agenda-title font-title-2">Closing Remarks</p>
-                  <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                  <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </section>
-              </div>
-        </section>
+      <!-- Session -->
+      <section class="agenda-group grid vertical-gap" data-daysection="1">
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 08:30 08:35 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Welcome to JDConf Americas</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 08:35 09:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">JDConf Americas Keynote</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 09:00 09:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 09:30 10:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 10:00 10:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 10:30 11:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 11:00 11:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 11:30 11:55 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 11:55 11:59 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Closing Remarks</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+      </section>
     </section>
     <h2 class="font-title-2 vertical-gap">Asia-Pacific - Live stream schedule</h2>
     <h2 id="timeZoneInfoDiv2" class="font-subtitle-1"></h2>
     <section class="agenda-container vertical-gap">
-        <!-- Day -->
-        <!--<div data-date='11/14/2023 08:00:00 PST' data-day="1">
+      <!-- Day -->
+      <!--<div data-date='11/14/2023 08:00:00 PST' data-day="1">
             <h2 class="font-large-title">Day 1</h2>
             <p class="font-title-1">Tuesday, November 14</p>
         </div>-->
-          <!-- Session -->
-        <section class="agenda-group grid vertical-gap" data-daysection="1">
-                <p class="agenda-group-title font-title-2">
-                    <span class="session-time">27-Mar-24 07:00 07:05 PM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                    <section id="{speakername}-session" class="agenda-session">
-                        <p class="agenda-title font-title-2">Welcome to JDConf Asia-Pacific</p>
-                        <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                        <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">27-Mar-24 07:05 07:30 PM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                    <section id="{speakername}-session" class="agenda-session">
-                        <p class="agenda-title font-title-2">JDConf Asia-Pacific Keynote</p>
-                        <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                        <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">27-Mar-24 07:30 08:00 PM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                      <p class="agenda-title font-title-2">Session Title</p>
-                      <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                      <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">27-Mar-24 08:00 08:30 PM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                    <section id="{speakername}-session" class="agenda-session">
-                        <p class="agenda-title font-title-2">Session Title</p>
-                        <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                        <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">27-Mar-24 08:30 09:00 PM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                      <p class="agenda-title font-title-2">Session Title</p>
-                      <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                      <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">27-Mar-24 09:00 09:30 PM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                    <p class="agenda-title font-title-2">Session Title</p>
-                    <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                    <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                <span class="session-time">27-Mar-24 09:30 10:00 PM</span>
-              </p>
-              <div role="presentation" class="agenda-group-gradient-line"></div>
-              <!-- Session Details -->
-              <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                      <p class="agenda-title font-title-2">Session Title</p>
-                      <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                      <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-              </div>
-              <p class="agenda-group-title font-title-2">
-                <span class="session-time">27-Mar-24 10:00 10:25 PM</span>
-              </p>
-              <div role="presentation" class="agenda-group-gradient-line"></div>
-              <!-- Session Details -->
-              <div class="agenda-group-sessions-container">
-                <section id="{speakername}-session" class="agenda-session">
-                    <p class="agenda-title font-title-2">Session Title</p>
-                    <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                    <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </section>
-              </div>
-              <p class="agenda-group-title font-title-2">
-                <span class="session-time">27-Mar-24 10:25 10:30 PM</span>
-              </p>
-              <div role="presentation" class="agenda-group-gradient-line"></div>
-              <!-- Session Details -->
-              <div class="agenda-group-sessions-container">
-                <section id="{speakername}-session" class="agenda-session">
-                  <p class="agenda-title font-title-2">Closing Remarks</p>
-                  <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                  <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </section>
-              </div>
-        </section>
+      <!-- Session -->
+      <section class="agenda-group grid vertical-gap" data-daysection="1">
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 07:00 07:05 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Welcome to JDConf Asia-Pacific</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 07:05 07:30 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">JDConf Asia-Pacific Keynote</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 07:30 08:00 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 08:00 08:30 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 08:30 09:00 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 09:00 09:30 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 09:30 10:00 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 10:00 10:25 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">27-Mar-24 10:25 10:30 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Closing Remarks</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+      </section>
     </section>
     <h2 class="font-title-2 vertical-gap">EMEA - Live stream schedule</h2>
     <h2 id="timeZoneInfoDiv3" class="font-subtitle-1"></h2>
     <section class="agenda-container vertical-gap">
-        <!-- Day -->
-        <!--<div data-date='11/14/2023 08:00:00 PST' data-day="1">
+      <!-- Day -->
+      <!--<div data-date='11/14/2023 08:00:00 PST' data-day="1">
             <h2 class="font-large-title">Day 1</h2>
             <p class="font-title-1">Tuesday, November 14</p>
         </div>-->
-          <!-- Session -->
-        <section class="agenda-group grid vertical-gap" data-daysection="1">
-                <p class="agenda-group-title font-title-2">
-                    <span class="session-time">28-Mar-24 02:00 02:05 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                    <section id="{speakername}-session" class="agenda-session">
-                        <p class="agenda-title font-title-2">Welcome to JDConf EMEA</p>
-                        <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                        <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">28-Mar-24 02:05 02:30 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                    <section id="{speakername}-session" class="agenda-session">
-                        <p class="agenda-title font-title-2">JDConf EMEA Keynote</p>
-                        <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                        <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">28-Mar-24 02:30 03:00 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                      <p class="agenda-title font-title-2">Session Title</p>
-                      <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                      <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">28-Mar-24 03:00 03:30 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                    <section id="{speakername}-session" class="agenda-session">
-                        <p class="agenda-title font-title-2">Session Title</p>
-                        <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                        <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">28-Mar-24 03:30 04:00 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                      <p class="agenda-title font-title-2">Session Title</p>
-                      <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                      <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                  <span class="session-time">28-Mar-24 04:00 04:30 AM</span>
-                </p>
-                <div role="presentation" class="agenda-group-gradient-line"></div>
-                <!-- Session Details -->
-                <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                    <p class="agenda-title font-title-2">Session Title</p>
-                    <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                    <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-                </div>
-                <p class="agenda-group-title font-title-2">
-                <span class="session-time">28-Mar-24 04:30 05:00 AM</span>
-              </p>
-              <div role="presentation" class="agenda-group-gradient-line"></div>
-              <!-- Session Details -->
-              <div class="agenda-group-sessions-container">
-                  <section id="{speakername}-session" class="agenda-session">
-                      <p class="agenda-title font-title-2">Session Title</p>
-                      <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                      <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </section>
-              </div>
-              <p class="agenda-group-title font-title-2">
-                <span class="session-time">28-Mar-24 05:00 05:25 AM</span>
-              </p>
-              <div role="presentation" class="agenda-group-gradient-line"></div>
-              <!-- Session Details -->
-              <div class="agenda-group-sessions-container">
-                <section id="{speakername}-session" class="agenda-session">
-                    <p class="agenda-title font-title-2">Session Title</p>
-                    <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                    <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </section>
-              </div>
-              <p class="agenda-group-title font-title-2">
-                <span class="session-time">28-Mar-24 05:25 05:30 AM</span>
-              </p>
-              <div role="presentation" class="agenda-group-gradient-line"></div>
-              <!-- Session Details -->
-              <div class="agenda-group-sessions-container">
-                <section id="{speakername}-session" class="agenda-session">
-                  <p class="agenda-title font-title-2">Closing Remarks</p>
-                  <p class="agenda-speaker-name font-stronger">Speaker Name</p>
-                  <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </section>
-              </div>
-        </section>
+      <!-- Session -->
+      <section class="agenda-group grid vertical-gap" data-daysection="1">
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">28-Mar-24 02:00 02:05 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Welcome to JDConf EMEA</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">28-Mar-24 02:05 02:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">JDConf EMEA Keynote</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">28-Mar-24 02:30 03:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">28-Mar-24 03:00 03:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">28-Mar-24 03:30 04:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">28-Mar-24 04:00 04:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">28-Mar-24 04:30 05:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">28-Mar-24 05:00 05:25 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Session Title</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span class="session-time">28-Mar-24 05:25 05:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="{speakername}-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Closing Remarks</p>
+            <p class="agenda-speaker-name font-stronger">Speaker Name</p>
+            <p class="agenda-description font-subtitle-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </div>
+      </section>
     </section>
     <!-- Session -->
-    </main>
-    <footer>
-        <section id="socials" class="social-container">
-            <p>Follow us on the web</p>
-            <div class="social-icons">
-                <!-- GitHub Icon -->
-                <a href="https://github.com/microsoft/JDConf" class="social" target="_blank" aria-label="Follow us on GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                </a>
-                <!-- Twitter Icon -->
-                <a href="https://twitter.com/JavaAtMicrosoft" class="social" target="_blank" aria-label="Follow us on Twitter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                </a>
-                <!-- LinkedIn Icon -->
-                <a href="https://www.linkedin.com/showcase/microsoft-developers/" class="social" target="_blank" aria-label="Follow us on LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                    </svg>
-                </a>
-               <!-- YouTube Icon -->
-               <a href="https://www.youtube.com/c/JavaonAzure" class="social" target="_blank" aria-label="Follow us on YouTube">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
-                       <g clip-path="url(#clip0_1090_8939)">
-                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C1.79086 0 0 1.79086 0 4V20C0 22.2091 1.79086 24 4 24H20C22.2091 24 24 22.2091 24 20V4C24 1.79086 22.2091 0 20 0H4ZM16.7929 10.7596L8.56807 5.08237C7.90472 4.62449 7 5.09932 7 5.90535V17.121C7 17.9218 7.89431 18.3978 8.55855 17.9505L16.7834 12.412C17.3679 12.0184 17.3728 11.1599 16.7929 10.7596Z" fill="CurrentColor"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_1090_8939">
-                                <rect width="24" height="24" fill="white"></rect>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-                <section id="copyright">
-                    <div><a href="https://privacy.microsoft.com/en-us/privacystatement">Privacy Policy</a> © 2024 Microsoft</div>
-                </section>
-            </div>
+  </main>
+  <footer>
+    <section id="socials" class="social-container">
+      <p>Follow us on the web</p>
+      <div class="social-icons">
+        <!-- GitHub Icon -->
+        <a href="https://github.com/microsoft/JDConf" class="social" target="_blank" aria-label="Follow us on GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+          </svg>
+        </a>
+        <!-- Twitter Icon -->
+        <a href="https://twitter.com/JavaAtMicrosoft" class="social" target="_blank" aria-label="Follow us on Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+          </svg>
+        </a>
+        <!-- LinkedIn Icon -->
+        <a href="https://www.linkedin.com/showcase/microsoft-developers/" class="social" target="_blank"
+          aria-label="Follow us on LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+          </svg>
+        </a>
+        <!-- YouTube Icon -->
+        <a href="https://www.youtube.com/c/JavaonAzure" class="social" target="_blank"
+          aria-label="Follow us on YouTube">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1090_8939)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 0C1.79086 0 0 1.79086 0 4V20C0 22.2091 1.79086 24 4 24H20C22.2091 24 24 22.2091 24 20V4C24 1.79086 22.2091 0 20 0H4ZM16.7929 10.7596L8.56807 5.08237C7.90472 4.62449 7 5.09932 7 5.90535V17.121C7 17.9218 7.89431 18.3978 8.55855 17.9505L16.7834 12.412C17.3679 12.0184 17.3728 11.1599 16.7929 10.7596Z"
+                fill="CurrentColor"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_1090_8939">
+                <rect width="24" height="24" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <section id="copyright">
+          <div><a href="https://privacy.microsoft.com/en-us/privacystatement">Privacy Policy</a> © 2024 Microsoft</div>
         </section>
-        <!-- <p><a href="https://go.microsoft.com/fwlink/?LinkId=246338">Terms of use</a></p>
+      </div>
+    </section>
+    <!-- <p><a href="https://go.microsoft.com/fwlink/?LinkId=246338">Terms of use</a></p>
         <p>Designed with <a href="https://github.com">GitHub</a></p>
         -->
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
