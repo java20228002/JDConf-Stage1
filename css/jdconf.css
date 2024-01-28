@@ -22,7 +22,7 @@ body {
       /*background-image: url('../images/jdconf-background-mobile-9.jpg');*/ /* mobile-specific background image */
       /*background-image: url('../images/jdconf-background-desktop-1.png');*/
       /*background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(135, 225, 236, 0.637)),  url('../images/jdconf-background-desktop-1.png');*/
-      background: linear-gradient(bottom, rgb(255, 255, 255) 60%, rgba(145, 229, 240, 0.637)),  url('../images/jdconf-background-mobile-4.jpg');
+      background: linear-gradient(bottom, rgb(255, 255, 255) 10%, rgba(185, 238, 245, 0.637)),  url('../images/jdconf-background-mobile-4.jpg');
       /* additional mobile-specific styles if needed */
   }
 }
@@ -104,8 +104,9 @@ footer {
 }
 
 a {
-    color: #0094FF;
+    color: #0067b8;
     text-decoration: none;
+    font-weight: 500;
 }
 
 a:hover {
@@ -535,4 +536,14 @@ a.social {
     display: flex;
     flex-direction: column;
   }
+}
+
+.jdconf-hero-banner {
+  width: 100%; /* Full width */
+  height: 60vh; /* Height adjusts automatically */
+  background-image: url('../images/JDConf2024-hero-9.png');
+  background-size: contain; /* Cover the entire area of the banner */
+  background-repeat: no-repeat;
+  background-position: top center; /* Center the image within the banner */
+  /* Additional styling as needed */
 }
