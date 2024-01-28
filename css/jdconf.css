@@ -352,7 +352,7 @@ a.social {
   
   
   .speaker {
-    border: 1px solid #ccc;
+    border: 1px solid #B0E0E6;
     text-align: center;
     padding: 10px;
     position: relative;
@@ -372,7 +372,7 @@ a.social {
   
   .icon-info {
     cursor: pointer;
-    color: #007bff;
+    color: ;
     margin-left: 5px;
   }
   
@@ -388,8 +388,8 @@ a.social {
     bottom: 10px;
     left: 5%;
     right: 5%;
-    border: 1px solid #ccc;
-    border-radius: 5%;
+    border: 1px solid #B0E0E6;
+    border-radius: 10px;
   }
   
   /* Media query for mobile devices */
