@@ -479,6 +479,18 @@ a.social {
     padding: 14px 10px;
   }
 }
+
+.session-speaker {
+
+}
+  /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+  @media (max-width: 768px) {
+    .session-speaker {
+      display: none;
+    }
+  }
+  
+
   
   .nav-menu li a:hover {
     /*background-color: #ddd; */ /* Change for hover effect */
