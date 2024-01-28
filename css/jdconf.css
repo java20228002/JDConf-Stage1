@@ -1064,6 +1064,9 @@ h6,
 .text-center {
 	text-align: center;
 }
+.text-center-agenda {
+text-align: center;
+}
 
 .gradient-text {
 	background: var(--color-primary-gradient);
@@ -1456,7 +1459,8 @@ h6,
 .local-events-session {
 	margin-bottom: 10px;
 }
-	.agenda-group-sessions-container,
+
+.agenda-group-sessions-container,
 	.local-events-group-sessions-container {
 		grid-column: span 6;
 	}
@@ -1468,4 +1472,7 @@ h6,
 		gap: 0;
 	}
 
+.text-center-agenda {
+text-align:left;
+}
 }
