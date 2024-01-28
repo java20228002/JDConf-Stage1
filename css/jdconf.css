@@ -58,9 +58,10 @@ h2 {
 header {
     background-color: #000;
     color: white;
-    padding:15px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 3.5%;
     /*text-align: center;*/
-    padding-left: 70px;
 }
 
 /* Media query for desktop devices */
