@@ -14,9 +14,8 @@ body {
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   body {
-      background: linear-gradient(bottom, rgb(255, 255, 255) 10%, rgba(201, 241, 247, 0.537)),  url('../images/banners/jdconf-background-1.jpg');
+      background: linear-gradient(top, rgb(255, 255, 255) 10%, rgba(201, 241, 247, 0.537)),  url('../images/banners/jdconf-background-2.jpg');
       /* additional mobile-specific styles if needed */
-      display:none;
   }
 }
 
