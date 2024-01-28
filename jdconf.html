@@ -3,41 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/jdconf-favicon (1).png" type="image/x-icon">
+    <link rel="icon" href="images/jdconf-favicon.png" type="image/x-icon">
     <title>Microsoft JDConf 2024</title>
-    <link rel="stylesheet" href="css/jdconf.css?v=1.1">
+    <link rel="stylesheet" href="css/jdconf.css?v=1.3">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
 </head>
 
 <body>
+    <script src="js/jdconf.js"></script>  
     <header>
-        <div id="conference-title">Microsoft JDConf is back in 2024!</div>
-    </header>
-
-    <!-- <img src="images/JDConf2024-hero-2.png" alt="JDConf 2024 Main Image" class="main-image"> -->
-    <!--<img src="images/JDConf2024-hero.png" alt="JDConf 2024 Main Image" class="main-image"> -->
+        <!-- <div id="conference-title">Microsoft JDConf is back in 2024!</div> -->
+        <nav class="navbar">
+            <!--<a href="home.html" class="navbar-logo">
+              <img src="images/jdconflogo7.png" alt="JDConf Logo" class="jdconflogo">
+            </a> -->
+            <ul class="nav-menu">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="agenda.html">Agenda</a></li>
+              <li><a href="speakers.html">Speakers</a></li>
+              <!-- Add other menu items here -->
+            </ul>
+          </nav>
+   </header>
     
     <picture>
-        <source media="(min-width: 768px)" srcset="images/JDConf2024-hero-4.png">
-        <source media="(min-width: 480px)" srcset="images/duke.png">
-        <img src="images/duke.png" alt="Hero Image" class="hero-image">
+        <source media="(min-width: 768px)" srcset="images/banners/JDConf2024-hero-landscape.png">
+        <source media="(min-width: 480px)" srcset="images/banners/JDConf2024-hero-portrait.png">
+        <img src="images/banners/JDConf2024-hero-portrait.png" alt="Hero Image" class="hero-image">
     </picture>
 
     <main>
+        <!-- Mobile Section -->
+        <section id="about-mobile">
+            <h2>Microsoft JDConf 2024</h2>
+            <h4>Live on March 27-28, 2024</h4>
+            <h4>JDConf 2024 will livestream on Microsoft Reactor: Sign-up today for exclusive updates, 
+                networking opportunities, and resources. <a href="https://aka.ms/JDConf24/RSVP">Learn more.</a>
+            </h4>
+            <a href="https://aka.ms/JDConf24/RSVP" class="button">Sign-up now</a>
+        </section>
 
-<!-- Mobile Section -->
-<section id="about-mobile">
-    <h2>Microsoft JDConf 2024</h2>
-    <p>Live on March 27-28, 2024</p>
-    <p>Share your expertise and insights.</p>
-
-    <a href="https://sessionize.com/microsoft-jdconf-2024" class="button">Submit your proposal now</a>
-</section>
-
-<!-- Desktop Section -->
-<section id="about-desktop">
-    <p>Join us at JDConf 2024: Share your expertise and insights.</p>
-    <a href="https://sessionize.com/microsoft-jdconf-2024" class="button">Submit your proposal now</a>
-</section>
+        <!-- Desktop Section -->
+        <section id="about-desktop">
+            <h4>JDConf 2024 will livestream on Microsoft Reactor: Sign-up today for exclusive updates, 
+                networking opportunities, and resources. <a href="https://aka.ms/JDConf24/RSVP">Learn more.</a>
+            </h4>
+            <a href="https://aka.ms/JDConf24/RSVP" class="button">Sign-up now</a>
+        </section>
         <section id="event">
             <h2>What is JDConf</h2>
             <p>JDConf, a key event in the Java landscape, is returning in 2024 for an exceptional two-day virtual experience. Our mission is to provide a world-class, engaging event accessible to attendees from every corner of the globe. With each year, JDConf has expanded its content and global reach, now drawing thousands of live viewers worldwide and fostering a network of local community events.</p>
@@ -48,12 +61,325 @@
             <p>Prepare for an enriching two-day journey with JDConf 2024, featuring a curated selection of live sessions from leading voices in the Java community and Microsoft’s Java team. To accommodate our global audience, we're organizing separate live streams targeting three major regions: North America, Europe, and Asia-Pacific. This ensures that no matter where you are, you can be a part of JDConf at a time that works best for you.</p>
             <p>JDConf 2024 isn't just another event; it's a platform where you can elevate your Java expertise, explore cutting-edge developments in the Java ecosystem, and connect with fellow Java professionals. Get ready to join us for two days packed with insights and advancements that will empower you as a Java developer.</p>
         </section>
+        <section id="sectionToHide">
+            <h2>Announcing the first round of speakers</h2>
+             <div class="speakers-grid">
+                <!-- Repeat this block for each speaker -->
+                <div class="speaker">
+                    <img src="images/speakers/alina-yurenko.jpg" alt="Alina Yurenko">
+                    <h3>Alina Yurenko<span class="icon-info"><i class="fa fa-info-circle"></i></span></h3>
+                    <p>Developer advocate for GraalVM at Oracle Labs</p>
+                    <div class="bio">
+                        <p>Alina Yurenko is a developer advocate for GraalVM at Oracle Labs, a research & development organization at Oracle. She loves both programming and natural languages, compilers, and open source.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="images//speakers/brian-benz.jpg" alt="Brian Benz">
+                    <h3>Brian Benz<span class="icon-info"><i class="fa fa-info-circle"></i></span></h3>
+                    <p>Java Champion and a Cloud Advocate at Microsoft</p>
+                    <div class="bio">
+                        <p>Brian is a Java Champion and a Cloud Advocate at Microsoft, helping developers get the most out of Azure. Before Joining Microsoft, he was a program manager, evangelist, solution architect, consultant, developer, and author at IBM, Deloitte, and other companies. Find him on Twitter @bbenz. A current list of Brian's talks can be found at https://aka.ms/brianspeaking.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="images/speakers/daniel-oh.png" alt="Daniel Oh">
+                    <h3>Daniel Oh<span class="icon-info"><i class="fa fa-info-circle"></i></span></h3>
+                    <p>Senior Principal Developer Advocate at Red Hat</p>
+                    <div class="bio">
+                        <p>Daniel Oh is a Java Champion and Senior Principal Developer Advocate at Red Hat to evangelize developers for building cloud-native apps and serverless ob Kubernetes ecosystems. He's also contributing to various cloud open-source projects and ecosystems as a CNCF ambassador for accelerating DevOps adoption in enterprises. He's speaking at lots of technical seminars, workshops, and meetups to elaborate on new emerging technologies for enterprise developers & DevOps teams.<p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="images/speakers/josh-long.png" alt="Josh Long">
+                    <h3>Josh Long<span class="icon-info"><i class="fa fa-info-circle"></i></span></h3>
+                    <p>Spring Developer Advocate at Broadcom</p>
+                    <div class="bio">
+                        <p>Josh (@starbuxman) has been the first Spring Developer Advocate since 2010. Josh is a Java Champion, author of 6 books (including O’Reilly’s “Cloud Native Java: Designing Resilient Systems with Spring Boot, Spring Cloud, and Cloud Foundry” and “Reactive Spring”) and numerous best-selling video training (including “Building Microservices with Spring Boot Livelessons” with Spring Boot co-founder Phil Webb), and an open-source contributor (Spring Boot, Spring Integration, Spring Cloud, Activiti and Vaadin, etc), a podcaster (“A Bootiful Podcast”) and a YouTuber.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="images/speakers/lize-raes.png" alt="Lize Raes">
+                    <h3>Lize Raes<span class="icon-info"><i class="fa fa-info-circle"></i></span></h3>
+                    <p>Software Engineer at Open Tide</p>
+                    <div class="bio">
+                        <p>Lize Raes is a Senior Software Engineer and Head of AI at a Swiss company specializing in software for drug discovery and gene technology. In parallel, she develops LLM-powered apps and is a core member of the LangChain4j team. Lize loves using technology to solve societal issues. This has driven her in the past to work as a cochlear implant researcher at Ghent University, to develop a COVID-19 prognosis model and advise the Belgian government, and to engage as a committee member for the CNCF + UN hackathon. In her free time, you will find her behind the piano or in her woodworking atelier.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="images/speakers/loiane-groner.jpg" alt="Loiane Groner">
+                    <h3>Loiane Groner<span class="icon-info"><i class="fa fa-info-circle"></i></span></h3>
+                    <p>Citibank | GDE | MVP | Java Champion | Oracle ACE</p>
+                    <div class="bio">
+                        <p>Loiane Groner is a Development Manager at Citibank and has authored books for Packt Publishing. Google Developer Expert in Angular, Microsoft MVP in Developer Technologies, Oracle ACE, and Java Champion. In her spare time, she loves contributing to the community, and she publishes tech videos on Youtube and creates free programming courses at https://loiane.training.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="images/speakers/mark-heckler.jpg" alt="Mark Heckler">
+                    <h3>Mark Heckler<span class="icon-info"><i class="fa fa-info-circle"></i></span></h3>
+                    <p>Principal Cloud Developer Advocate for Java/JVM Languages at Microsoft</p>
+                    <div class="bio">
+                        <p>Mark Heckler, MBA is a software developer & Principal Cloud Developer Advocate for Java/JVM Languages at Microsoft, conference speaker, Java Champion, and Kotlin Developer Expert focused on developing innovative production-ready software at velocity for cloud and edge computing platforms. He has worked with key players in numerous industries and public sector organizations to develop and deliver critical capabilities on time and on budget. Mark is an open source contributor and author of Spring Boot: Up and Running (https://bit.ly/springbootbook) and can be found on Twitter/X @mkheck.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="images/speakers/mark-pollack.jpg" alt="Mark Pollack">
+                    <h3>Mark Pollack<span class="icon-info"><i class="fa fa-info-circle"></i></span></h3>
+                    <p>Spring Engineer at Broadcom</p>
+                    <div class="bio">
+                        <p>Dr. Mark Pollack has been involved with the Spring (Java) framework since 2003, contributing JMS functionality. He is the founder and technical lead of the Spring CLI and Spring AI projects, focusing on improving Java application development with an emphasis on AI integration and developer-focused command-line tooling. His previous roles include being the founder and technical lead of several notable Spring projects, including Spring Cloud Data Flow, Spring XD, Spring Data, Spring Shell, Spring AMQP, and Spring.NET. Before his work with Spring, Mark was involved in offline computing in high-energy nuclear physics at Brookhaven National Laboratory and also served as a technical lead in the financial services industry, concentrating on front-office trading systems.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="images/speakers/reza-rahman.jpg" alt="Reza Rahman">
+                    <h3>Reza Rahman<span class="icon-info"><i class="fa fa-info-circle"></i></span></h3>
+                    <p>Principal Program Manager, Java on Azure at Microsoft</p>
+                    <div class="bio">
+                        <p>Reza Rahman is Principal Program Manager for Java on Azure at Microsoft. He works to make sure Java developers are first class citizens at Microsoft and Microsoft is a first class citizen of the Java ecosystem. Reza has been an official Java technologist at Oracle. He is the author of the popular book EJB 3 in Action from Manning Publishing. Reza has long been a frequent speaker at Java User Groups and conferences worldwide including JavaOne and Devoxx. He has been the lead for the Java EE track at JavaOne as well as a JavaOne Rock Star Speaker award recipient. He was the program chair for the inaugural JakartaOne conference. Reza is an avid contributor to industry journals like JavaLobby/DZone and TheServerSide. He has been a member of the Java EE, EJB and JMS expert groups over the years. Reza implemented the EJB container for the Resin open source Java EE application server. He helps lead the Philadelphia Java User Group.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="images/speakers/theresa-mammarella.jpg" alt="Theresa Mammarella">
+                    <h3>Theresa Mammarella<span class="icon-info"><i class="fa fa-info-circle"></i></span></h3>
+                    <p>Software Engineer at IBM</p>
+                    <div class="bio">
+                        <p>Theresa Mammarella is a software engineer working on the Eclipse OpenJ9 JVM at IBM. She enjoys helping developers harness the full potential of their tools to create innovative, secure and performant solutions. Theresa is a frequent conference speaker and community organizer, giving talks around the world at Jfokus, Devoxx, DevNexus, JavaZone, KCDC, Java User Groups and more.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="images/speakers/yoshio-terada.jpg" alt="Yoshio Terada">
+                    <h3>Yoshio Terada <span class="icon-info"><i class="fa fa-info-circle"></i></span></h3>
+                    <p>Sr. Cloud Advocate, Java Champion at Microsoft</p>
+                    <div class="bio">
+                        <p>I joined the Microsoft in 2015. Since then, I've evangelized and advocated for Java on Azure and the development of Cloud Native micro-services App on Azure as well as Kubernetes.
 
-        <!-- <section id="agenda">
-            <h2>2024 Event agenda will be live soon...</h2>
+                            For most of my technical career I have been an advocate and evangelist for numerous technologies; including Java, Cloud Native micro-services, Microsoft Azure and Kubernetes. With over 10 years of experiences as a Java Evangelist, I was selected as one of the “We are professional. 100 people energizing the world” by Japanese media company NIKKEI in 2013. As part of this, I have been a board member of the Japanese Java Users Group and an Oracle Java Champion since 2016.</p>
+                    </div>
+                </div>
+             <!-- ... other speakers ... -->
+            </div>
         </section>
-        -->
+        <section id="sectionToHide">
+            <h2>Event schedule (Coming soon)</h2>
+            <div id="timeZoneInfoDiv"></div>            
+            <div class="agenda">
+                <div class="region-column" id="Americas">
+                    <h2>Americas</h2>
+                    <div class="agenda-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Session Title</th>
+                            <th>Speakers</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="session-date">27-Mar-24 08:35 09:00 AM</td>
+                            <td class="session-time">27-Mar-24 08:35 09:00 AM</td>
+                            <td>JDConf Americas Keynote</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 09:00 09:30 AM</td>
+                            <td class="session-time">27-Mar-24 09:00 09:30 AM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 09:30 10:00 AM</td>
+                            <td class="session-time">27-Mar-24 09:30 10:00 AM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 10:00 10:30 AM</td>
+                            <td class="session-time">27-Mar-24 10:00 10:30 AM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 10:30 11:00 AM</td>
+                            <td class="session-time">27-Mar-24 10:30 11:00 AM</td>
+                             <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 11:00 11:30 AM</td>
+                            <td class="session-time">27-Mar-24 11:00 11:30 AM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 11:30 11:55 AM</td>
+                            <td class="session-time">27-Mar-24 11:30 11:55 AM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
 
+
+                    <a href="https://developer.microsoft.com/en-us/reactor/events/21593/" target="_blank">
+                        Click to learn more and register for Americas event
+                    </a>
+                    </div>
+                  </div>                           
+                  <div class="region-column" id="asia-pacific">
+                    <h2>Asia-Pacific</h2>
+                    <div class="agenda-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Session Title</th>
+                            <th>Speakers</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="session-date">27-Mar-24 07:00 07:05 PM</td>
+                            <td class="session-time">27-Mar-24 07:00 07:05 PM</td>
+                            <td>Welcome to JDConf APAC</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 07:05 07:30 PM</td>
+                            <td class="session-time">27-Mar-24 07:05 07:30 PM</td>
+                            <td>JDConf APAC Keynote</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 07:30 08:00 PM</td>
+                            <td class="session-time">27-Mar-24 07:30 08:00 PM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 08:00 08:30 PM</td>
+                            <td class="session-time">27-Mar-24 08:00 08:30 PM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 08:30 09:00 PM</td>
+                            <td class="session-time">27-Mar-24 08:30 09:00 PM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 09:00 09:30 PM</td>
+                            <td class="session-time">27-Mar-24 09:00 09:30 PM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 09:30 10:00 PM</td>
+                            <td class="session-time">27-Mar-24 09:30 10:00 PM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 10:00 10:25 PM</td>
+                            <td class="session-time">27-Mar-24 10:00 10:25 PM</td>
+                            <td></td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">27-Mar-24 10:25 10:30 PM</td>
+                            <td class="session-time">27-Mar-24 10:25 10:30 PM</td>
+                            <td>Closing Remarks</td>
+                            <td>-</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+
+                <a href="https://developer.microsoft.com/en-us/reactor/events/21595/" target="_blank">
+                    Click to learn more and register for Asia-Pacific event
+                </a>
+                    </div>
+                  </div>                  
+                  <div class="region-column" id="europe">
+                    <h2>Europe, Middle East, and Africa</h2>
+                    <div class="agenda-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Session Title</th>
+                            <th>Speakers</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="session-date">28-Mar-24 02:00 02:05 AM</td>
+                            <td class="session-time">28-Mar-24 02:00 02:05 AM</td>
+                            <td>Welcome to JDConf EMEA</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">28-Mar-24 02:05 02:30 AM</td>
+                            <td class="session-time">28-Mar-24 02:05 02:30 AM</td>
+                            <td>JDConf EMEA Keynote</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">28-Mar-24 02:30 03:00 AM</td>
+                            <td class="session-time">28-Mar-24 02:30 03:00 AM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">28-Mar-24 03:00 03:30 AM</td>
+                            <td class="session-time">28-Mar-24 03:00 03:30 AM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">28-Mar-24 03:30 04:00 AM</td>
+                            <td class="session-time">28-Mar-24 03:30 04:00 AM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">28-Mar-24 04:00 04:30 AM</td>
+                            <td class="session-time">28-Mar-24 04:00 04:30 AM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">28-Mar-24 04:30 05:00 AM</td>
+                            <td class="session-time">28-Mar-24 04:30 05:00 AM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">28-Mar-24 05:00 05:25 AM</td>
+                            <td class="session-time">28-Mar-24 05:00 05:25 AM</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="session-date">28-Mar-24 05:25 05:30 AM</td>
+                            <td class="session-time">28-Mar-24 05:25 05:30 AM</td>
+                            <td>Closing Remarks</td>
+                            <td>-</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    <a href="https://developer.microsoft.com/en-us/reactor/events/21594/" target="_blank">
+                       Click to learn more and register for EMEA event
+                    </a>
+                    </div>
+                  </div>
+              </div>             
+        </section>
+ 
         <div class="full-width-wrapper">
             <section id="previous-events">
                 <h2>Explore past JDConf event</h2>
@@ -182,7 +508,7 @@
                     </svg>
                 </a>
                 <section id="copyright">
-                    <div><a href="https://privacy.microsoft.com/en-us/privacystatement">Privacy Policy</a> © 2023 Microsoft</div>
+                    <div><a href="https://privacy.microsoft.com/en-us/privacystatement">Privacy Policy</a> © 2024 Microsoft</div>
                 </section>
             </div>
         </section>
@@ -190,5 +516,5 @@
         <p>Designed with <a href="https://github.com">GitHub</a></p>
         -->
     </footer>
- </body>
+  </body>
 </html>
