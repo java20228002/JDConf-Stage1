@@ -59,7 +59,7 @@ header {
 /* Media query for desktop devices */
 @media screen and (max-width: 767px) {
   header {
-    padding-left: 10px;
+    padding-left: 15px;
 }
 }
 
