@@ -3,19 +3,19 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
-    text-align: left;
-      
-    background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(135, 225, 236, 0.637)),  url('../images/banners/jdconf-background-2.jpg');
-    background-size:cover; /* Cover the entire viewport */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-position: center; /* Center the image */  
+    text-align: left;  
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
+/* Media query for laptop devices */
+@media (min-width: 768px) {
   body {
       background: linear-gradient(top, rgb(255, 255, 255) 10%, rgba(201, 241, 247, 0.537)),  url('../images/banners/jdconf-background-2.jpg');
       /* additional mobile-specific styles if needed */
+
+background: radial-gradient(circle, rgb(255, 255, 255) 30%, rgba(135, 225, 236, 0.637)),  url('../images/banners/jdconf-background-2.jpg');
+    background-size:cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
   }
 }
 
