@@ -90,3 +90,13 @@ function toggleMenu() {
   var menuItems = document.getElementById("menuItems");
   menuItems.classList.toggle("active");
 }
+
+
+document.querySelectorAll('.nav-menu li a').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelector('.nav-menu li a.active').classList.remove('active');
+        this.classList.add('active');
+    });
+});
+
+
