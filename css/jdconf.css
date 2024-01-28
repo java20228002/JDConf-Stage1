@@ -485,8 +485,15 @@ a.social {
     color: #0067b8;
     
   }
-  
-  .timezone-notice {
+
+
+.nav-menu li a.active {
+    /* Your decorative styles for the active menu item */
+    color: #0067b8; /* example */
+    font-weight: bold; 
+}  
+
+.timezone-notice {
     text-align: center;
     margin-top: 0;
     margin-bottom: 1em;
