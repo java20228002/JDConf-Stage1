@@ -64,7 +64,7 @@ header {
 /* Media query for desktop devices */
 @media screen and (max-width: 767px) {
 	header {
-		padding-left: 15px;
+		padding-left: 10px;
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
