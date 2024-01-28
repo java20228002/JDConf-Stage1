@@ -93,7 +93,7 @@ function toggleMenu() {
 
 
 document.querySelectorAll('.nav-menu li a').forEach(item => {
-    item.addEventListener('click', function() {
+    item.addEventListener('touchstart', function() {
         document.querySelector('.nav-menu li a.active').classList.remove('active');
         this.classList.add('active');
     });
