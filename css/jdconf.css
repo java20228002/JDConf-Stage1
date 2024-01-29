@@ -611,6 +611,10 @@ a.social:visited {
 	}
 }
 
+.schedule-column {
+    white-space: nowrap;
+}
+
 /* Design tokens */
 :root {
 	--color-midnight-blue-primary: #151718;
