@@ -381,11 +381,10 @@ a.social:visited {
 	grid-gap: 20px;
 }
 
-
 .speaker {
 	border: 1px solid #B0E0E6;
 	text-align: center;
-	padding: 10px;
+	padding: 15px;
 	position: relative;
 	border-radius: 10px;
 	/* Rounded corners */
@@ -1126,6 +1125,78 @@ h6,
 	-webkit-text-fill-color: transparent;
 }
 
+
+.jdconf-speaker-card {
+	display: flex;
+	flex-flow: column nowrap;
+	color: var(--jdconf-speaker-card-foreground);
+	background-color: var(--jdconf-speaker-card-background);
+	padding: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: var(--corner-radius-lg);
+	grid-column: span 3;
+	text-decoration: none;
+	box-shadow: var(--jdconf-speaker-card-box-shadow);
+	transition: box-shadow 200ms ease-out;
+}
+
+	.jdconf-speaker-card:hover {
+		box-shadow: var(--jdconf-speaker-card-box-shadow-hover);
+		text-decoration: none;
+	}
+
+	.jdconf-speaker-card:nth-child(5n+1) {
+		border-color: var(--color-brand-purple-primary);
+	}
+
+	.jdconf-speaker-card:nth-child(5n+2) {
+		border-color: var(--color-magenta-primary);
+	}
+
+	.jdconf-speaker-card:nth-child(5n+3) {
+		border-color: var(--color-flamingo-primary);
+	}
+
+	.jdconf-speaker-card:nth-child(5n+4) {
+		border-color: var(--color-brand-purple-primary);
+	}
+
+	.jdconf-speaker-card:nth-child(5n+5) {
+		border-color: var(--color-blue-primary);
+	}
+
+	.jdconf-speaker-card .jdconf-speaker-card-image {
+		margin: 0 auto 16px auto;
+		width: 164px;
+		height: 164px;
+		border-radius: 100%;
+		background: var(--color-primary-gradient);
+	}
+
+	.jdconf-speaker-card .jdconf-speaker-card-name {
+		background: var(--color-primary-gradient);
+		background-clip: text;
+		-webkit-background: var(--color-primary-gradient-webkit);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.jdconf-speaker-card .jdconf-speaker-card-pronouns {
+		color: var(--jdconf-speaker-card-foreground);
+		margin-bottom: 16px;
+	}
+
+	.jdconf-speaker-card .jdconf-speaker-card-company-name {
+		color: var(--jdconf-speaker-card-foreground);
+		margin-bottom: 16px;
+	}
+
+	.jdconf-speaker-card .jdconf-speaker-card-socials {
+		color: var(--jdconf-speaker-card-foreground);
+		word-break: break-all;
+	}
+
 /* Mobile styles */
 @media screen and (max-width: 539px) {
 	.font-display-1 {
@@ -1281,9 +1352,9 @@ h6,
 	}
 
 	.navbar-links {
-		color: var(--color-dotnet-menu-popover-foreground);
-		background-color: var(--color-dotnet-menu-popover-background);
-		border: solid var(--dotnet-btn-border-width) var(--color-dotnet-menu-popover-background);
+		color: var(--color-jdconf-menu-popover-foreground);
+		background-color: var(--color-jdconf-menu-popover-background);
+		border: solid var(--jdconf-btn-border-width) var(--color-jdconf-menu-popover-background);
 		border-radius: var(--corner-radius-xs);
 		margin-left: var(--content-width-padding-mobile);
 		margin-right: var(--content-width-padding-mobile);
@@ -1305,8 +1376,8 @@ h6,
 		display: block;
 		width: 100%;
 		line-height: 1rem;
-		color: var(--color-dotnet-menu-popover-foreground);
-		background-color: var(--color-dotnet-menu-popover-background);
+		color: var(--color-jdconf-menu-popover-foreground);
+		background-color: var(--color-jdconf-menu-popover-background);
 		text-decoration: none;
 		font-size: 0.875rem;
 		padding: 8px 10px;
@@ -1314,22 +1385,22 @@ h6,
 	}
 
 	.navbar-links>li a:hover {
-		color: var(--color-dotnet-menu-popover-foreground-hover);
-		background-color: var(--color-dotnet-menu-popover-background-hover);
+		color: var(--color-jdconf-menu-popover-foreground-hover);
+		background-color: var(--color-jdconf-menu-popover-background-hover);
 		text-decoration: none;
 		line-height: 1rem;
 	}
 
 	.navbar-links>li a:active {
-		color: var(--color-dotnet-menu-popover-foreground-active);
-		background-color: var(--color-dotnet-menu-popover-background-active);
+		color: var(--color-jdconf-menu-popover-foreground-active);
+		background-color: var(--color-jdconf-menu-popover-background-active);
 		text-decoration: none;
 		line-height: 1rem;
 	}
 
 	.navbar-links>li a:focus-visible {
-		background-color: var(--color-dotnet-menu-popover-background);
-		outline: solid 2px var(--color-dotnet-menu-popover-focus-border);
+		background-color: var(--color-jdconf-menu-popover-background);
+		outline: solid 2px var(--color-jdconf-menu-popover-focus-border);
 	}
 
 	.navbar a:hover::after,
@@ -1390,7 +1461,7 @@ h6,
 		margin-right: 0px;
 	}
 
-	#cookie-consent .dotnet-solid-btn-accent {
+	#cookie-consent .jdconf-solid-btn-accent {
 		margin-left: 0px;
 		margin-top: 24px;
 	}
@@ -1416,7 +1487,7 @@ h6,
 		align-items: flex-start;
 	}
 
-	.hero-ctas .dotnet-link-btn-neutral {
+	.hero-ctas .jdconf-link-btn-neutral {
 		margin-top: 1rem;
 	}
 
@@ -1448,13 +1519,13 @@ h6,
 		margin-bottom: 32px;
 	}
 
-	#biggest-dotnet-virtual-event h2,
+	#biggest-jdconf-virtual-event h2,
 	#what-to-expect h2,
 	.text-swimlane h2 {
 		grid-column: span 6;
 	}
 
-	#biggest-dotnet-virtual-event p,
+	#biggest-jdconf-virtual-event p,
 	#what-to-expect p,
 	.text-swimlane>p,
 	.text-swimlane>div {
@@ -1486,7 +1557,7 @@ h6,
 		grid-column: 1 / span 6;
 	}
 
-	.dotnet-speaker-card {
+	.jdconf-speaker-card {
 		grid-column: span 6;
 	}
 
