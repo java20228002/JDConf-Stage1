@@ -344,7 +344,7 @@ a.social:visited {
 }
 
 .agenda-table th {
-	background-color: #004A7F;
+	background-color: #000;
 	color: #fff;
 }
 
@@ -608,6 +608,10 @@ a.social:visited {
 		display: flex;
 		flex-direction: column;
 	}
+}
+
+.session-time {
+    white-space: nowrap;
 }
 
 /* Design tokens */

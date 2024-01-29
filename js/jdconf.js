@@ -18,7 +18,7 @@ function getTimeZoneInfo() {
   //timeZoneName = convertTimezoneToAbbreviation (now.zoneName);
 
   // Create the HTML string with the desired format
-  const timeZoneInfoHTML = `All times in - (${utcDiffString}) ${timeZoneName}`;
+  const timeZoneInfoHTML = `Local time (${utcDiffString}) ${timeZoneName}`;
 
   return timeZoneInfoHTML;
 }
