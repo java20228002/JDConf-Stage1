@@ -13,17 +13,23 @@
 
 <body>
     <script src="js/jdconf.js"></script>
-    <header>
-        <!-- <div id="conference-title">Microsoft JDConf is back in 2024!</div> -->
-        <nav class="navbar">
-            <ul class="nav-menu">
+    <header class="navbar grid">
+        <a class="navbar-title font-title-2" href="index.html">JDConf 2024</a>
+        <button id="navbar-menu-btn" class="navbar-menu-icon-btn" aria-label="Toggle menu">
+            <svg width="40" height="30" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="4" fill="white"/>
+              <rect y="13" width="40" height="4" fill="white"/>
+              <rect y="26" width="40" height="4" fill="white"/>
+          </svg>
+        </button>
+        <nav>
+            <ul class="navbar-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="agenda.html">Agenda</a></li>
                 <li><a href="speakers.html">Speakers</a></li>
-                <!-- Add other menu items here -->
-            </ul>
         </nav>
-    </header>
+      </header>
+  
 
     <!-- <picture>
         <source media="(min-width: 768px)" srcset="images/banners/JDConf2024-hero-landscape.png">
