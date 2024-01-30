@@ -462,7 +462,7 @@ a.social:visited {
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
 @media (max-width: 768px) {
 	.navbar {
-		padding: 40px;
+		padding: 20px;
 		/* Adjust padding for mobile devices */
 	}
 }
