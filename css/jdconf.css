@@ -1155,6 +1155,16 @@ h6,
 	color: var(--color-title-font);
 }
 
+.font-title-2-underline {
+	font-size: 2rem;
+	font-family: var(--title-font-family);
+	font-weight: 700;
+	font-style: normal;
+	line-height: 2.5rem;
+	text-decoration: underline;
+	text-transform: none;
+	color: var(--color-title-font);
+}
 .agenda-container>div,
 .local-events-container>div {
 	margin-bottom: 36px;
@@ -1371,6 +1381,16 @@ h6,
 		font-style: normal;
 		line-height: 2.25rem;
 		text-decoration: none;
+		text-transform: none;
+	}
+
+	.font-title-2-underline {
+		font-size: 1.625rem;
+		font-family: var(--title-font-family);
+		font-weight: 700;
+		font-style: normal;
+		line-height: 2.25rem;
+		text-decoration: underline;
 		text-transform: none;
 	}
 
