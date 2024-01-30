@@ -821,7 +821,7 @@ a.social:visited {
   break point there is still some padding between the viewport and content. */
 	--content-width-padding-desktop: 40px;
 	--content-width-padding-tablet: 30px;
-	--content-width-padding-mobile: 10px;
+	--content-width-padding-mobile: 20px;
 	--grid-template-desktop: repeat(12, 1fr);
 	--grid-template-tablet: repeat(12, 1fr);
 	--grid-template-mobile: repeat(6, 1fr);
