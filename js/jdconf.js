@@ -175,5 +175,155 @@ window.addEventListener('resize', function() {
   }
 });
 
+function startCountdownAmericas() {
+    // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
+    var countDownDate = new Date("March 27, 2024 08:30:00 GMT-0700").getTime();
 
+    // Update the count down every 1 second
+    var x = setInterval(function() {
 
+        // Get today's date and time (in user's local time)
+        var now = new Date().getTime();
+            
+        // Find the time left between now and the count down date
+        var distance = countDownDate - now;
+            
+        // Time calculations for days, hours, minutes, and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        // Display the result in an element with id="demo"
+        document.getElementById("americas-countdown").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        document.getElementById("americas-countdown").innerHTML = "Americas event will start in: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+            
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("americas-countdown").innerHTML = "EVENT STARTED";
+        }
+    }, 1000);
+}
+
+// Call the function to start the countdown
+startCountdownAmericas();
+
+function startCountdownAsia() {
+  // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
+  var countDownDate = new Date("March 27, 2024 15:00:00 GMT-0700").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time (in user's local time)
+    var now = new Date().getTime();
+
+    // Find the time left between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes, and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in an element with id="demo"
+    document.getElementById("asia-countdown").innerHTML = days + "d " + hours + "h " +
+      minutes + "m " + seconds + "s ";
+    document.getElementById("asia-countdown").innerHTML = "Asia-Pacific event will start in: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+
+    // If the count down is finished, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("asia-countdown").innerHTML = "EVENT STARTED";
+    }
+  }, 1000);
+}
+
+// Call the function to start the countdown
+startCountdownAsia();
+
+function startCountdownEurope() {
+  // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
+  var countDownDate = new Date("March 28, 2024 04:00:00 GMT-0700").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time (in user's local time)
+    var now = new Date().getTime();
+
+    // Find the time left between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes, and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in an element with id="demo"
+    document.getElementById("europe-countdown").innerHTML = days + "d " + hours + "h " +
+      minutes + "m " + seconds + "s ";
+    document.getElementById("europe-countdown").innerHTML = "EMEA event will start in: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+
+    // If the count down is finished, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("europe-countdown").innerHTML = "EVENT STARTED";
+    }
+  }, 1000);
+}
+
+// Call the function to start the countdown
+startCountdownEurope();
+
+// Write function for cookie consent
+function handleCookieConsent() {
+  // Check if user has previously provided consent
+  const hasConsented = getCookie("cookieConsent") || false;
+
+  // If user has not provided consent, display cookie consent banner
+  if (!hasConsented) {
+    // Display banner code here...
+  }
+
+  // Handle user's consent decision
+  const acceptButton = document.getElementById("acceptCookiesButton");
+  const declineButton = document.getElementById("declineCookiesButton");
+
+  acceptButton.addEventListener("click", () => {
+    // Set cookie or update consent status variable
+    setCookie("cookieConsent", true);
+    // Hide cookie consent banner
+    hideBanner();
+    // Enable or load features that require cookies
+    enableFeatures();
+  });
+
+  declineButton.addEventListener("click", () => {
+    // Handle decline logic (e.g., disable certain features)
+    disableFeatures();
+  });
+
+  // Add update consent option for previously consented users
+  const updateButton = document.getElementById("updateConsentButton");
+
+  updateButton.addEventListener("click", () => {
+    // Show cookie consent banner and allow user to update their consent options
+    showBanner();
+  });
+}
+
+// Helper function to get the value of a specific cookie
+function getCookie(cookieName) {
+  const cookieValue = document.cookie.match(`(^|;)\\s*${cookieName}\\s*=\\s*([^;]+)`);
+  return cookieValue ? cookieValue.pop() : null;
+}
+
+// Helper function to set a cookie with a specific value
+function setCookie(cookieName, cookieValue) {
+  document.cookie = `${cookieName}=${cookieValue}`;
+}

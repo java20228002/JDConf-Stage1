@@ -11,7 +11,8 @@
   <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
 </head>
 
-<body>
+<body onload="startCountdownAmericas(); startCountdownAsia(); startCountdownEurope();">
+
   <script src="js/jdconf.js"></script>
  
   <header class="navbar grid">
@@ -28,6 +29,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="agenda.html">Agenda</a></li>
             <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="about.html">About</a></li>
     </nav>
   </header>
 
@@ -39,267 +41,224 @@
   </picture>
 
   <main>
-    <!-- Mobile Section -->
-    <section id="about-mobile">
-      <h4>JDConf 2024 will livestream on Microsoft Reactor: RSVP today for exclusive updates,
+    
+    <h4>Microsoft JDConf 2024 will livestream on Microsoft Reactor: RSVP today for exclusive updates,
         networking opportunities, and resources. <a href="https://aka.ms/JDConf24/RSVP">Learn more.</a>
-      </h4>
-      <a href="https://aka.ms/JDConf24/RSVP" class="button">RSVP Now</a>
-    </section>
-
-    <!-- Desktop Section -->
-    <section id="about-desktop">
-      <h4>JDConf 2024 will livestream on Microsoft Reactor: RSVP today for exclusive updates,
-        networking opportunities, and resources. <a href="https://aka.ms/JDConf24/RSVP">Learn more.</a>
-      </h4>
-      <a href="https://aka.ms/JDConf24/RSVP" class="button">RSVP Now</a>
-    </section>
-    <section id="event" class="font-subtitle-2 section-home">
-      <h2>What is JDConf</h2>
-      <p>JDConf, a key event in the Java landscape, is returning in 2024 for an exceptional two-day virtual experience.
-        Our mission is to provide a world-class, engaging event accessible to attendees from every corner of the globe.
-        With each year, JDConf has expanded its content and global reach, now drawing thousands of live viewers
-        worldwide and fostering a network of local community events.</p>
-    </section>
-
+    </h4>
+    <a href="https://aka.ms/JDConf24/RSVP" class="button">RSVP Now
+    </a>
+    
     <section id="conference" class="font-subtitle-2 section-home">
       <h2>What to expect at the conference</h2>
-      <p>Prepare for an enriching two-day journey with JDConf 2024, featuring a curated selection of live sessions from
-        leading voices in the Java community and Microsoft’s Java team. To accommodate our global audience, we're
-        organizing separate live streams targeting three major regions: North America, Europe, and Asia-Pacific. This
-        ensures that no matter where you are, you can be a part of JDConf at a time that works best for you.</p>
-      <p>JDConf 2024 isn't just another event; it's a platform where you can elevate your Java expertise, explore
-        cutting-edge developments in the Java ecosystem, and connect with fellow Java professionals. Get ready to join
-        us for two days packed with insights and advancements that will empower you as a Java developer.</p>
+      <p>Prepare for an enriching two-day journey with Microsoft JDConf 2024, featuring a curated selection of live sessions from leading voices in the Java community and Microsoft’s teams. To accommodate our global audience, we're organizing separate live streams targeting three major regions: Americas, EMEA and Asia-Pacific. This ensures that no matter where you are, you can be a part of Microsoft JDConf at a time that works best for you.</p>
+      <p>Microsoft JDConf isn't just another event; it's a platform where you can elevate your Java expertise, explore cutting-edge developments in the Java ecosystem, learn about Microsoft tools and services that empower every Java developer in the world, and connect with fellow Java professionals. Get ready to join us for two days packed with insights and advancements that will empower you as a Java developer.</p>
     </section>
 
     <section id="sectionToHide" class="font-subtitle-2 section-home">
-      <h2>Stay tuned! Our exciting agenda is coming your way shortly.</h2>
       <div class="agenda">
+        <h1 class="font-display-4 text-center">Agenda</h1>
+        <div class="live-stream-nav font-title-3 text-center">
+         <ul>
+             <li><a href="#americas">Americas</a></li>
+             <li><a href="#apac">Asia-Pacific</a></li>
+             <li><a href="#emea">EMEA</a></li>
+         </ul>
+        </div>
+        <section id="americas"> </section>
         <div class="region-column" id="Americas">
-          <h2>Americas - Live stream schedule</h2>
+          <h2 class="font-title-2-underline"><a href="https://developer.microsoft.com/en-us/reactor/events/21593/" target="_blank">Join our Americas live stream - RSVP now.</a></h2>
           <div id="timeZoneInfoDiv"></div>
-          <div class="agenda-table font-subtitle-2">
+          <div id="americas-countdown" class="font-subtitle-2 hidden">Americas event will start in: </div>
+          <div class="agenda-table font-subtitle-3">
             <table>
               <thead>
                 <tr>
                   <th>Schedule</th>
-                  <th>Title</th>
+                  <th>Session</th>
                   <th class="session-speaker">Speakers</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td class="session-time">27-Mar-24 08:30 08:35 AM</td>
-                  <td class="session-title">Welcome to JDConf Americas</td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title">
+                    <a href="agenda.html#brunob-welcome">Welcome to JDConf Americas</a>
+                  </td>
+                  <td class="session-speaker">Host: Bruno Borges, Microsoft</td>
                 </tr>
                 <td class="session-time">27-Mar-24 08:35 09:00 AM</td>
-                <td class="session-title">JDConf Americas Keynote</td>
-                <td class="session-speaker"></td>
+                <td class="session-title"><a href="agenda.html#americas-keynote-session">JDConf Americas Keynote</a></td>
+                <td class="session-speaker">Amanda Silver, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 09:00 09:30 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#theresam-session">Cache Me If You Can: Speed Up Your JVM With Project Valhalla</a></td>
+                  <td class="session-speaker">Theresa Mammarella, IBM</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 09:30 10:00 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#danielo-session">Empowering Quarkus Applications with AI and OpenTelemetry on Kubernetes</a></td>
+                  <td class="session-speaker">Daniel Oh, Red Hat, Brian Benz, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 10:00 10:30 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#markh-session">Paving a Painless Path to Production AI in your Java Applications</a></td>
+                  <td class="session-speaker">Mark Heckler, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 10:30 11:00 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#loianeg-session">From Zero to Java Hero: Visual Studio Code Mastery</a></td>
+                  <td class="session-speaker">Loiane Groner, Citibank</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 11:00 11:30 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#simonr-session">Instant Coffee: How to Eliminate Java Performance Warmup</a></td>
+                  <td class="session-speaker">Simon Ritter, Azul Systems</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 11:30 11:55 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#markp-session">Spring AI: Streamlining Java Enterprise AI Development and Deployment</a></td>
+                  <td class="session-speaker">Mark Pollack, Broadcom</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 11:55 11:59 AM </td>
-                  <td class="session-title">Closing Remarks </td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#brunob-close">Closing Remarks</a></td>
+                  <td class="session-speaker">Bruno Borges, Microsoft</td>
                 </tr>
               </tbody>
             </table>
-
-
-            <a href="https://developer.microsoft.com/en-us/reactor/events/21593/" target="_blank">
-              Click to learn more and register for Americas event
-            </a>
           </div>
         </div>
+        <section id="apac"> </section>
         <div class="region-column" id="asia-pacific">
-          <h2>Asia-Pacific - Live stream schedule</h2>
+          <h2 class="font-title-2-underline"><a href="https://developer.microsoft.com/en-us/reactor/events/21595/" target="_blank">Join our Asia-Pacific live stream. RSVP now.</a></h2>
           <div id="timeZoneInfoDiv2"></div>
-          <div class="agenda-table font-subtitle-2">
+          <div id="asia-countdown" class="font-subtitle-2 hidden">Asia-Pacific event will start in: </div>
+          <div class="agenda-table font-subtitle-3">
             <table>
               <thead>
                 <tr>
                   <th>Schedule</th>
-                  <th>Title</th>
+                  <th>Session</th>
                   <th class="session-speaker">Speakers</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td class="session-time">27-Mar-24 07:00 07:05 PM</td>
-                  <td class="session-title">Welcome to JDConf Asia-Pacific</td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#roryp-welcome">Welcome to JDConf Asia-Pacific</a></td>
+                  <td class="session-speaker">Host: Rory Preddy, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 07:05 07:30 PM</td>
-                  <td class="session-title">JDConf Asia-Pacific Keynote</td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#joshl-session">Bootiful Spring Boot 3</a></td>
+                  <td class="session-speaker">Josh Long, Broadcom</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 07:30 08:00 PM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#danielk-session">Virtual Threads in Action</a></td>
+                  <td class="session-speaker">Daniel Kec, Oracle</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 08:00 08:30 PM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#nikitan-session">Optimize Java Apps for High Traffic Scenarios</a></td>
+                  <td class="session-speaker">Nikita Nallamothu, Microsoft, Sandra Ahlgrimm, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 08:30 09:00 PM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#seanl-session">Maximize Azure Container Apps for Seamless Deployment and Execution</a></td>
+                  <td class="session-speaker">Sean Li, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 09:00 09:30 PM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#yoshiot-session">Leveraging Generative AI for Java Service Enhancement</a></td>
+                  <td class="session-speaker">Yoshio Terada, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 09:30 10:00 PM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#cesars-session">Improving HotSpot Scalar Replacement</a></td>
+                  <td class="session-speaker">Cesar Soares, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 10:00 10:25 PM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#theok-session">Building multi-tenant apps with Java Spring Data on Cosmos DB</a></td>
+                  <td class="session-speaker">Theodorus Leonardus van Kraay, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">27-Mar-24 10:25 10:30 PM</td>
-                  <td class="session-title">Closing Remarks</td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#roryp-close">Closing Remarks</a></td>
+                  <td class="session-speaker">Rory Preddy, Microsoft</td>
                 </tr>
               </tbody>
             </table>
-
-
-            <a href="https://developer.microsoft.com/en-us/reactor/events/21595/" target="_blank">
-              Click to learn more and register for Asia-Pacific event
-            </a>
           </div>
         </div>
+        <section id="emea"> </section>
         <div class="region-column" id="europe">
-          <h2>Europe, Middle East, and Africa - Live stream schedule</h2>
+          <h2 class="font-title-2-underline"><a href="https://developer.microsoft.com/en-us/reactor/events/21594/" target="_blank">Join our EMEA live stream. RSVP now.</a></h2>
           <div id="timeZoneInfoDiv3"></div>
-          <div class="agenda-table font-subtitle-2">
+          <div id="europe-countdown" class="font-subtitle-2 hidden">EMEA event will start in: </div>
+          <div class="agenda-table font-subtitle-3">
             <table>
               <thead>
                 <tr>
                   <th>Schedule</th>
-                  <th>Title</th>
+                  <th>Session</th>
                   <th class="session-speaker">Speakers</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td class="session-time">28-Mar-24 02:00 02:05 AM</td>
-                  <td class="session-title">Welcome to JDConf EMEA</td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#sandraa-welcome">Welcome to JDConf EMEA</a></td>
+                  <td class="session-speaker">Host: Sandra Ahlgrimm, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">28-Mar-24 02:05 02:30 AM</td>
-                  <td class="session-title">JDConf EMEA Keynote</td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#lizer-session">Java Meets AI: How to build LLM-Powered Applications with LangChain4j</a></td>
+                  <td class="session-speaker">Lize Raes, Open Tide</td>
                 </tr>
                 <tr>
                   <td class="session-time">28-Mar-24 02:30 03:00 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#nickz-session">Sparking Developer Joy: Elevating Developer Experience with VSCode Java</a></td>
+                  <td class="session-speaker">Nick Zhu, Microsoft, Mohit Suman, Red Hat, Roland Grunberg, Red Hat</td>
                 </tr>
                 <tr>
                   <td class="session-time">28-Mar-24 03:00 03:30 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#olegs-session">Mastering Testcontainers for better integration tests</a></td>
+                  <td class="session-speaker">Oleg Šelajev, AtomicJar</td>
                 </tr>
                 <tr>
                   <td class="session-time">28-Mar-24 03:30 04:00 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#roryp-session">Semantic Kernel for Java</a></td>
+                  <td class="session-speaker">Rory Preddy, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">28-Mar-24 04:00 04:30 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#rezar-session">What's Coming in Jakarta EE 11?</a></td>
+                  <td class="session-speaker">Reza Rahman, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-time">28-Mar-24 04:30 05:00 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#alinay-session">Fast And Lightweight Spring Boot Applications With GraalVM</a></td>
+                  <td class="session-speaker">Alina Yurenko, Oracle Labs</td>
                 </tr>
                 <tr>
                   <td class="session-time">28-Mar-24 05:00 05:25 AM</td>
-                  <td class="session-title"></td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#martinl-session">How to keep your Spring Boot projects up-to-date</a></td>
+                  <td class="session-speaker">Martin Lippert, Broadcom</td>
                 </tr>
                 <tr>
                   <td class="session-time">28-Mar-24 05:25 05:30 AM</td>
-                  <td class="session-title">Closing Remarks</td>
-                  <td class="session-speaker"></td>
+                  <td class="session-title"><a href="agenda.html#sandraa-close">Closing Remarks</a></td>
+                  <td class="session-speaker">Sandra Ahlgrimm, Microsoft</td>
                 </tr>
               </tbody>
             </table>
-
-            <a href="https://developer.microsoft.com/en-us/reactor/events/21594/" target="_blank">
-              Click to learn more and register for EMEA event
-            </a>
           </div>
         </div>
       </div>
     </section>
-
-    <div class="full-width-wrapper font-subtitle-1 section-home">
-      <section id="previous-events">
-        <h2>Explore past JDConf event</h2>
-        <p>Interested in what we've discussed in the past? Take a look at the highlights and sessions from JDConf 2022.
-        </p>
-        <div class="video-grid">
-          <div class="video-column">
-            <iframe src="https://www.youtube.com/embed/fHO4N2VBiyw?si=jHkBZOvzuJ41jND6" frameborder="0"
-              allowfullscreen></iframe>
-          </div>
-          <div class="video-column">
-            <iframe src="https://www.youtube.com/embed/hdt_B1-75lU?si=ykMDlQ15zhU6lSLg" frameborder="0"
-              allowfullscreen></iframe>
-          </div>
-          <div class="video-column">
-            <iframe src="https://www.youtube.com/embed/Ns7TXrm4bP0" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <a href="https://learn.microsoft.com/en-us/events/learn-events/jdconf-2022/?WT.mc_id=jdconf-56324-jemorg"
-          class="button">More JDConf 2022 sessions</a>
-      </section>
-    </div>
 
     <section id="stay-connected" class="font-subtitle-2 section-home">
       <h2>Stay connected</h2>
@@ -307,92 +266,6 @@
           href="https://twitter.com/JavaAtMicrosoft">Java at Microsoft</a> for the latest news and updates about JDConf.
       </p>
       <p>Follow the event at <a href="https://x.com/hashtag/jdconf">#JDConf</a></p>
-    </section>
-
-    <section id="faq-section-3" class="font-subtitle-2 section-home">
-      <div class="uhf-container">
-        <div class="is-reading-width">
-          <div class="padding-bottom-md">
-            <h2 id="frequently-asked-questions" class="title is-2 is-responsive">Frequently asked questions</h2>
-          </div>
-          <div class="">
-            <details class="details">
-              <summary class="details-summary">Is there a cost to attend the event?</summary>
-              <div class="details-content content">
-                <p>The event is free! You can join <a href="https://developer.microsoft.com/en-us/reactor/"
-                    data-linktype="external">Microsoft Reactor</a> anytime to stream content for free!</p>
-
-              </div>
-            </details>
-            <details class="details">
-              <summary class="details-summary">When does the event take place?</summary>
-              <div class="details-content content">
-                <p>We will be streaming three unique and live virtual events around the globe.</p>
-                <ul>
-                  <li><strong>Americas:</strong> March 27, 2024, 8:30 AM – 12:00 PM PDT / 3:30 PM – 7:00 PM UTC</li>
-                  <li><strong>Asia-Pacific-Australia:</strong> March 27, 2024, 7:00 PM – 10:30 PM PDT / March 28, 2024,
-                    2:00 AM – 5:30 AM UTC</li>
-                  <li><strong>Europe-Middle East-Africa:</strong> March 28, 2024, 2:00 AM – 5:30 AM PDT / 9:00 AM –
-                    12:30 PM UTC</li>
-                </ul>
-                <p>Over ten total hours of live, original content! More content will be available on-demand the day of
-                  the event as well!</p>
-              </div>
-            </details>
-            <details class="details">
-              <summary class="details-summary">Where does the event take place?</summary>
-              <div class="details-content content">
-                <p>The JDConf is virtual! Join us and thousands of others to enjoy the experience from the comfort of
-                  your own home, office, or device. The content will be streamed on <a
-                    href="https://developer.microsoft.com/en-us/reactor/" data-linktype="external">Microsoft
-                    Reactor</a>.</p>
-              </div>
-            </details>
-            <details class="details">
-              <summary class="details-summary">Will this event be available on-demand?</summary>
-              <div class="details-content content">
-                <p>Yes! You can stream our past events and JDConf 2020 anytime! Visit <a
-                    href="https://learn.microsoft.com/en-us/events/jdconf-2022/" data-linktype="absolute-path">On-Demand
-                    Events</a> to stream anytime.</p>
-              </div>
-            </details>
-            <details class="details">
-              <summary class="details-summary">By registering, what communications will I receive?</summary>
-              <div class="details-content content">
-                <p>Your privacy is important to us and we encourage you to review the <a
-                    href="https://privacy.microsoft.com/privacystatement" data-linktype="external">Microsoft Privacy
-                    Statement</a> for additional information.</p>
-
-              </div>
-            </details>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="code-of-conduct-section" class="section-home">
-      <div id="text-section-4">
-        <div class="uhf-container">
-          <div class="is-reading-width">
-            <h2 id="code-of-conduct" class="title is-2 is-responsive">Code of conduct</h2>
-            <div>
-              <p class="margin-top-xs">We seek to provide a respectful, friendly, professional experience for everyone,
-                regardless of gender, sexual orientation, physical appearance, disability, age, race or religion. We do
-                not tolerate any behavior that is degrading to any gender, race, sexual orientation, or disability, or
-                any behavior that would be deemed harassment or discrimination. Individuals are responsible for knowing
-                and abiding by our standards and we encourage everyone to assist in creating a welcoming and safe
-                environment. Additionally, we strive to treat our shared planet with the same amount of respect. Please
-                report any questions, concerns, or disruptive activity or behavior to the organizing team, so that we
-                can address the issue immediately.</p>
-            </div>
-            <div class="margin-top-xs">
-              <div class="buttons margin-top-xxs">
-                <a href="https://developer.microsoft.com/en-us/reactor/CodeOfConduct/" class="button"
-                  data-linktype="external">Microsoft Reactor code of conduct</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   </main>
   <footer>
