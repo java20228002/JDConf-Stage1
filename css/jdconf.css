@@ -1548,7 +1548,7 @@ h6,
 
 	.navbar-links>li a {
 		display: block;
-		width: 97%;
+		width: 95%;
 		line-height: 1rem;
 		color: var(--color-jdconf-menu-popover-foreground);
 		background-color: var(--color-jdconf-menu-popover-background);
