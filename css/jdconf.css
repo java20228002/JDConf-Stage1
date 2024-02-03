@@ -330,7 +330,8 @@ a.social:visited {
 	/* Adds space between each region section */
 	/*background-color: white;*/
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.09);
-	padding: 10px;
+	box-shadow: 0 2px 10px 4px rgba(0, 0, 0, 0.04);
+	padding: 1% 2%;
 	/* Padding inside each region for content spacing */
 }
 
@@ -1167,7 +1168,7 @@ h6,
 .font-subtitle-3 {
 	font-size: 1.125rem;
 	font-family: var(--base-font-family);
-	font-weight: 600;
+	font-weight: 400;
 	font-style: normal;
 	line-height: 1.688rem;
 	text-decoration: none;
