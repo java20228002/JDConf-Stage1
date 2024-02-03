@@ -1546,6 +1546,16 @@ h6,
 		text-transform: none;
 	}
 
+	.font-subtitle-3 {
+		font-size: 1.062rem;
+		font-family: var(--base-font-family);
+		font-weight: 400;
+		font-style: normal;
+		line-height: 1.594rem;
+		text-decoration: none;
+		text-transform: none;
+	}
+
 	.font-hero-subtitle {
 		font-size: 1.5rem;
 		font-family: var(--base-font-family);
@@ -1568,6 +1578,22 @@ h6,
 		color: var(--color-title-font);
 		color: #0078d4;
 	}
+
+	.card-content-description {
+		display: flex;
+		font-size: 1.062rem;
+		flex-direction: column;
+		flex: 1; /* Ensures content uses the available space in flex direction */
+		font-family: var(--base-font-family);
+		font-weight: 400;
+		font-style: normal;
+		line-height: 1.594rem;
+		text-decoration: none;
+		text-transform: none;
+		color: var(--color-title-font);
+		flex: 1; /* Allows the description to expand */
+		margin-bottom: 20px; /* Space at the bottom of the description */
+	  }
 
 	header,
 	main, 
