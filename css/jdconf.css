@@ -1239,6 +1239,7 @@ h6,
 
 .card-content-description {
 	display: flex;
+	font-size: 1.15rem;
 	flex-direction: column;
 	flex: 1; /* Ensures content uses the available space in flex direction */
 	font-family: var(--base-font-family);
