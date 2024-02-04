@@ -381,10 +381,10 @@ a.social:visited {
 		width: auto;
 		/* Allows table to scroll horizontally on small screens */
 	}
+.session-title {
+  width:70%;
 }
-
-
-
+}
 
 /* Speaker section */
 .speakers-grid {
