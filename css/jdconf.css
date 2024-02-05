@@ -334,7 +334,7 @@ a.social:visited {
         border-radius: 10px;
         background: #f0f4f8;
         background: #f5f5f5;
-        border: 1px solid #cccccc;
+        border: 1px solid var(--color-neutrals-additionals-grey-80);
         /* Padding inside each region for content spacing */
 }
 
@@ -397,7 +397,7 @@ a.social:visited {
 }
 
 .speaker {
-	border: 1px solid #B0E0E6;
+	border: 1px solid var(--color-neutrals-additionals-grey-80); /*#B0E0E6*/
 	text-align: center;
 	padding: 15px;
 	position: relative;
@@ -435,7 +435,7 @@ a.social:visited {
 	bottom: 10px;
 	left: 5%;
 	right: 5%;
-	border: 1px solid #B0E0E6;
+	border: 1px solid var(--color-neutrals-additionals-grey-80);
 	border-radius: 10px;
 }
 
@@ -1915,7 +1915,7 @@ h6,
 	flex-direction: column;
 	width: 100%; /* Makes sure the card uses the full width of the grid column */
 	overflow: hidden; /* Keeps the content within the borders */
-	border: 1px solid #cccccc; /* Border color for the card */
+	border: 1px solid var(--color-neutrals-additionals-grey-80); /* Border color for the card */
 	border-radius: 8px; /* Rounded corners for the card */
 	box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Simple shadow for depth */
 	transition: transform 0.2s; /* Smooth transition for hover effect */
