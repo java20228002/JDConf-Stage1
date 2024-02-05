@@ -1079,6 +1079,11 @@ main {
 	display: none !important;
 }
 
+.fix-margins {
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+
 /* Font styles */
 .font-display-1 {
 	font-size: 4.875rem;
