@@ -1904,7 +1904,7 @@ h6,
 /* Container holding the grid */
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 20px; /* Adjust the space between cards */
 	padding: 20px, 0px; /* Space around the grid */
   }
