@@ -338,6 +338,7 @@ a.social:visited {
         /* Padding inside each region for content spacing */
 }
 
+
 /* Ensure table layout is still responsive within each region */
 .agenda-table table {
         width: 100%;
@@ -1081,7 +1082,7 @@ main {
 
 .fix-margins {
 	margin-top: 20px;
-	margin-bottom:20px;
+	margin-bottom:0px;
 }
 
 /* Font styles */
