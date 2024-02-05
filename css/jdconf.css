@@ -324,31 +324,32 @@ a.social:visited {
 .agenda {
 	/* No need for display: flex; here anymore */
 }
-
 .region-column {
-	margin-bottom: 20px;
-	/* Adds space between each region section */
-	/*background-color: white;*/
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.09);
-	box-shadow: 0 2px 10px 4px rgba(0, 0, 0, 0.04);
-	padding: 1% 2%;
-	border-radius: 10px;
-	background: #f0f4f8;
-	/* Padding inside each region for content spacing */
+        margin-bottom: 20px;
+        /* Adds space between each region section */
+        /*background-color: white;*/
+       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.09);
+        box-shadow: 0 2px 10px 4px rgba(0, 0, 0, 0.04);
+        padding: 1% 2%;
+        border-radius: 10px;
+        background: #f0f4f8;
+        background: #f5f5f5;
+        border: 1px solid #cccccc;
+        /* Padding inside each region for content spacing */
 }
 
 /* Ensure table layout is still responsive within each region */
 .agenda-table table {
-	width: 100%;
-	border-collapse: collapse;
-	margin-bottom: 20px;
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
 }
 
 .agenda-table th,
 .agenda-table td {
-	text-align: left;
-	padding: 8px;
-	border-bottom: 1px solid #ddd;
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
 }
 
 .session-title {
@@ -356,22 +357,23 @@ a.social:visited {
 }
 
 .agenda-table th {
-	background-color: #000;
-	color: #fff;
+        background-color: #000;
+        color: #fff;
 }
 
 .agenda-table tr:nth-child(odd) {
-	background-color: #B0E0E6;
- background-color: #F0F4F8;
-	/* Ice Blue for odd rows */
+        background-color: #B0E0E6;
+        background-color: #F0F4F8;
+        /* Ice Blue for odd rows */
 }
 
 .agenda-table tr:nth-child(even) {
-	background-color: #e2f4f6;
+        background-color: #e2f4f6;
+        background-color: #ddeeff;
 }
 
 .agenda-table tr:hover {
-	background-color: #fff;
+        background-color: #fff;
 }
 
 /* Responsive behavior for smaller screens */
@@ -1913,7 +1915,7 @@ h6,
 	flex-direction: column;
 	width: 100%; /* Makes sure the card uses the full width of the grid column */
 	overflow: hidden; /* Keeps the content within the borders */
-	border: 1px solid #B0E0E6; /* Border color for the card */
+	border: 1px solid #cccccc; /* Border color for the card */
 	border-radius: 8px; /* Rounded corners for the card */
 	box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Simple shadow for depth */
 	transition: transform 0.2s; /* Smooth transition for hover effect */
