@@ -431,6 +431,7 @@ a.social:visited {
 .speaker:hover .bio {
 	display: block;
 	background-color: #e2f4f6;
+ background-color: #ddeeff;
 	padding: 5px;
 	position: absolute;
 	bottom: 10px;
