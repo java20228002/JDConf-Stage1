@@ -357,6 +357,10 @@ a.social:visited {
   width:50%;
 }
 
+.session-time {
+	width:20%;
+  }
+
 .agenda-table th {
         background-color: #000;
         color: #fff;
@@ -386,8 +390,11 @@ a.social:visited {
 		/* Allows table to scroll horizontally on small screens */
 	}
 .session-title {
-  width:70%;
+  width:75%;
 }
+.session-time {
+	width:25%;
+  }
 }
 
 /* Speaker section */
