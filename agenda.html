@@ -6,29 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/jdconf-favicon.png" type="image/png">
   <title>Microsoft JDConf 2024</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta charset="utf-8" />
-  <meta name="description" content="Join the Microsoft JDConf free virtual event March 27-28 to learn about the newest developments across the Java ecosystem, cloud and dev tools. Mark your calendar!" />
+  <meta name="description" content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments across the Java ecosystem, cloud and AI. Mark your calendar!" />
   <meta name="author" content="Microsof" />
   <meta name="keywords" content="Java, Jakarta EE, JDConf, SpringBoot, OpenAI, Copilot, Azure, Tomcat, Kubernetes, Containers, OpenJDK, VSCode" />
   <meta name="Distribution" content="Global" />
 
   <!-- Open graph meta tags -->
   <meta property="og:title" content="Microsoft JDCOnf 2024" />
-  <meta property="og:description" content="Join the Microsoft JDConf 2024 free virtual event March 27-28 to learn about the newest developments across the Java ecosystem, open source, and dev tools. Mark your calendar!" />
+  <meta property="og:description" content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments across the Java ecosystem, cloud and AI. Mark your calendar!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jdconf.com" />
+  <meta property="og:image" content="https://jdconf.com/images/banners/JDConf2024-feature-image.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="628" />
+  <meta property="og:image:type" content="image/jpg" />
 
   <!-- Twitter meta tags -->
   <meta name="twitter:title" content="Microsoft JDConf 2024" />
-  <meta name="twitter:description" content="Join the Microsoft JDConf 2024 virtual event March 27-28 to learn about the newest developments across the Java ecosystem, open source, and dev tools. Mark your calendar!" />
+  <meta name="twitter:description" content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments across the Java ecosystem, cloud and AI. Mark your calendar!" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@jdconf">
-
-  <link rel="stylesheet" href="css/jdconf.css?v=1.3">
-  <link rel="stylesheet" href="css/dotnetconf.css?v=1.0">
+  <link rel="stylesheet" href="css/jdconf.css?v=1.4">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
 </head>
@@ -36,7 +35,7 @@
 <body>
   <script src="js/jdconf.js"></script>
   <header class="navbar grid">
-    <a class="navbar-title font-title-2" href="index.html">JDConf 2024</a>
+    <a class="navbar-title font-title-2" href="/">JDConf 2024</a>
     <button id="navbar-menu-btn" class="navbar-menu-icon-btn" aria-label="Toggle menu">
         <svg width="40" height="30" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
           <rect width="40" height="4" fill="white"/>
@@ -98,9 +97,9 @@
         <!-- Session Details -->
         <div class="agenda-group-sessions-container">
           <section id="americas-keynote-session" class="agenda-session">
-            <p class="agenda-title font-title-2">JDConf Keynote</p>
-            <p class="agenda-speaker-name font-stronger"><div class="agenda-speaker-name font-stronger">Julia Liuson, Microsoft</div><div class="agenda-speaker-name font-stronger">Martin Woodward, GitHub</div><div class="agenda-speaker-name font-stronger">Josh Long, Broadcom</div><div class="agenda-speaker-name font-stronger">Mark Heckler, Microsoft</div></p>
-            <p class="agenda-description font-subtitle-2">Join us for an engaging keynote on the powerful trio of Code, Cloud, and Community. See how Microsoft Java on Azure and GitHub boosts developer productivity, especially with Generative AI, pushing the boundaries of tech and accelerating innovation. It's a session packed with demos and insights for everyone looking to make the most out of Java apps and cloud technologies.</p>
+            <p class="agenda-title font-title-2">JDConf Technical Keynote</p>
+            <p class="agenda-speaker-name font-stronger"><div class="agenda-speaker-name font-stronger">Julia Liuson, Microsoft</div><div class="agenda-speaker-name font-stronger">Josh Long, Broadcom</div><div class="agenda-speaker-name font-stronger">Mark Heckler, Microsoft</div></p>
+            <p class="agenda-description font-subtitle-2">Julia's talk will focus on the strong connection between Java coding, cloud technology, AI, and the power of our community. She will show us how Microsoft is helping Java developers fully realize their potential, making it easier for them to develop Java apps with the help of AI and GitHub Copilot, and deploy these apps across various cloud platforms and services. Julia will also talk about Microsoft's deep partnerships within the Java ecosystem and its commitment to supporting and expanding the Java community. It is going to be an insightful session that highlights how together we are moving Java forward.</p>
           </section>
         </div>
         <p class="agenda-group-title font-title-2">
@@ -110,7 +109,7 @@
         <!-- Session Details -->
         <div class="agenda-group-sessions-container">
           <section id="theresam-session" class="agenda-session">
-            <p class="agenda-title font-title-2">Cache Me If You Can: Speed Up Your JVM With Project Valhalla</p>
+            <p class="agenda-title font-title-2">Cache Me If You Can: Speed Up Your JVM with Project Valhalla</p>
             <p class="agenda-speaker-name font-stronger">Theresa Mammarella, IBM</p>
             <p class="agenda-description font-subtitle-2">OpenJDK’s Project Valhalla is set to revolutionize how the JVM handles data objects in memory. By bringing the characteristics of primitives to Java objects and classes you’ll see denser memory layouts that can lead to many advantages such as improved cache performance and a smaller memory footprint.
               This talk offers an exploration of Valhalla's objectives, progress, and its potential impact on the Java ecosystem with examples throughout. Come discover how Project Valhalla is on the verge of reshaping the landscape of Java, paving the way for a more efficient and high-performing future.</p>
@@ -135,7 +134,7 @@
         <!-- Session Details -->
         <div class="agenda-group-sessions-container">
           <section id="markh-session" class="agenda-session">
-            <p class="agenda-title font-title-2">Paving a Painless Path to Production AI in your Java Applications</p>
+            <p class="agenda-title font-title-2">Paving a Painless Path to Production AI in Your Java Applications</p>
             <p class="agenda-speaker-name font-stronger">Mark Heckler, Microsoft</p>
             <p class="agenda-description font-subtitle-2">Artificial Intelligence is eating the world, and new and amazing use cases are being discovered every day. These uses for AI aren't just in new domains, but perhaps even more importantly, in areas that are broadly applicable in countless "everyday" mission-critical applications.
 
@@ -252,7 +251,7 @@
           </section>
         </div>
         <p class="agenda-group-title font-title-2">
-          <span section id="danielk-session" class="session-time">27-Mar-24 08:00 08:30 PM</span>
+          <span section id="danielk-session" class="session-time">27-Mar-24 07:30 08:00 PM</span>
         </p>
         <div role="presentation" class="agenda-group-gradient-line"></div>
         <!-- Session Details -->
@@ -264,7 +263,7 @@
           </section>
         </div>
         <p class="agenda-group-title font-title-2">
-          <span section id="nikitan-session" class="session-time">27-Mar-24 08:30 09:00 PM</span>
+          <span section id="nikitan-session" class="session-time">27-Mar-24 08:00 08:30 PM</span>
         </p>
         <div role="presentation" class="agenda-group-gradient-line"></div>
         <!-- Session Details -->
@@ -277,7 +276,7 @@
           </section>
         </div>
         <p class="agenda-group-title font-title-2">
-          <span section id="seanl-session" class="session-time">27-Mar-24 09:00 09:30 PM</span>
+          <span section id="seanl-session" class="session-time">27-Mar-24 08:30 09:00 PM</span>
         </p>
         <div role="presentation" class="agenda-group-gradient-line"></div>
         <!-- Session Details -->
@@ -293,7 +292,7 @@
           </section>
         </div>
         <p class="agenda-group-title font-title-2">
-          <span section id="yoshiot-session" class="session-time">27-Mar-24 09:30 10:00 PM</span>
+          <span section id="yoshiot-session" class="session-time">27-Mar-24 09:00 09:30 PM</span>
         </p>
         <div role="presentation" class="agenda-group-gradient-line"></div>
         <!-- Session Details -->
@@ -305,7 +304,7 @@
           </section>
         </div>
         <p class="agenda-group-title font-title-2">
-          <span section id="cesars-session" class="session-time">27-Mar-24 07:30 08:00 PM</span>
+          <span section id="cesars-session" class="session-time">27-Mar-24 09:30 10:00 PM</span>
         </p>
         <div role="presentation" class="agenda-group-gradient-line"></div>
         <!-- Session Details -->
@@ -323,7 +322,7 @@
         <!-- Session Details -->
         <div class="agenda-group-sessions-container">
           <section id="theok-session" class="agenda-session">
-            <p class="agenda-title font-title-2">Building generative AI applications with Azure Cosmos DB and Java</p>
+            <p class="agenda-title font-title-2">Building Generative AI Applications with Azure Cosmos DB and Java</p>
             <p class="agenda-speaker-name font-stronger">Manish Sharma, Principal PM Manager, Microsoft</p>
             <p class="agenda-description font-subtitle-2">Join us and learn about the versatile vector database capabilities of Azure Cosmos DB with Java. In this session, you’ll discover how the integration of your operational and transactional data with native vector indexing and search functionalities can enrich your generative AI applications at incredible scale. Learn how to build RAG pattern solutions and manage conversational chat histories, by seamlessly connecting with Azure Open AI.</p>
           </section>
@@ -381,7 +380,7 @@
         <!-- Session Details -->
         <div class="agenda-group-sessions-container">
           <section id="lizer-session" class="agenda-session">
-            <p class="agenda-title font-title-2">Java Meets AI: How to build LLM-Powered Applications with LangChain4j</p>
+            <p class="agenda-title font-title-2">Java Meets AI: How to Build LLM-Powered Applications with LangChain4j</p>
             <p class="agenda-speaker-name font-stronger">Lize Raes, Open Tide</p>
             <p class="agenda-description font-subtitle-2">Do you want to build applications powered by Large Language Models (LLMs) using Java?
               We built LangChain4j exactly for that! The framework allows you to easily create AI-powered chatbots, process loads of unstructured data, and automate processes with the help of AI Services, that can use various tools: call APIs, access databases, and even dynamically execute generated code. You will get a hands-on guided tour through LangChain4j's functionality and its integrations (OpenAI, Google Gemini, HuggingFace, Dall-E, Quarkus, Spring Boot, etc.). We will explain the fundamental building blocks of LLM-powered applications and show you how to chain them together into AI Services. By the end of this session, you will have all the technical knowledge to start coding, along with plenty of inspiration for the applications of the future!</p>
@@ -412,7 +411,7 @@
         <!-- Session Details -->
         <div class="agenda-group-sessions-container">
           <section id="olegs-session" class="agenda-session">
-            <p class="agenda-title font-title-2">Mastering Testcontainers for better integration tests</p>
+            <p class="agenda-title font-title-2">Mastering Testcontainers for Better Integration Tests</p>
             <p class="agenda-speaker-name font-stronger">Oleg Šelajev, AtomicJar</p>
             <p class="agenda-description font-subtitle-2">Testcontainers libraries are a great way to create a reliable environment for running tests. It provides programmable, lightweight, and disposable containers to give you more confidence in your integration tests.
 
@@ -464,7 +463,7 @@
         <!-- Session Details -->
         <div class="agenda-group-sessions-container">
           <section id="alinay-session" class="agenda-session">
-            <p class="agenda-title font-title-2">Fast And Lightweight Spring Boot Applications With GraalVM</p>
+            <p class="agenda-title font-title-2">Fast and Lightweight Spring Boot Applications with GraalVM</p>
             <p class="agenda-speaker-name font-stronger">Alina Yurenko, Oracle Labs</p>
             <p class="agenda-description font-subtitle-2">Spring Boot 3.0 has introduced GA of GraalVM Native Image support, previously incubated in the Spring Native project. Now you can easily compile your Spring Boot application ahead of time with GraalVM to produce a native executable that starts fast, needs less memory, and doesn’t require a JVM. In this session we'll take a look at building native Spring Boot apps from scratch, leveraging latest GraalVM features, and using popular libraries.</p>
           </section>
@@ -476,7 +475,7 @@
         <!-- Session Details -->
         <div class="agenda-group-sessions-container">
           <section id="martinl-session" class="agenda-session">
-            <p class="agenda-title font-title-2">How to keep your Spring Boot projects up-to-date</p>
+            <p class="agenda-title font-title-2">How to Keep Your Spring Boot Projects Up-to-Date</p>
             <p class="agenda-speaker-name font-stronger">Martin Lippert, Broadcom</p>
             <p class="agenda-description font-subtitle-2">Staying on top of the Spring Boot versions can be a challenge. You need to be aware of new patch or minor version releases. And updating your projects to such a newer version might not always be as easy as changing a version number, especially when updating projects to new minor or even new major versions of Spring Boot.
 
