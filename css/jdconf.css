@@ -1398,6 +1398,24 @@ h6,
 	margin-bottom: 4px;
 }
 
+@media screen and (max-width: 600px) {
+	.grid {
+		grid-template-columns: var(--grid-template-desktop);
+		gap: var(--grid-gap-desktop);
+		row-gap: var(--vertical-gap-desktop);
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.grid {
+		display: grid;
+		grid-template-columns: var(--grid-template-desktop);
+		gap: var(--grid-gap-desktop);
+		row-gap: var(--vertical-gap-desktop);
+	}
+}
+
+
 .grid {
 	display: grid;
 	grid-template-columns: var(--grid-template-desktop);
