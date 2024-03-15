@@ -1038,6 +1038,11 @@ main {
 	position: relative;
 }
 
+.navbar-link:last-child {
+	padding-left: 80px;
+	/* Adjust the margin as needed */
+}
+
 .skills-challenge {
 	display: block;
 }
@@ -1045,16 +1050,11 @@ main {
 @media screen and (max-width: 980px) {
 	/* Styles for devices with a viewport width of 980px or less */
 	.skills-challenge {
-		display: none;
+		padding-left: 0px !important;
 		/* Adjust the margin as needed */
 	}
-  }
-  
-.navbar-link:last-child {
-	padding-left: 80px;
-	/* Adjust the margin as needed */
 }
-
+  
 .navbar-links a:hover,
 .navbar-links a:focus-visible {
 	color: #0067b8;
