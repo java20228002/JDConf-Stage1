@@ -1039,7 +1039,7 @@ main {
 }
 
 .navbar-link:last-child {
-	padding-left: 5%;
+	padding-left: 10%;
 	/* Adjust the margin as needed */
 }
 
@@ -1855,6 +1855,18 @@ h6,
 		grid-template-columns: var(--grid-template-mobile);
 		gap: var(--grid-gap-mobile);
 		row-gap: var(--vertical-gap-mobile);
+	}
+
+	.grid2 {
+		display: grid;
+		grid-template-columns: var(--grid-template-mobile);
+		gap: var(--grid-gap-mobile);
+		row-gap: var(--vertical-gap-mobile);
+	}
+
+	.navbar-link:last-child {
+		padding-left: 0px;
+		/* Adjust the margin as needed */
 	}
 
 	.vertical-gap {
