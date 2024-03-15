@@ -1010,7 +1010,7 @@ main {
 }
 
 .navbar>nav {
-	grid-column: 8 / span 1;
+	grid-column: 7 / span 1;
 	justify-self: end;
 	display: flex;
 	justify-items: center;
@@ -1039,7 +1039,7 @@ main {
 }
 
 .navbar-link:last-child {
-	padding-left: 80px;
+	padding-left: 10%;
 	/* Adjust the margin as needed */
 }
 
