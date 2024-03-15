@@ -476,7 +476,7 @@ a.social:visited {
 .navbar {
 	background-color: #000;
 	/* Change as per your color scheme */
-	overflow: hidden;
+	/* overflow: hidden; */
 	display: flex;
 	align-items: center;
 	padding-left: 4.5%;
@@ -540,6 +540,7 @@ a.social:visited {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+
 }
 
 /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
@@ -1020,6 +1021,7 @@ main {
 	align-items: center;
 	margin: 0;
 	padding: 0;
+	white-space: nowrap;
 }
 
 .navbar-links li {
@@ -1034,6 +1036,11 @@ main {
 	font-weight: 600;
 	text-decoration: none;
 	position: relative;
+}
+
+.navbar-link:last-child {
+	padding-left: 80px;
+	/* Adjust the margin as needed */
 }
 
 .navbar-links a:hover,
@@ -1085,6 +1092,49 @@ main {
 
 .navbar-menu-icon-btn>svg path {
 	fill: var(--color-navbar-menu-icon-fill);
+}
+
+/* Style the dropdown container */
+.navbar-link.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Remove default list styling and padding */
+.dropdown-content li {
+	padding: 0;
+	list-style-type: none;
+	margin-left: 0px;
+	margin-right: 40px;
+}
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #000;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	white-space: nowrap;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+	color: #fff;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Show the dropdown menu on hover */
+.navbar-link.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Add some color to the dropdown links on hover */
+.dropdown-content a:hover {
+	/*background-color: #ddd;*/
 }
 
 
@@ -1464,7 +1514,6 @@ h6,
 	height: 100%;
 }
 
-
 /* Mobile styles */
 @media screen and (max-width: 767px) {
 	.font-display-1 {
@@ -1712,6 +1761,11 @@ h6,
 		width: 100%;
 	}
 
+	.navbar-link:last-child {
+		padding-left: 0px;
+		/* Adjust the margin as needed */
+	}
+
 	.navbar-links>li a {
 		display: block;
 		width: 95%;
@@ -1722,6 +1776,7 @@ h6,
 		font-size: 0.875rem;
 		padding: 8px 10px;
 		border-radius: var(--corner-radius-xs);
+		border-radius: 0;
 	}
 
 	.navbar-links>li a:hover {
@@ -1747,6 +1802,46 @@ h6,
 	.navbar a:focus-visible::after {
 		height: 0;
 		background: transparent;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: var(--color-jdconf-menu-popover-background);
+		min-width: 160px;
+		z-index: 1;
+		white-space: nowrap;
+		box-shadow: 0;
+		border-radius: 0;
+		border-radius: var(--corner-radius-xs);
+	}
+
+	/* Remove default list styling and padding */
+	.dropdown-content li {
+		padding: 0;
+		list-style-type: none;
+		margin-left: 0px;
+		border-radius: 0;
+		box-shadow: 0;
+		border-radius: 0;
+		border-radius: var(--corner-radius-xs);
+		background-color: transparent;
+	}
+
+	/* Add some color to the dropdown links on hover */
+	.dropdown-content a:hover {
+		background-color:  transparent;
+	}
+
+	.dropdown-content>li a:focus-visible {
+		background-color: transparent;
+	}
+
+	.dropdown-content>li a:active {
+		color: var(--color-jdconf-menu-popover-foreground-active);
+		background-color: transparent;
+		text-decoration: none;
+		line-height: 1rem;
 	}
 
 	.grid {
@@ -1947,6 +2042,35 @@ h6,
 	/* Space around the grid */
 }
 
+/* Container holding the grid */
+.grid-container2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	gap: 20px;
+	/* Adjust the space between cards */
+	padding: 20px, 0px;
+	/* Space around the grid */
+}
+
+/* Container holding the grid */
+.grid-container3 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+	gap: 20px;
+	/* Adjust the space between cards */
+	padding: 20px, 0px;
+	/* Space around the grid */
+}
+
+/* Container holding the grid */
+.grid-container4 {
+	display: grid;
+	gap: 20px;
+	/* Adjust the space between cards */
+	padding: 20px, 0px;
+	/* Space around the grid */
+}
+
 /* Grid item */
 .grid-item {
 	display: flex;
@@ -2000,6 +2124,14 @@ h6,
 /* Responsive adjustments */
 @media (max-width: 600px) {
 	.grid-container {
+		grid-template-columns: 1fr;
+		/* Stacks the cards on smaller screens */
+	}
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+	.grid-container2 {
 		grid-template-columns: 1fr;
 		/* Stacks the cards on smaller screens */
 	}

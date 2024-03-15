@@ -8,7 +8,7 @@
   <title>Microsoft JDConf 2024</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="description"
-    content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments across the Java ecosystem, cloud and AI. Mark your calendar!" />
+    content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments in Java, Cloud and AI. Mark your calendar!" />
   <meta name="author" content="Microsof" />
   <meta name="keywords"
     content="Java, Jakarta EE, JDConf, SpringBoot, OpenAI, Copilot, Azure, Tomcat, Kubernetes, Containers, OpenJDK, VSCode" />
@@ -17,7 +17,7 @@
   <!-- Open graph meta tags -->
   <meta property="og:title" content="Microsoft JDCOnf 2024" />
   <meta property="og:description"
-    content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments across the Java ecosystem, cloud and AI. Mark your calendar!" />
+    content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments in Java, Cloud and AI. Mark your calendar!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jdconf.com" />
   <meta property="og:image" content="https://jdconf.com/images/banners/JDConf2024-feature-image.jpg">
@@ -28,7 +28,7 @@
   <!-- Twitter meta tags -->
   <meta name="twitter:title" content="Microsoft JDConf 2024" />
   <meta name="twitter:description"
-    content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments across the Java ecosystem, cloud and AI. Mark your calendar!" />
+    content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments in Java, Cloud and AI. Mark your calendar!" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@jdconf">
   <link rel="stylesheet" href="css/jdconf.css?v=1.4">
@@ -50,11 +50,21 @@
     </button>
     <nav>
       <ul class="navbar-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="agenda.html">Agenda</a></li>
-        <li><a href="speakers.html">Speakers</a></li>
-        <li><a href="about.html">About</a></li>
-    </nav>
+          <li class="navbar-link"><a href="/">Home</a></li>
+          <li class="navbar-link dropdown hidden">
+              <a>Livestream</a>
+              <ul class="dropdown-content">
+                  <li><a href="americas.html">Americas</a></li>
+                  <li><a href="apac.html">Asia-Pacific</a></li>
+                  <li><a href="emea.html">Europe, Middle East, and Africa</a></li>
+              </ul>
+          </li>
+          <li class="navbar-link"><a href="agenda.html">Agenda</a></li>
+          <li class="navbar-link"><a href="speakers.html">Speakers</a></li>
+          <li class="navbar-link"><a href="about.html">About</a></li>
+          <li class="navbar-link"><a href="https://aka.ms/java-apps-csc">Java Cloud Skills Challenge</a></li>
+      </ul>
+  </nav>
   </header>
   <main>
     <section id="event" class="font-subtitle-2 section-home">
@@ -78,13 +88,62 @@
         <li><strong>Free & accessible content</strong>: Enjoy all sessions without cost, available live and on-demand
           for ultimate flexibility.</li>
       </ul>
-      <!-- Embed YouTube Video Here -->
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2JtmyMBb1lE?si=u40v5hRfhgXEeGZm?rel=0"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-
+      <div id="grid-section-2" class="padding-block-md">
+        <div class="section-home">
+          <div class="grid-container2">
+            <div class="grid-item">
+              <article class="card">
+                <div class="card-content">
+                  <a href="https://www.youtube.com/watch?v=joyUQHrWGiM" class="card-title">Join us to celebrate all
+                    things Java, Cloud & AI!</a>
+                  <p class="card-content-description">
+                  </p>
+                  <!-- Embed YouTube Video Here -->
+                  <div class="video-container">
+                    <iframe width="560" height="315"
+                      src="https://www.youtube.com/embed/joyUQHrWGiM?si=Q-rlz0x9Kzvom7s0?rel=0" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="grid-item">
+              <article class="card">
+                <div class="card-content">
+                  <a href="https://www.youtube.com/watch?v=NjMuoZ8Fx_0" class="card-title">Sneak peek at sessions</a>
+                  <p class="card-content-description">
+                  </p>
+                  <!-- Embed YouTube Video Here -->
+                  <div class="video-container">
+                    <iframe width="560" height="315"
+                      src="https://www.youtube.com/embed/NjMuoZ8Fx_0?si=jefYYtSb4mCvaqmM?rel=0" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="grid-item">
+              <article class="card">
+                <div class="card-content">
+                  <a href="https://www.youtube.com/watch?v=2JtmyMBb1lE&feature=emb_imp_woyt" class="card-title">Welcome
+                    to Microsoft JDConf
+                    2024</a>
+                  <p class="card-content-description">
+                  </p>
+                  <!-- Embed YouTube Video Here -->
+                  <div class="video-container">
+                    <iframe width="560" height="315"
+                      src="https://www.youtube.com/embed/2JtmyMBb1lE?si=u40v5hRfhgXEeGZm?rel=0" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -203,7 +262,7 @@
       <p>Follow us on the web</p>
       <div class="social-icons">
         <!-- GitHub Icon -->
-        <a href="https://github.com/microsoft/JDConf" class="social" target="_blank" aria-label="Follow us on GitHub">
+        <a href="https://github.com/openjdk/" class="social" target="_blank" aria-label="Follow us on GitHub">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
             <path
               d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />

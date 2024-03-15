@@ -197,7 +197,8 @@ function startCountdownAmericas() {
         // Display the result in an element with id="demo"
         document.getElementById("americas-countdown").innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
-        document.getElementById("americas-countdown").innerHTML = "Americas event will start in: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+        document.getElementById("americas-countdown").innerHTML = "Event countdown: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+        document.getElementById("americas-countdown").innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
             
         // If the count down is finished, write some text 
         if (distance < 0) {
@@ -232,7 +233,8 @@ function startCountdownAsia() {
     // Display the result in an element with id="demo"
     document.getElementById("asia-countdown").innerHTML = days + "d " + hours + "h " +
       minutes + "m " + seconds + "s ";
-    document.getElementById("asia-countdown").innerHTML = "Asia-Pacific event will start in: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+    document.getElementById("asia-countdown").innerHTML = "Event countdown: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+    document.getElementById("asia-countdown").innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
 
     // If the count down is finished, write some text 
     if (distance < 0) {
@@ -267,7 +269,8 @@ function startCountdownEurope() {
     // Display the result in an element with id="demo"
     document.getElementById("europe-countdown").innerHTML = days + "d " + hours + "h " +
       minutes + "m " + seconds + "s ";
-    document.getElementById("europe-countdown").innerHTML = "EMEA event will start in: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+    document.getElementById("europe-countdown").innerHTML = "Event countdown: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+    document.getElementById("europe-countdown").innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
 
     // If the count down is finished, write some text 
     if (distance < 0) {
