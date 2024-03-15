@@ -1038,6 +1038,14 @@ main {
 	position: relative;
 }
 
+@media screen and (max-width: 980px) {
+	/* Styles for devices with a viewport width of 980px or less */
+	.navbar-link:last-child {
+		display: none;
+		/* Adjust the margin as needed */
+	}
+  }
+  
 .navbar-link:last-child {
 	padding-left: 80px;
 	/* Adjust the margin as needed */
@@ -1398,22 +1406,12 @@ h6,
 	margin-bottom: 4px;
 }
 
-@media screen and (max-width: 600px) {
-	.grid {
-		grid-template-columns: var(--grid-template-desktop);
-		gap: var(--grid-gap-desktop);
-		row-gap: var(--vertical-gap-desktop);
-	}
-}
-
-@media screen and (min-width: 980px) {
-	.grid {
+.grid {
 		display: grid;
 		grid-template-columns: var(--grid-template-desktop);
 		gap: var(--grid-gap-desktop);
 		row-gap: var(--vertical-gap-desktop);
 	}
-}
 
 
 .grid {
