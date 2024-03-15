@@ -1405,6 +1405,12 @@ h6,
 	row-gap: var(--vertical-gap-desktop);
 }
 
+.grid2 {
+	grid-template-columns: var(--grid-template-desktop);
+	gap: var(--grid-gap-desktop);
+	row-gap: var(--vertical-gap-desktop);
+}
+
 .vertical-gap {
 	margin-bottom: var(--vertical-gap-desktop);
 }
