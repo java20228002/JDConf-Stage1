@@ -43,19 +43,21 @@
 	opacity: 0;
 	z-index: 1;
 	/* Ensure slides are stacked below the active one */
-	animation: slideFade 10s infinite;
+	animation: slideFade 15s infinite;
 	/* Adjust timing as needed */
 }
 
 /* Keyframes to fade slides in and out */
 @keyframes slideFade {
-	0%, 50%, 100% { opacity: 0; }
-	10%, 40% { opacity: 1; z-index: 2; }
-}
-  
+	0%, 100% { opacity: 0; }
+	5%, 30% { opacity: 1; z-index: 2; } /* First slide */
+	33%, 60% { opacity: 1; z-index: 2; } /* Second slide */
+	65%, 95% { opacity: 1; z-index: 3; } /* Third slide */
+}  
+
 .banner-slide:nth-child(1) { animation-delay: 0s; }
 .banner-slide:nth-child(2) { animation-delay: -5s; } /* Starts after the first slide has been visible for 5s */
-/*.banner-slide:nth-child(3) { animation-delay: -10s; } *//* Starts after the second slide has been visible for 5s */
+.banner-slide:nth-child(3) { animation-delay: -10s; } /* Starts after the second slide has been visible for 5s */
 
 
 body {
