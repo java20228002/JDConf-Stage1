@@ -179,6 +179,30 @@ a:hover {
 	transition: background-image 1s ease-in-out;
   }
 
+  .hero-image {
+	width: 100%;
+	padding-top: 0%; /* Adjust this value based on your image's aspect ratio */
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .hero-image::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url('/JDConf-Stage1/images/banners/JDConf2024-hero-landscape.png'); /* Optional: Initial background image */
+	background-size: cover;
+	background-position: center;
+	transition: opacity 1s ease-in-out;
+	opacity: 0;
+  }
+  
+
 .video-grid {
 	display: flex;
 	flex-wrap: wrap;
