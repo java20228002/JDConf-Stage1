@@ -1,3 +1,63 @@
+.banner-container {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Aspect ratio box */
+@media (min-width: 768px) {
+	.banner-container::before {
+		content: "";
+		display: block;
+		padding-top: 30%;
+		/* Example for a 16:9 aspect ratio. Calculate as (height / width * 100)% */
+		background-size: cover;
+		/* Cover the entire viewport */
+		background-repeat: no-repeat;
+		/* Do not repeat the image */
+		background-position: center;
+	}
+}
+
+/* Aspect ratio box */
+@media (max-width: 768px) {
+	.banner-container::before {
+		content: "";
+		display: block;
+		padding-top: 150%;
+		/* Example for a 16:9 aspect ratio. Calculate as (height / width * 100)% */
+		background-size: cover;
+		/* Cover the entire viewport */
+		background-repeat: no-repeat;
+		/* Do not repeat the image */
+		background-position: center;
+	}
+}
+
+.banner-slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+	/* Ensure slides are stacked below the active one */
+	animation: slideFade 10s infinite;
+	/* Adjust timing as needed */
+}
+
+/* Keyframes to fade slides in and out */
+@keyframes slideFade {
+	0%, 50%, 100% { opacity: 0; }
+	10%, 40% { opacity: 1; z-index: 2; }
+}
+  
+.banner-slide:nth-child(1) { animation-delay: 0s; }
+.banner-slide:nth-child(2) { animation-delay: -5s; } /* Starts after the first slide has been visible for 5s */
+/*.banner-slide:nth-child(3) { animation-delay: -10s; } *//* Starts after the second slide has been visible for 5s */
+
+
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin: 0;
@@ -1065,9 +1125,10 @@ main {
 }
 
 .icon-livestream {
-	padding-right: 5px; /* Give enough space for the icon */
+	padding-right: 5px;
+	/* Give enough space for the icon */
 	margin-left: -20px;
-  }
+}
 
 @media screen and (max-width: 980px) {
 
