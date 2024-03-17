@@ -1,3 +1,5 @@
+
+
 function getTimeZoneInfo() {
   // Get the current date and time
   const now = luxon.DateTime.now();
@@ -103,6 +105,11 @@ window.onload = function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   // Your code here
+  // Check if the element exists
+  var countdownElement = document.getElementById("timeZoneInfoDiv");
+  if (!countdownElement) {
+    return; // Stop the function if element is not found
+  }
   const timeZoneInfoHTML = getTimeZoneInfo();
   const timeZoneInfoDiv = document.getElementById('timeZoneInfoDiv');
   timeZoneInfoDiv.innerHTML = timeZoneInfoHTML;
@@ -110,6 +117,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   // Your code here
+  var countdownElement = document.getElementById("timeZoneInfoDiv2");
+  if (!countdownElement) {
+    return; // Stop the function if element is not found
+  }
   const timeZoneInfoHTML = getTimeZoneInfo();
   const timeZoneInfoDiv = document.getElementById('timeZoneInfoDiv2');
   timeZoneInfoDiv.innerHTML = timeZoneInfoHTML;
@@ -117,10 +128,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   // Your code here
+  var countdownElement = document.getElementById("timeZoneInfoDiv3");
+  if (!countdownElement) {
+    return; // Stop the function if element is not found
+  }
   const timeZoneInfoHTML = getTimeZoneInfo();
   const timeZoneInfoDiv = document.getElementById('timeZoneInfoDiv3');
   timeZoneInfoDiv.innerHTML = timeZoneInfoHTML;
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Your code here
+  var countdownElement = document.getElementById("timeZoneInfoDiv4");
+  if (!countdownElement) {
+    return; // Stop the function if element is not found
+  }
+  const timeZoneInfoHTML = getTimeZoneInfo();
+  const timeZoneInfoDiv = document.getElementById('timeZoneInfoDiv4');
+  timeZoneInfoDiv.innerHTML = timeZoneInfoHTML;
+});
+
 
 function toggleMenu() {
   var menuItems = document.getElementById("menuItems");
@@ -138,85 +165,142 @@ document.querySelectorAll('.nav-menu li a').forEach(item => {
 window.addEventListener('load', main);
 
 function main() {
-	const navbarMenuButton = document.getElementById('navbar-menu-btn');
-	const navbarNav = document.querySelector('.navbar > nav');
+  const navbarMenuButton = document.getElementById('navbar-menu-btn');
+  const navbarNav = document.querySelector('.navbar > nav');
 
-	let isOpen = false;
+  let isOpen = false;
 
-	navbarMenuButton.addEventListener('click', () => {
-		if (isOpen) {
-			navbarNav.style.display = 'none';
-			isOpen = false;
-		} else {
-			navbarNav.style.display = 'flex'; 
-			isOpen = true;
-		}
-	});
+  navbarMenuButton.addEventListener('click', () => {
+    if (isOpen) {
+      navbarNav.style.display = 'none';
+      isOpen = false;
+    } else {
+      navbarNav.style.display = 'flex';
+      isOpen = true;
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
   const navbarNav = document.querySelector('.navbar > nav');
-  navbarNav.style.display = 'flex'; 
+  navbarNav.style.display = 'flex';
   isOpen = true;
   if (window.innerWidth <= 768) {
-      navbarNav.style.display = 'none';
-      isOpen = false;
+    navbarNav.style.display = 'none';
+    isOpen = false;
   }
 });
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   const navbarNav = document.querySelector('.navbar > nav');
   if (window.innerWidth <= 768) {
-      navbarNav.style.display = 'none';
-      isOpen = false;
+    navbarNav.style.display = 'none';
+    isOpen = false;
   } else {
-      navbarNav.style.display = 'flex';
-      isOpen = true;
+    navbarNav.style.display = 'flex';
+    isOpen = true;
   }
+});
+
+function startCountdownAmericas2() {
+
+  // Check if the element exists
+  var countdownElement = document.getElementById("americas2-countdown");
+  if (!countdownElement) {
+    return; // Stop the function if element is not found
+  }
+  // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
+  var countDownDate = new Date("March 27, 2024 09:00:00 GMT-0700").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function () {
+
+    // Get today's date and time (in user's local time)
+    var now = new Date().getTime();
+
+    // Find the time left between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes, and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in an element with id="demo"
+    document.getElementById("americas2-countdown").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    document.getElementById("americas2-countdown").innerHTML = "Event countdown: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+    document.getElementById("americas2-countdown").innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
+
+    // If the count down is finished, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("americas2-countdown").innerHTML = "EVENT STARTED";
+    }
+  }, 1000);
+}
+// Call the function to start the countdown
+document.addEventListener('DOMContentLoaded', function() {
+  startCountdownAmericas2();
 });
 
 function startCountdownAmericas() {
-    // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
-    var countDownDate = new Date("March 27, 2024 08:30:00 GMT-0700").getTime();
 
-    // Update the count down every 1 second
-    var x = setInterval(function() {
+  // Check if the element exists
+  var countdownElement = document.getElementById("americas-countdown");
+  if (!countdownElement) {
+    return; // Stop the function if element is not found
+  }
+  // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
+  var countDownDate = new Date("March 27, 2024 08:30:00 GMT-0700").getTime();
 
-        // Get today's date and time (in user's local time)
-        var now = new Date().getTime();
-            
-        // Find the time left between now and the count down date
-        var distance = countDownDate - now;
-            
-        // Time calculations for days, hours, minutes, and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-        // Display the result in an element with id="demo"
-        document.getElementById("americas-countdown").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-        document.getElementById("americas-countdown").innerHTML = "Event countdown: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
-        document.getElementById("americas-countdown").innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
-            
-        // If the count down is finished, write some text 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("americas-countdown").innerHTML = "EVENT STARTED";
-        }
-    }, 1000);
+  // Update the count down every 1 second
+  var x = setInterval(function () {
+
+    // Get today's date and time (in user's local time)
+    var now = new Date().getTime();
+
+    // Find the time left between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes, and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in an element with id="demo"
+    document.getElementById("americas-countdown").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    document.getElementById("americas-countdown").innerHTML = "Event countdown: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+    document.getElementById("americas-countdown").innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
+
+    // If the count down is finished, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("americas-countdown").innerHTML = "EVENT STARTED";
+    }
+  }, 1000);
 }
 
-// Call the function to start the countdown
-startCountdownAmericas();
+document.addEventListener('DOMContentLoaded', function() {
+  startCountdownAmericas();
+});
 
 function startCountdownAsia() {
+
+  // Check if the element exists
+  var countdownElement = document.getElementById("asia-countdown");
+  if (!countdownElement) {
+    return; // Stop the function if element is not found
+  }
+
   // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
   var countDownDate = new Date("March 27, 2024 15:00:00 GMT-0700").getTime();
 
   // Update the count down every 1 second
-  var x = setInterval(function() {
+  var x = setInterval(function () {
 
     // Get today's date and time (in user's local time)
     var now = new Date().getTime();
@@ -245,14 +329,23 @@ function startCountdownAsia() {
 }
 
 // Call the function to start the countdown
-startCountdownAsia();
+document.addEventListener('DOMContentLoaded', function() {
+  startCountdownAsia();
+})
 
 function startCountdownEurope() {
+
+  // Check if the element exists
+  var countdownElement = document.getElementById("europe-countdown");
+  if (!countdownElement) {
+    return; // Stop the function if element is not found
+  }
+
   // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
   var countDownDate = new Date("March 28, 2024 04:00:00 GMT-0700").getTime();
 
   // Update the count down every 1 second
-  var x = setInterval(function() {
+  var x = setInterval(function () {
 
     // Get today's date and time (in user's local time)
     var now = new Date().getTime();
@@ -281,7 +374,9 @@ function startCountdownEurope() {
 }
 
 // Call the function to start the countdown
-startCountdownEurope();
+document.addEventListener('DOMContentLoaded', function() {
+  startCountdownEurope();
+})
 
 // Write function for cookie consent
 function handleCookieConsent() {

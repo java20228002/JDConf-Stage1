@@ -362,6 +362,10 @@ a.social:visited {
 	width: 20%;
 }
 
+.session-ondemand {
+	width: 20%;
+}
+
 .agenda-table th {
 	background-color: #000;
 	color: #fff;
@@ -396,6 +400,10 @@ a.social:visited {
 	}
 
 	.session-time {
+		width: 25%;
+	}
+
+	.session-ondemand {
 		width: 25%;
 	}
 }
@@ -600,6 +608,11 @@ a.social:visited {
 	padding-bottom: 10px;
 }
 
+#timeZoneInfoDiv4 {
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
 /* Style for the mobile menu */
 .mobile-menu {
 	display: flex;
@@ -640,6 +653,10 @@ a.social:visited {
 }
 
 .session-time {
+	white-space: nowrap;
+}
+
+.session-ondemand {
 	white-space: nowrap;
 }
 
@@ -1047,14 +1064,20 @@ main {
 	display: block;
 }
 
+.icon-livestream {
+	padding-right: 5px; /* Give enough space for the icon */
+	margin-left: -20px;
+  }
+
 @media screen and (max-width: 980px) {
+
 	/* Styles for devices with a viewport width of 980px or less */
 	.skills-challenge {
 		display: none;
 		/* Adjust the margin as needed */
 	}
 }
-  
+
 .navbar-links a:hover,
 .navbar-links a:focus-visible {
 	color: #0067b8;
@@ -1411,14 +1434,6 @@ h6,
 }
 
 .grid {
-		display: grid;
-		grid-template-columns: var(--grid-template-desktop);
-		gap: var(--grid-gap-desktop);
-		row-gap: var(--vertical-gap-desktop);
-	}
-
-
-.grid {
 	display: grid;
 	grid-template-columns: var(--grid-template-desktop);
 	gap: var(--grid-gap-desktop);
@@ -1535,12 +1550,12 @@ h6,
 }
 
 /* Mobile styles */
-	/* Styles for devices with a viewport width of 980px or less */
 @media screen and (max-width: 767px) {
-.skills-challenge {
-		display:block;
+	.skills-challenge {
+		display: block;
 	}
 }
+
 @media screen and (max-width: 767px) {
 	.font-display-1 {
 		font-size: 3rem;
@@ -1856,7 +1871,7 @@ h6,
 
 	/* Add some color to the dropdown links on hover */
 	.dropdown-content a:hover {
-		background-color:  transparent;
+		background-color: transparent;
 	}
 
 	.dropdown-content>li a:focus-visible {
