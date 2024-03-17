@@ -1,9 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   const images = [
-    '/images/banners/JDConf2024-hero-landscape.png',
-    '/images/banners/JDConf2024-hero-landscape2.png',
-    '/images/banners/JDConf2024-hero-landscape3.png',
+    '/JDConf-Stage1/images/banners/JDConf2024-hero-landscape.png',
+    '/JDConf-Stage1/images/banners/JDConf2024-hero-landscape2.png',
+    '/JDConf-Stage1/images/banners/JDConf2024-hero-landscape3.png',
   ];
   let currentIndex = 0;
 
