@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/jdconf-favicon.png" type="image/png">
+    <title>Microsoft JDConf 2024</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description"
+        content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments in Java, Cloud and AI. Mark your calendar!" />
+    <meta name="author" content="Microsof" />
+    <meta name="keywords"
+        content="Java, Jakarta EE, JDConf, SpringBoot, OpenAI, Copilot, Azure, Tomcat, Kubernetes, Containers, OpenJDK, VSCode" />
+    <meta name="Distribution" content="Global" />
+
+    <!-- Open graph meta tags -->
+    <meta property="og:title" content="Microsoft JDCOnf 2024" />
+    <meta property="og:description"
+        content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments in Java, Cloud and AI. Mark your calendar!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jdconf.com" />
+    <meta property="og:image" content="https://jdconf.com/images/banners/JDConf2024-feature-image.jpg">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta property="og:image:type" content="image/jpg" />
+
+    <!-- Twitter meta tags -->
+    <meta name="twitter:title" content="Microsoft JDConf 2024" />
+    <meta name="twitter:description"
+        content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments in Java, Cloud and AI. Mark your calendar!" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@jdconf">
+    <link rel="stylesheet" href="css/jdconf.css?v=1.4">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
+</head>
+
+<body onload="startCountdownAmericas(); startCountdownAsia(); startCountdownEurope();">
+
+    <script src="js/jdconf.js"></script>
+
+    <header class="navbar grid">
+        <a class="navbar-title font-title-2" href="/">JDConf 2024</a>
+        <button id="navbar-menu-btn" class="navbar-menu-icon-btn" aria-label="Toggle menu">
+            <svg width="40" height="30" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="4" fill="white" />
+                <rect y="13" width="40" height="4" fill="white" />
+                <rect y="26" width="40" height="4" fill="white" />
+            </svg>
+        </button>
+        <nav>
+            <ul class="navbar-links">
+                <li class="navbar-link"><a href="/">Home</a></li>
+                <li class="navbar-link dropdown">
+                    <a>Livestream</a>
+                    <ul class="dropdown-content">
+                        <li><a href="americas.html"><img src="images/livestream.svg" alt="Livestream Icon" class="icon-livestream">Americas</a></li>
+                        <li><a href="apac.html"><img src="images/livestream.svg" alt="Livestream Icon" class="icon-livestream">Asia-Pacific</a></li>
+                        <li><a href="emea.html"><img src="images/livestream.svg" alt="Livestream Icon" class="icon-livestream">Europe, Middle East, and Africa</a></li>
+                        <li><a href="ondemand.html">On-demand</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-link"><a href="agenda.html">Agenda</a></li>
+                <li class="navbar-link"><a href="speakers.html">Speakers</a></li>
+                <li class="navbar-link"><a href="about.html">About</a></li>
+                <li class="navbar-link skills-challenge"><a href="https://aka.ms/java-apps-csc">Java Cloud Skills Challenge</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="vertical-gap"></div>
+        <h4 class="font-title-4 text-center">March 28, 9:00 AM GMT</h4>
+        <h4 class="font-title-5 text-center"><img src="images/livestream.svg" alt="Livestream Icon" class="icon-livestream">Europe, Middle East, and Africa</h4>
+        <div id="europe-countdown" class="font-title-5 text-center"></div>
+        <h4 class="font-title-5 text-center"><a href="https://developer.microsoft.com/en-us/reactor/events/21594/"
+                target="_blank" class="button">RSVP Now</a></h4>
+        <br>
+        <div id="grid-section-2" class="padding-block-md">
+            <div class="section-home">
+                <div class="grid-container4">
+                    <div class="grid-item">
+                        <article class="card">
+                            <div class="card-content">
+                                <p class="card-content-description">
+                                </p>
+                                <!-- Embed YouTube Video Here -->
+                                <div class="video-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/8Fxx2nb1F2w?si=lZf1Qm29Uau9Tm9Q?rel=0"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="sectionToHide" class="font-subtitle-2 section-home">
+            <div class="agenda">
+                <section id="emea"> </section>
+                <div class="region-column" id="europe">
+                    <h1 class="font-title-4 text-center">Agenda</h1>
+                    <div id="timeZoneInfoDiv3"></div>
+                    <div class="agenda-table font-subtitle-3">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Schedule</th>
+                                    <th>Session</th>
+                                    <th class="session-speaker">Speakers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="session-time">28-Mar-24 02:00 02:05 AM</td>
+                                    <td class="session-title"><a href="agenda.html#sandraa-welcome">Welcome to JDConf
+                                            EMEA</a></td>
+                                    <td class="session-speaker">Host: Sandra Ahlgrimm, Microsoft</td>
+                                </tr>
+                                <tr>
+                                    <td class="session-time">28-Mar-24 02:05 02:30 AM</td>
+                                    <td class="session-title"><a href="agenda.html#lizer-session">Java Meets AI: How to
+                                            Build
+                                            LLM-Powered Applications with LangChain4j</a></td>
+                                    <td class="session-speaker">Lize Raes, Open Tide</td>
+                                </tr>
+                                <tr>
+                                    <td class="session-time">28-Mar-24 02:30 03:00 AM</td>
+                                    <td class="session-title"><a href="agenda.html#nickz-session">Sparking Developer
+                                            Joy: Elevating
+                                            Developer Experience with VSCode Java</a></td>
+                                    <td class="session-speaker">
+                                        <div>Nick Zhu, Microsoft</div>
+                                        <div>Mohit Suman, Red Hat</div>
+                                        <div>Roland Grunberg, Red Hat</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="session-time">28-Mar-24 03:00 03:30 AM</td>
+                                    <td class="session-title"><a href="agenda.html#olegs-session">Mastering
+                                            Testcontainers for Better
+                                            Integration Tests</a></td>
+                                    <td class="session-speaker">Oleg Šelajev, AtomicJar</td>
+                                </tr>
+                                <tr>
+                                    <td class="session-time">28-Mar-24 03:30 04:00 AM</td>
+                                    <td class="session-title"><a href="agenda.html#roryp-session">Semantic Kernel for
+                                            Java</a></td>
+                                    <td class="session-speaker">Rory Preddy, Microsoft</td>
+                                </tr>
+                                <tr>
+                                    <td class="session-time">28-Mar-24 04:00 04:30 AM</td>
+                                    <td class="session-title"><a href="agenda.html#rezar-session">What's Coming in
+                                            Jakarta EE 11?</a>
+                                    </td>
+                                    <td class="session-speaker">Reza Rahman, Microsoft</td>
+                                </tr>
+                                <tr>
+                                    <td class="session-time">28-Mar-24 04:30 05:00 AM</td>
+                                    <td class="session-title"><a href="agenda.html#alinay-session">Fast And Lightweight
+                                            Spring Boot
+                                            Applications With GraalVM</a></td>
+                                    <td class="session-speaker">Alina Yurenko, Oracle</td>
+                                </tr>
+                                <tr>
+                                    <td class="session-time">28-Mar-24 05:00 05:25 AM</td>
+                                    <td class="session-title"><a href="agenda.html#martinl-session">How to Keep Your
+                                            Spring Boot
+                                            Projects Up-to-Date</a></td>
+                                    <td class="session-speaker">Martin Lippert, Broadcom</td>
+                                </tr>
+                                <tr>
+                                    <td class="session-time">28-Mar-24 05:25 05:30 AM</td>
+                                    <td class="session-title"><a href="agenda.html#sandraa-close">Closing Remarks</a>
+                                    </td>
+                                    <td class="session-speaker">Sandra Ahlgrimm, Microsoft</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <section id="sectionToHide">
+                <h1 class="font-display-3 vertical-gap text-center">Speakers</h1>
+                <div class="speakers-grid">
+                    <!-- Repeat this block for each speaker -->
+                    <div class="speaker fix-margins">
+                        <img src="images/speakers/alina-yurenko.jpg" alt="Alina Yurenko">
+                        <h3 class="fix-margins">Alina Yurenko</h3>
+                        <h6 class="fix-margins">Developer advocate for GraalVM at Oracle Labs</h6>
+                        <div class="bio">
+                            <p>Alina Yurenko is a developer advocate for GraalVM at Oracle Labs, a research &
+                                development
+                                organization at Oracle. She loves both programming and natural languages, compilers, and
+                                open source.</p>
+                        </div>
+                    </div>
+                    <div class="speaker fix-margins">
+                        <img src="images/speakers/lize-raes2.jpg" alt="Lize Raes">
+                        <h3 class="fix-margins">Lize Raes</h3>
+                        <h6 class="fix-margins">Software Engineer at Open Tide</h6>
+                        <div class="bio">
+                            <p>Lize Raes is a Senior Software Engineer and Head of AI at a Swiss company specializing in
+                                software for drug discovery and gene technology. In parallel, she develops LLM-powered
+                                apps
+                                and is a core member of the LangChain4j team. Lize loves using technology to solve
+                                societal
+                                issues. This has driven her in the past to work as a cochlear implant researcher at
+                                Ghent
+                                University, to develop a COVID-19 prognosis model and advise the Belgian government, and
+                                to
+                                engage as a committee member for the CNCF + UN hackathon. In her free time, you will
+                                find
+                                her behind the piano or in her woodworking atelier.</p>
+                        </div>
+                    </div>
+                    <div class="speaker fix-margins">
+                        <img src="images/speakers/martin-lippert.jpg" alt="Martin Lippert">
+                        <h3 class="fix-margins">Martin Lippert</h3>
+                        <h6 class="fix-margins">Spring Tools Lead, VMware / Broadcom</h6>
+                        <div class="bio">
+                            <p>Martin works at VMware on developer tooling for the Spring and Spring Boot. He co-leads
+                                the
+                                team that ships all the Spring Tools for Eclipse, Visual Studio Code, Theia, and more.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="speaker fix-margins">
+                        <img src="images/speakers/mohit-suman.png" alt="Mohit Suman">
+                        <h3 class="fix-margins">Mohit Suman</h3>
+                        <h6 class="fix-margins">Senior Product Manager, Red Hat</h6>
+                        <div class="bio">
+                            <p>Mohit Suman is based out of beautiful country India. He works as a Senior Technical
+                                Product
+                                Manager at Red Hat, Developer Experience. He holds experience in Product Management,
+                                Software Engineering and Architecture in fields ranging from large-scale distributed
+                                computing and developer productivity.</p>
+                        </div>
+                    </div>
+                    <div class="speaker fix-margins">
+                        <img src="images/speakers/nick-zhu.png" alt="Nick Zhu">
+                        <h3 class="fix-margins">Nick Zhu</h3>
+                        <h6 class="fix-margins">VS Code, Java development, Cloud-native, Microsoft</h6>
+                        <div class="bio">
+                            <p>Developer at heart.</p>
+                        </div>
+                    </div>
+                    <div class="speaker fix-margins">
+                        <img src="images/speakers/oleg-selajev.jpg" alt="Oleg Šelajev">
+                        <h3 class="fix-margins">Oleg Šelajev</h3>
+                        <h6 class="fix-margins">Head of Developer Relations, AtomicJar</h6>
+                        <div class="bio">
+                            <p>Oleg Šelajev is a head of developer relations at AtomicJar working on making local
+                                development and testing bring joy. Developer. Java Champion. Docker captain.
+                                Loves all languages.</p>
+                        </div>
+                    </div>
+                    <div class="speaker fix-margins">
+                        <img src="images/speakers/reza-rahman.jpg" alt="Reza Rahman">
+                        <h3 class="fix-margins">Reza Rahman</h3>
+                        <h6 class="fix-margins">Principal Program Manager, Java on Azure at Microsoft</h6>
+                        <div class="bio">
+                            <p>Reza Rahman is Principal Program Manager for Java on Azure at Microsoft. He works to make
+                                sure Java developers are first class citizens at Microsoft and Microsoft is a first
+                                class
+                                citizen of the Java ecosystem. Reza has been an official Java technologist at Oracle. He
+                                is
+                                the author of the popular book EJB 3 in Action from Manning Publishing. Reza has long
+                                been a
+                                frequent speaker at Java User Groups and conferences worldwide including JavaOne and
+                                Devoxx.
+                                He has been the lead for the Java EE track at JavaOne as well as a JavaOne Rock Star
+                                Speaker
+                                award recipient. He was the program chair for the inaugural JakartaOne conference. Reza
+                                is
+                                an avid contributor to industry journals like JavaLobby/DZone and TheServerSide. He has
+                                been
+                                a member of the Java EE, EJB and JMS expert groups over the years. Reza implemented the
+                                EJB
+                                container for the Resin open source Java EE application server. He helps lead the
+                                Philadelphia Java User Group.</p>
+                        </div>
+                    </div>
+                    <div class="speaker fix-margins">
+                        <img src="images/speakers/roland-grunberg.jpg" alt="Roland Grunberg">
+                        <h3 class="fix-margins">Roland Grunberg</h3>
+                        <h6 class="fix-margins">IDE Extensions Team Lead, Red Hat</h6>
+                        <div class="bio">
+                            <p>Software developer, and IDE Extensions team lead at Red Hat. I help maintain the popular
+                                Java
+                                language support extension for VS Code.</p>
+                        </div>
+                    </div>
+                    <div class="speaker fix-margins">
+                        <img src="images/speakers/rory-preddy.jpg" alt="Rory Reddy">
+                        <h3 class="fix-margins">Rory Preddy</h3>
+                        <h6 class="fix-margins">Principal Cloud Advocate, Microsoft</h6>
+                        <div class="bio">
+                            <p>Rory works in the Developer Relations team at Microsoft as a Principal Cloud Advocate.
+                                Cloud
+                                Advocates use their deep research skills to help professional cloud developers discover
+                                and
+                                successfully use Microsoft’s platforms.
+                                A seasoned speaker whose talks are both meaningful and humorous, Rory speaks around the
+                                world empowering developers to achieve more.</p>
+                        </div>
+                    </div>
+                    <div class="speaker fix-margins">
+                        <img src="images/speakers/sandra-ahlgrimm.png" alt="Sandra Ahlgrimm">
+                        <h3 class="fix-margins">Sandra Ahlgrimm</h3>
+                        <h6 class="fix-margins">Senior Cloud Advocate, Microsoft</h6>
+                        <div class="bio">
+                            <p>Sandra worked at some Axel Springer Companies where she learned a lot about coding and
+                                DevOps
+                                in large companies. That knowledge helped her a lot in setting up the automated
+                                infrastructure and DevOps pipeline plus the agile momentum in the StartUp she worked
+                                afterwards. In her first year at Microsoft, she helped several companies with their
+                                container, Kubernetes, DevOps, agile processes before moving 5 years ago to the cloud
+                                advocacy team where she keeps focusing on open source technologies and heavily in Java.
+                            </p>
+                        </div>
+                    </div>
+                <!-- ... other speakers ... -->
+                </div>
+                <h1 class="font-subtitle-1 vertical-gap"></h1>
+            </section>
+
+            <section id="stay-connected" class="font-subtitle-2 section-home">
+                <h2>Stay connected</h2>
+                <p>Follow the <a href="https://devblogs.microsoft.com/java/">Microsoft for Java developers blog</a>
+                    and
+                    <a href="https://twitter.com/JavaAtMicrosoft">Java at Microsoft</a> for the latest news and
+                    updates
+                    about
+                    JDConf.
+                </p>
+                <p>Follow the event at <a href="https://x.com/hashtag/jdconf">#JDConf</a></p>
+            </section>
+    </main>
+    <footer>
+        <section id="socials" class="social-container">
+            <p>Follow us on the web</p>
+            <div class="social-icons">
+                <!-- GitHub Icon -->
+                <a href="https://github.com/openjdk/" class="social" target="_blank" aria-label="Follow us on GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+                <!-- Twitter Icon -->
+                <a href="https://twitter.com/JavaAtMicrosoft" class="social" target="_blank"
+                    aria-label="Follow us on Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                </svg>
+                </a>
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/showcase/microsoft-developers/" class="social" target="_blank"
+                    aria-label="Follow us on LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                </a>
+                <!-- YouTube Icon -->
+                <a href="https://www.youtube.com/c/JavaonAzure" class="social" target="_blank"
+                    aria-label="Follow us on YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="CurrentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1090_8939)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4 0C1.79086 0 0 1.79086 0 4V20C0 22.2091 1.79086 24 4 24H20C22.2091 24 24 22.2091 24 20V4C24 1.79086 22.2091 0 20 0H4ZM16.7929 10.7596L8.56807 5.08237C7.90472 4.62449 7 5.09932 7 5.90535V17.121C7 17.9218 7.89431 18.3978 8.55855 17.9505L16.7834 12.412C17.3679 12.0184 17.3728 11.1599 16.7929 10.7596Z"
+                                fill="CurrentColor"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1090_8939">
+                                <rect width="24" height="24" fill="white"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <section id="copyright">
+                    <div><a href="https://privacy.microsoft.com/en-us/privacystatement">Privacy Policy</a> © 2024
+                        Microsoft</div>
+                </section>
+            </div>
+        </section>
+        <!-- <p><a href="https://go.microsoft.com/fwlink/?LinkId=246338">Terms of use</a></p>
+        <p>Designed with <a href="https://github.com">GitHub</a></p>
+        -->
+    </footer>
+</body>
+
+</html>

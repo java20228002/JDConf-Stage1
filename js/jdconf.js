@@ -1,32 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const images = [
-    '/JDConf-Stage1/images/banners/JDConf2024-hero-landscape.png',
-    '/JDConf-Stage1/images/banners/JDConf2024-hero-landscape2.png',
-    '/JDConf-Stage1/images/banners/JDConf2024-hero-landscape3.png',
-  ];
-
-  const mobileimages = [
-    '/JDConf-Stage1/images/banners/JDConf2024-hero-portrait.png',
-  ];
-  let currentIndex = 0;
-
-  // Function to change the hero image
-  function changeHeroImage() {
-    document.getElementById('hero-banner').style.backgroundImage = `url('${images[currentIndex]}')`;
-    currentIndex = (currentIndex + 1) % images.length;
-  }
-
-  // Check if the device's screen width is more than 768px to run the rotation
-  if (window.innerWidth > 768) {
-    // Change image every 5 seconds for devices wider than 768px
-    changeHeroImage(); // Change immediately on load
-    setInterval(changeHeroImage, 5000);
-  } else {
-    // For mobile devices (or screens narrower than 768px), display only the first image
-    document.getElementById('hero-banner').style.backgroundImage = `url('${mobileimages[0]}')`;
-  }
-});
-
 
 
 function getTimeZoneInfo() {

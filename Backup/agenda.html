@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/jdconf-favicon.png" type="image/png">
+  <title>Microsoft JDConf 2024</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="description"
+    content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments in Java, Cloud and AI. Mark your calendar!" />
+  <meta name="author" content="Microsof" />
+  <meta name="keywords"
+    content="Java, Jakarta EE, JDConf, SpringBoot, OpenAI, Copilot, Azure, Tomcat, Kubernetes, Containers, OpenJDK, VSCode" />
+  <meta name="Distribution" content="Global" />
+
+  <!-- Open graph meta tags -->
+  <meta property="og:title" content="Microsoft JDCOnf 2024" />
+  <meta property="og:description"
+    content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments in Java, Cloud and AI. Mark your calendar!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jdconf.com" />
+  <meta property="og:image" content="https://jdconf.com/images/banners/JDConf2024-feature-image.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="628" />
+  <meta property="og:image:type" content="image/jpg" />
+
+  <!-- Twitter meta tags -->
+  <meta name="twitter:title" content="Microsoft JDConf 2024" />
+  <meta name="twitter:description"
+    content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments in Java, Cloud and AI. Mark your calendar!" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@jdconf">
+  <link rel="stylesheet" href="css/jdconf.css?v=1.4">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
+</head>
+
+<body>
+  <script src="js/jdconf.js"></script>
+  <header class="navbar grid">
+    <a class="navbar-title font-title-2" href="/">JDConf 2024</a>
+    <button id="navbar-menu-btn" class="navbar-menu-icon-btn" aria-label="Toggle menu">
+      <svg width="40" height="30" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="4" fill="white" />
+        <rect y="13" width="40" height="4" fill="white" />
+        <rect y="26" width="40" height="4" fill="white" />
+      </svg>
+    </button>
+    <nav>
+      <ul class="navbar-links">
+        <li class="navbar-link"><a href="/">Home</a></li>
+        <li class="navbar-link dropdown">
+          <a>Livestream</a>
+          <ul class="dropdown-content">
+            <li><a href="americas.html"><img src="images/livestream.svg" alt="Livestream Icon"
+                  class="icon-livestream">Americas</a></li>
+            <li><a href="apac.html"><img src="images/livestream.svg" alt="Livestream Icon"
+                  class="icon-livestream">Asia-Pacific</a></li>
+            <li><a href="emea.html"><img src="images/livestream.svg" alt="Livestream Icon"
+                  class="icon-livestream">Europe, Middle East, and Africa</a></li>
+            <li><a href="ondemand.html">On-demand</a></li>
+          </ul>
+        </li>
+        <li class="navbar-link"><a href="agenda.html">Agenda</a></li>
+        <li class="navbar-link"><a href="speakers.html">Speakers</a></li>
+        <li class="navbar-link"><a href="about.html">About</a></li>
+        <li class="navbar-link skills-challenge"><a href="https://aka.ms/java-apps-csc">Java Cloud Skills Challenge</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- <picture>
+      <source media="(min-width: 768px)" srcset="images/banners/JDConf2024-hero-landscape.png">
+      <source media="(min-width: 480px)" srcset="images/banners/JDConf2024-hero-portrait.png">
+      <img src="images/banners/JDConf2024-hero-portrait.png" alt="Hero Image" class="hero-image">
+  </picture> -->
+
+  <main>
+    <section id="americas"> </section>
+    <h1 class="font-display-3 text-center">Agenda</h1>
+    <div class="live-stream-nav font-title-3 text-center">
+      <ul>
+        <li><a href="#americas" style="text-decoration: underline;">Americas</a></li>
+        <li><a href="#apac" style="text-decoration: none;">Asia-Pacific</a></li>
+        <li><a href="#emea" style="text-decoration: none;">EMEA</a></li>
+        <li><a href="#ondemand" style="text-decoration: none;">On-demand</a></li>
+      </ul>
+    </div>
+    <h2 class="font-title-3 text-center"><a href="https://developer.microsoft.com/en-us/reactor/events/21593/"
+        class="button" target="_blank">RSVP Now</a></h2>
+    <h2 id="timeZoneInfoDiv" class="font-subtitle-1"></h2>
+    <section class="agenda-container vertical-gap">
+      <!-- Day -->
+      <!--<div data-date='11/14/2023 08:00:00 PST' data-day="1">
+            <h2 class="font-large-title">Day 1</h2>
+            <p class="font-title-1">Tuesday, November 14</p>
+        </div>-->
+      <!-- Session -->
+      <section class="agenda-group grid vertical-gap" data-daysection="1">
+        <p class="agenda-group-title font-title-2">
+          <span section id="brunob-welcome" class="session-time">27-Mar-24 08:30 08:35 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section class="agenda-session">
+            <p class="agenda-title font-title-2">Welcome to JDConf Americas</p>
+            <p class="agenda-speaker-name font-stronger">Bruno Borges, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Join Bruno Borges for the opening of Microsoft JDConf 2024.
+              We're gearing up for an unforgettable virtual experience, connecting Java enthusiasts from around the
+              globe.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="americas-keynote-session" class="session-time">27-Mar-24 08:35 09:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="americas-keynote-session" class="agenda-session">
+            <p class="agenda-title font-title-2">JDConf Technical Keynote</p>
+            <p class="agenda-speaker-name font-stronger">
+            <div class="agenda-speaker-name font-stronger">Julia Liuson, Microsoft</div>
+            <div class="agenda-speaker-name font-stronger">Josh Long, Broadcom</div>
+            <div class="agenda-speaker-name font-stronger">Mark Heckler, Microsoft</div>
+            </p>
+            <p class="agenda-description font-subtitle-2">Julia's talk will focus on the strong connection between Java
+              coding, cloud technology, AI, and the power of our community. She will show us how Microsoft is helping
+              Java developers fully realize their potential, making it easier for them to develop Java apps with the
+              help of AI and GitHub Copilot, and deploy these apps across various cloud platforms and services. Julia
+              will also talk about Microsoft's deep partnerships within the Java ecosystem and its commitment to
+              supporting and expanding the Java community. It is going to be an insightful session that highlights how
+              together we are moving Java forward.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="theresam-session" class="session-time">27-Mar-24 09:00 09:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="theresam-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Cache Me If You Can: Speed Up Your JVM with Project Valhalla</p>
+            <p class="agenda-speaker-name font-stronger">Theresa Mammarella, IBM</p>
+            <p class="agenda-description font-subtitle-2">OpenJDK’s Project Valhalla is set to revolutionize how the JVM
+              handles data objects in memory. By bringing the characteristics of primitives to Java objects and classes
+              you’ll see denser memory layouts that can lead to many advantages such as improved cache performance and a
+              smaller memory footprint.
+              This talk offers an exploration of Valhalla's objectives, progress, and its potential impact on the Java
+              ecosystem with examples throughout. Come discover how Project Valhalla is on the verge of reshaping the
+              landscape of Java, paving the way for a more efficient and high-performing future.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="danielo-session" class="session-time">27-Mar-24 09:30 10:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="danielo-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Empowering Quarkus Applications with AI and OpenTelemetry on Kubernetes
+            </p>
+            <p class="agenda-speaker-name font-stronger">Daniel Oh, Red Hat, Brian Benz, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">In this session, we delve into the integration of
+              OpenTelemetry with Java applications using the Quarkus framework, deployed to Kubernetes on Azure
+              Kubernetes Service (AKS). The focus is on leveraging the power of Azure's managed Kubernetes service for
+              deploying and managing containerized applications and enhancing telemetry collection and observability. We
+              will also explore the innovative use of GitHub Copilot, an AI-powered coding assistant, to streamline
+              telemetry setup and deployment processes.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="markh-session" class="session-time">27-Mar-24 10:00 10:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="markh-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Paving a Painless Path to Production AI in Your Java Applications</p>
+            <p class="agenda-speaker-name font-stronger">Mark Heckler, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Artificial Intelligence is eating the world, and new and
+              amazing use cases are being discovered every day. These uses for AI aren't just in new domains, but
+              perhaps even more importantly, in areas that are broadly applicable in countless "everyday"
+              mission-critical applications.
+
+              This places developers in a difficult position: how do you take advantage of these new capabilities
+              without significant investments in both time and tooling to become an AI expert? How do you plug AI into
+              your existing applications without massive rearchitecting and rewriting?
+
+              Come to this session for a dive-into-the-deep-end introduction of key concepts and tools at your disposal
+              and even better, a *live-coding adventure* using Spring Boot, Java, and Azure OpenAI. You'll leave this
+              session with the knowledge and confidence to pave a painless (and powerful) path to production AI in your
+              Java applications.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="loianeg-session" class="session-time">27-Mar-24 10:30 11:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="loianeg-session" class="agenda-session">
+            <p class="agenda-title font-title-2">From Zero to Java Hero: Visual Studio Code Mastery</p>
+            <p class="agenda-speaker-name font-stronger">Loiane Groner, Citibank</p>
+            <p class="agenda-description font-subtitle-2">Transform into a Java hero with Visual Studio Code expertise.
+              This hands-on session covers the essentials of intelligent code completion, local application development,
+              and database connectivity through extensions, running tests, and test coverage, empowering you to conquer
+              Java development with this great free and open-source powerful editor.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="simonr-session" class="session-time">27-Mar-24 11:00 11:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="simonr-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Instant Coffee: How to Eliminate Java Performance Warmup</p>
+            <p class="agenda-speaker-name font-stronger">Simon Ritter, Azul Systems</p>
+            <p class="agenda-description font-subtitle-2">Java is consistently in the top three most popular programming
+              languages. Much of the reason for this is the performance and scalability of the JVM.
+
+              In this session, we’ll compare different approaches to reducing (or eliminating) performance "warmup":
+            <ul class="agenda-description font-subtitle-2">
+              <li>Graal Native Image, ahead-of-time compilation.</li>
+              <li>Recording a just-in-time (JIT) compiler profile of a warmed-up application that can be reused when the
+                application is restarted, eliminating the need for much of the JIT compilation.</li>
+              <li>Decoupling the JIT compiler from the JVM in a Cloud environment. Deploying JIT-as-a-Service allows the
+                caching of code and offloading the compilation to save resources.</li>
+              <li>Creating a checkpoint of a running application. This includes all application state in addition to the
+                JIT-compiled code. The Coordinated Restore at Checkpoint (CRaC) OpenJDK project will be used as an
+                example.</li>
+            </ul>
+            <p class="agenda-description font-subtitle-2">At the end of the session, you’ll be all set to improve your
+              Java application performance.</p>
+            </p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="markp-session" class="session-time">27-Mar-24 11:30 11:55 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="markp-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Spring AI: Streamlining Java Enterprise AI Development and Deployment
+            </p>
+            <p class="agenda-speaker-name font-stronger">Mark Pollack, Broadcom</p>
+            <p class="agenda-description font-subtitle-2">This session explores Spring AI, a new framework enabling Java
+              developers to integrate AI seamlessly into enterprise applications. Spring AI provides accessible AI
+              integration through comprehensive API abstractions for various AI Model APIs and vector databases.
+
+              Participants will learn how Spring AI simplifies data import into vector databases from PDFs and JSON
+              files. The presentation emphasizes the Spring ecosystem's principles of simplicity and efficiency and will
+              guide attendees through the streamlined 'zero to hello world' development process using Spring CLI.
+
+              Additionally, the session will showcase practical applications of Spring AI, such as AI code generation,
+              and a detailed case study on a Retrieval Augmented Generation (RAG) prototype developed in collaboration
+              with a Tanzu Labs customer.
+
+              The talk will also cover deploying AI applications to Azure Spring Apps, demonstrating Spring CLI's
+              'spring asa deploy' command for quick and efficient deployment.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="brunob-close" class="session-time">27-Mar-24 11:55 11:59 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="brunob-close" class="agenda-session">
+            <p class="agenda-title font-title-2">Closing Remarks</p>
+            <p class="agenda-speaker-name font-stronger">Bruno Borges, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Join Bruno as he wraps up our eventful journey, sharing key
+              next steps and inspiring final thoughts for the Java community.</p>
+          </section>
+        </div>
+      </section>
+    </section>
+    <section id="apac"> </section>
+    <h1 class="font-display-3 text-center">Agenda</h1>
+    <div class="live-stream-nav font-title-3 text-center">
+      <ul>
+        <li><a href="#americas" style="text-decoration:none;">Americas</a></li>
+        <li><a href="#apac" style="text-decoration:underline;">Asia-Pacific</a></li>
+        <li><a href="#emea" style="text-decoration: none;">EMEA</a></li>
+        <li><a href="#ondemand" style="text-decoration: none;">On-demand</a></li>
+      </ul>
+    </div>
+    <h2 class="font-title-3 text-center"><a href="https://developer.microsoft.com/en-us/reactor/events/21595/"
+        class="button" target="_blank">RSVP Now</a></h2>
+
+    <h2 id="timeZoneInfoDiv2" class="font-subtitle-1"></h2>
+    <section class="agenda-container vertical-gap">
+      <!-- Day -->
+      <!--<div data-date='11/14/2023 08:00:00 PST' data-day="1">
+            <h2 class="font-large-title">Day 1</h2>
+            <p class="font-title-1">Tuesday, November 14</p>
+        </div>-->
+      <!-- Session -->
+      <section class="agenda-group grid vertical-gap" data-daysection="1">
+        <p class="agenda-group-title font-title-2">
+          <span section id="roryp-welcome" class="session-time">27-Mar-24 07:00 07:05 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="roryp-welcome" class="agenda-session">
+            <p class="agenda-title font-title-2">Welcome to JDConf Asia-Pacific</p>
+            <p class="agenda-speaker-name font-stronger">Rory Preddy, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">As JDConf Americas concludes, we seamlessly transition to the
+              Asia-Pacific leg of our event, with Rory Preddy taking the stage for the opening remarks. Rory will bring
+              his unique insights and enthusiasm to the Java community, setting the tone for an exciting and enriching
+              experience tailored to our Asia-Pacific audience.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="joshl-session" class="session-time">27-Mar-24 07:05 07:30 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="joshl-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Bootiful Spring Boot 3</p>
+            <p class="agenda-speaker-name font-stronger">Josh Long, Broadcom</p>
+            <p class="agenda-description font-subtitle-2">Spring Framework 6 and Spring Boot 3 are here, and you know
+              what that means. New baselines and new possibilities! Spring Framework implies a Java 17 and Jakarta EE
+              baseline and offers new support for building GraalVM-native images and a compile-time component model in
+              the new Spring AOT engine. It also offers a new observability layer, declarative HTTP and RSocket clients,
+              preliminary Project Loom and CRaC support, Problem-Details support, and so much more. Join me, Spring
+              Developer Advocate Josh Long (@starbuxman), and we'll look at next-gen Spring.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="danielk-session" class="session-time">27-Mar-24 07:30 08:00 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="danielk-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Virtual Threads in Action</p>
+            <p class="agenda-speaker-name font-stronger">Daniel Kec, Oracle</p>
+            <p class="agenda-description font-subtitle-2">Do you really like reactive programming? What if I told you
+              that the same performance is achievable with imperative coding style? With virtual threads coming to Java
+              we can once again keep our code base clean and maintainable. Thanks to project Loom in JDK, the paradigm
+              can shift once more even for applications that require high concurrency. I will describe performance
+              problems which most of the modern frameworks solve by forcing developers to enter the dark world of
+              reactive programming. Then I will introduce Helidon Nima - new microservices framework which is built on
+              top of a server designed for Loom with fully synchronous routing that can block as needed, yet still
+              provide high performance under heavy concurrent load. I'll also talk about challenges, benefits and impact
+              on application development in such an environment. - Is it the end of reactive programming?</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="manish-session" class="session-time">27-Mar-24 08:00 08:30 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="manish-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Building Generative AI Applications with Azure Cosmos DB and Java</p>
+            <p class="agenda-speaker-name font-stronger">Manish Sharma, Principal PM Manager, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Join us and learn about the versatile vector database
+              capabilities of Azure Cosmos DB with Java. In this session, you’ll discover how the integration of your
+              operational and transactional data with native vector indexing and search functionalities can enrich your
+              generative AI applications at incredible scale. Learn how to build RAG pattern solutions and manage
+              conversational chat histories, by seamlessly connecting with Azure Open AI.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="seanl-session" class="session-time">27-Mar-24 08:30 09:00 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="seanl-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Maximize Azure Container Apps for Seamless Deployment and Execution</p>
+            <p class="agenda-speaker-name font-stronger">Sean Li, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">While Java developers favor containers, the overhead of
+              containerizing Java applications via Dockerfiles often introduces complexities. These complexities can
+              result in inconsistencies across applications, hindered updates, and governance challenges. Our focus will
+              be on mitigating these concerns through the Java cloud build process, leveraging cloud-native Buildpacks
+              to simplify containerization.
+
+              Moving into the execution phase, Java applications commonly rely on various components in the ecosystem
+              for functionalities like discovery, registration, and monitoring. Our aim is to alleviate the burden of
+              deploying and managing these components, enabling you to concentrate on your application's core logic.
+
+              Join us as we unravel the best way to deploy and connect Java applications in Azure Container Apps,
+              streamlining the process for maximum efficiency and rapid app deployment.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="yoshiot-session" class="session-time">27-Mar-24 09:00 09:30 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="yoshiot-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Leveraging Generative AI for Java Service Enhancement</p>
+            <p class="agenda-speaker-name font-stronger">Yoshio Terada, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Last year, generative AI made a swift entrance into the public
+              domain, with numerous companies beginning to integrate it into their services. In this session, we will
+              explore how Java-based services can utilize generative AI by selecting appropriate AI models and
+              implementing them within Java. Additionally, we will introduce the concept of 'Responsible AI' for safer
+              corporate adoption and demonstrate how to handle sensitive internal company data through 'Retrieval
+              Augmentation Generation (RAG)' techniques. By incorporating demos and actual code examples, we aim to
+              provide a clear understanding of these methods. Attendees will gain a comprehensive knowledge of various
+              libraries available for leveraging Azure OpenAI within Java and learn how to effectively use them.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="cesars-session" class="session-time">27-Mar-24 09:30 10:00 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="cesars-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Improving HotSpot Scalar Replacement</p>
+            <p class="agenda-speaker-name font-stronger">Cesar Soares, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">This talk addresses improving scalar replacement and escape
+              analysis in OpenJDK HotSpot, vital for Java performance optimization. We’ll overview these techniques,
+              focusing on their roles in reducing memory overhead and improving cache utilization. Key challenges in
+              HotSpot’s current implementation will be discussed, including handling of complex control flow and
+              allocation merges. We'll then discuss the approach that we used to improve HotSpot scalar replacement
+              implementation to increase the number of objects scalar replaced in an application. We'll conclude the
+              session by sharing results demonstrating enhanced application performance and inviting the audience to ask
+              questions and collaborate with future developments.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="nikitan-session" class="session-time">27-Mar-24 10:00 10:25 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="nikitan-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Optimize Java Apps for High Traffic Scenarios</p>
+            <p class="agenda-speaker-name font-stronger">Nikita Nallamothu, Microsoft, Sandra Ahlgrimm, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Identifying performance issues by simulating real-world
+              scenarios can be challenging. Learn how you can run your load tests and simulate high-scale loads on your
+              apps, no matter where they're hosted – all without worrying about the infrastructure. In today’s digital
+              landscape, application reliability is of utmost importance. Users expect applications to be available and
+              responsive, regardless of the platform or device they are using. Whether gearing up for a seasonal event
+              like Black Friday, handling tax filings, or striving to meet performance requirements during application
+              development, ensuring uninterrupted service is crucial.</p>
+            <p class="agenda-description font-subtitle-2">This session will explore the role of load testing in ensuring
+              optimal performance for Java applications by using Azure Load Testing. Discover common performance issues
+              and how Apache JMeter simplifies creating custom test scripts. Unlock valuable insights into performance
+              metrics and identify bottlenecks to optimize your Java applications.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="roryp-close" class="session-time">27-Mar-24 10:25 10:30 PM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="roryp-close" class="agenda-session">
+            <p class="agenda-title font-title-2">Closing Remarks</p>
+            <p class="agenda-speaker-name font-stronger">Rory Preddy, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Rory Preddy closes out the Asia-Pacific segment of JDConf with
+              a brief recap and next steps, offering a concise yet impactful conclusion to the event.</p>
+          </section>
+        </div>
+      </section>
+    </section>
+    <section id="emea"> </section>
+    <h1 class="font-display-3 text-center">Agenda</h1>
+    <div class="live-stream-nav font-title-3 text-center">
+      <ul>
+        <li><a href="#americas" style="text-decoration:none;">Americas</a></li>
+        <li><a href="#apac" style="text-decoration: none;">Asia-Pacific</a></li>
+        <li><a href="#emea" style="text-decoration: underline;">EMEA</a></li>
+        <li><a href="#ondemand" style="text-decoration: none;">On-demand</a></li>
+      </ul>
+    </div>
+    <h2 class="font-title-3 text-center"><a href="https://developer.microsoft.com/en-us/reactor/events/21594/"
+        class="button" target="_blank">RSVP Now</a></h2>
+
+    <h2 id="timeZoneInfoDiv3" class="font-subtitle-1"></h2>
+    <section class="agenda-container vertical-gap">
+      <!-- Day -->
+      <!--<div data-date='11/14/2023 08:00:00 PST' data-day="1">
+            <h2 class="font-large-title">Day 1</h2>
+            <p class="font-title-1">Tuesday, November 14</p>
+        </div>-->
+      <!-- Session -->
+      <section class="agenda-group grid vertical-gap" data-daysection="1">
+        <p class="agenda-group-title font-title-2">
+          <span section id="sandraa-welcome" class="session-time">28-Mar-24 02:00 02:05 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="sandraa-welcome" class="agenda-session">
+            <p class="agenda-title font-title-2">Welcome to JDConf EMEA</p>
+            <p class="agenda-speaker-name font-stronger">Sandra Ahlgrimm, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Sandra will open the EMEA livestream of JDConf, focusing on
+              the latest trends in Java and setting the tone for the day's discussions and presentations. Join her for a
+              concise overview of what's in store for attendees.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="lizer-session" class="session-time">28-Mar-24 02:05 02:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="lizer-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Java Meets AI: How to Build LLM-Powered Applications with LangChain4j
+            </p>
+            <p class="agenda-speaker-name font-stronger">Lize Raes, Open Tide</p>
+            <p class="agenda-description font-subtitle-2">Do you want to build applications powered by Large Language
+              Models (LLMs) using Java?
+              We built LangChain4j exactly for that! The framework allows you to easily create AI-powered chatbots,
+              process loads of unstructured data, and automate processes with the help of AI Services, that can use
+              various tools: call APIs, access databases, and even dynamically execute generated code. You will get a
+              hands-on guided tour through LangChain4j's functionality and its integrations (OpenAI, Google Gemini,
+              HuggingFace, Dall-E, Quarkus, Spring Boot, etc.). We will explain the fundamental building blocks of
+              LLM-powered applications and show you how to chain them together into AI Services. By the end of this
+              session, you will have all the technical knowledge to start coding, along with plenty of inspiration for
+              the applications of the future!</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="nickz-session" class="session-time">28-Mar-24 02:30 03:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="nickz-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Sparking Developer Joy: Elevating Developer Experience with VSCode Java
+            </p>
+            <p class="agenda-speaker-name font-stronger">Nick Zhu, Microsoft, Mohit Suman, Red Hat, Roland Grunberg, Red
+              Hat</p>
+            <p class="agenda-description font-subtitle-2">Join us for an immersive session that delves into the
+              cutting-edge advancements in Java development facilitated by the VSCode Java IDE extension. This session
+              will showcase how this extension has evolved to become an indispensable tool for Java developers,
+              fostering a seamless, efficient, and feature-rich coding experience, highlighting key points such as:
+
+              Java 1.5 to 21: Explore the robust support for Java 21, with a focus on language features and
+              improvements, thus empowering developers to leverage the full potential of modern Java programming.
+
+              Enhanced Developer Productivity: Delve into the features and tools that significantly boost developer
+              productivity and discover how the extension streamlines development tasks and accelerates the coding
+              process.
+
+              Collaboration with Red Hat and Microsoft: Uncover the synergies between Red Hat and Microsoft in advancing
+              the Java IDE extension & gain insights into collaborative efforts aimed at enriching the tool's
+              capabilities.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="olegs-session" class="session-time">28-Mar-24 03:00 03:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="olegs-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Mastering Testcontainers for Better Integration Tests</p>
+            <p class="agenda-speaker-name font-stronger">Oleg Šelajev, AtomicJar</p>
+            <p class="agenda-description font-subtitle-2">Testcontainers libraries are a great way to create a reliable
+              environment for running tests. It provides programmable, lightweight, and disposable containers to give
+              you more confidence in your integration tests.
+
+              Getting started with Testcontainers is super straightforward, but have you looked into more advanced
+              features to supercharge your test suite?
+
+              In this session, we’ll look deeper at Testcontainers and learn cool things like what’s the best way to
+              debug what happens in a container? How to build more complex topologies of services? What’s the best way
+              to migrate from Docker compose? How can one use Testcontainers for local development in addition to
+              integration tests? And what’s the magical reusable mode everyone is talking about?
+
+              Whether you’re a practitioner with solid test coverage or just beginning your journey into writing more
+              reliable software, this session will introduce you to Testcontainers and its pretty cool capabilities!
+
+            </p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="roryp-session" class="session-time">28-Mar-24 03:30 04:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="roryp-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Semantic Kernel for Java</p>
+            <p class="agenda-speaker-name font-stronger">Rory Preddy, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">With Semantic Kernel (SK), you'll discover a lightweight SDK
+              that effortlessly blends conventional programming languages with LLM AI capabilities. SK introduces
+              features like "prompts" with templating, chaining, and planning, readily available to enhance your
+              programming prowess.
+
+              Moreover, the Semantic Kernel for Java brings this innovation directly into the Java ecosystem. It's
+              designed to seamlessly integrate with Java applications and services, staying true to Java's idiomatic
+              style, while also facilitating easy integration with other Java libraries and frameworks.
+
+              Join me on this journey as we uncover the immense potential of SK and the Semantic Kernel for Java.
+              Together, we'll explore how AI and Java can harmoniously coexist, opening up a world of intelligent
+              possibilities.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="rezar-session" class="session-time">28-Mar-24 04:00 04:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="rezar-session" class="agenda-session">
+            <p class="agenda-title font-title-2">What's Coming in Jakarta EE 11?</p>
+            <p class="agenda-speaker-name font-stronger">Reza Rahman, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Jakarta EE 10 has now been delivered and work on Jakarta
+              progresses. This is a perfect time to begin exploring the horizons of Jakarta EE 11 and how you can help
+              make it reality.
+
+              We will guide you on how to begin contributing towards Jakarta EE 11. We will cover ways of contributing,
+              what paperwork is needed as well as the likely possibilities for Jakarta EE 11 including high level
+              themes, platform level changes and some detailed features. Some technologies that might change include
+              Jakarta Security, Concurrency and Messaging. New APIs that could be added include Jakarta NoSQL, RPC,
+              Repositories, and Configuration. We will talk about non-specification projects such as the Starter,
+              Tutorial and Samples.
+
+              We will also discuss what might be after Jakarta EE 11. Bring your thinking caps!</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="alinay-session" class="session-time">28-Mar-24 04:30 05:00 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="alinay-session" class="agenda-session">
+            <p class="agenda-title font-title-2">Fast and Lightweight Spring Boot Applications with GraalVM</p>
+            <p class="agenda-speaker-name font-stronger">Alina Yurenko, Oracle Labs</p>
+            <p class="agenda-description font-subtitle-2">Spring Boot 3.0 has introduced GA of GraalVM Native Image
+              support, previously incubated in the Spring Native project. Now you can easily compile your Spring Boot
+              application ahead of time with GraalVM to produce a native executable that starts fast, needs less memory,
+              and doesn’t require a JVM. In this session we'll take a look at building native Spring Boot apps from
+              scratch, leveraging latest GraalVM features, and using popular libraries.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="martinl-session" class="session-time">28-Mar-24 05:00 05:25 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="martinl-session" class="agenda-session">
+            <p class="agenda-title font-title-2">How to Keep Your Spring Boot Projects Up-to-Date</p>
+            <p class="agenda-speaker-name font-stronger">Martin Lippert, Broadcom</p>
+            <p class="agenda-description font-subtitle-2">Staying on top of the Spring Boot versions can be a challenge.
+              You need to be aware of new patch or minor version releases. And updating your projects to such a newer
+              version might not always be as easy as changing a version number, especially when updating projects to new
+              minor or even new major versions of Spring Boot.
+
+              The good news is: The Spring Tools for VSCode help you with all this. They show you relevant information
+              directly in your coding environment like latest versions and support ranges. And they automate updates to
+              newer versions as much as possible - even when upgrading projects to new major versions like Spring Boot
+              3.
+
+              This session shows all those features live in action and shows the audience how to keep your Spring Boot
+              projects always up-to-date when using Visual Studio Code.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="sandraa-close" class="session-time">28-Mar-24 05:25 05:30 AM</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="sandraa-close" class="agenda-session">
+            <p class="agenda-title font-title-2">Closing Remarks</p>
+            <p class="agenda-speaker-name font-stronger">Sandra Ahlgrimm, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Sandra wraps up the EMEA segment of JDConf, summarizing key
+              points and outlining next steps for the Java community.</p>
+          </section>
+        </div>
+      </section>
+    </section>
+
+    <section id="ondemand"> </section>
+    <h1 class="font-display-3 text-center">Agenda</h1>
+    <div class="live-stream-nav font-title-3 text-center">
+      <ul>
+        <li><a href="#americas" style="text-decoration:none;">Americas</a></li>
+        <li><a href="#apac" style="text-decoration: none;">Asia-Pacific</a></li>
+        <li><a href="#emea" style="text-decoration: none;">EMEA</a></li>
+        <li><a href="#ondemand" style="text-decoration: underline;">On-demand</a></li>
+      </ul>
+    </div>
+    <h2 class="font-title-3 text-center"><a href="https://developer.microsoft.com/en-us/reactor/series/s-1265/"
+        class="button" target="_blank">RSVP Now</a></h2>
+
+    <h2 id="timeZoneInfoDiv4" class="font-subtitle-1"></h2>
+    <section class="agenda-container vertical-gap">
+      <!-- Day -->
+      <!--<div data-date='11/14/2023 08:00:00 PST' data-day="1">
+            <h2 class="font-large-title">Day 1</h2>
+            <p class="font-title-1">Tuesday, November 14</p>
+        </div>-->
+      <!-- Session -->
+      <section class="agenda-group grid vertical-gap" data-daysection="1">
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-barkha" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-barkha" class="agenda-session">
+            <p class="agenda-title font-title-2">Realtime Analytics Unleashed: Unlocking the Potential of Data at Scale
+            </p>
+            <p class="agenda-speaker-name font-stronger">Barkha Herman, StarTree</p>
+            <p class="agenda-description font-subtitle-2">In this talk, we will explore the exciting possibilities of
+              modern analytics solutions – going beyond traditional
+              business dashboards, and diving into how to provide OLAP at OLTP speeds to a larger audience. Learn about
+              realtime analytics, and how scale can be achieved in this rapidly evolving field.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-brian" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-brian" class="agenda-session">
+            <p class="agenda-title font-title-2">Create a change data stream in minutes with Java, Azure SQL, and Azure
+              Functions</p>
+            <p class="agenda-speaker-name font-stronger">Brian Spendolini, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Capturing data changes from a database is a key component in
+              many modern application architectures and microservices. See how to quickly create a change data streams
+              from an Azure SQL Database using Java and Azure SQL Bindings for Azure Functions. Using VS Code, see how
+              you can have the binding created, tested and deployed all from one place in a no code/low code
+              environment.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-carlos" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-carlos" class="agenda-session">
+            <p class="agenda-title font-title-2">Simple and scalable performance testing with JMeter DSL</p>
+            <p class="agenda-speaker-name font-stronger">Carlos Gauto, Mercado Libre</p>
+            <p class="agenda-description font-subtitle-2">JMeter DSL is an open-source developer-friendly tool for
+              running performance tests as code, both locally and at scale. JMeter DSL is a Java API that takes
+              advantage of not only JMeter using it as an engine but also coding benefits as well.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">Creating your first test script: Learn how to develop a
+              performance test script from scratch using JMeter DSL. Discover how to define relevant metrics and gain
+              valuable insight into your application's behavior under simulated stress.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">CI/CD Integration: Automate your performance testing using
+              GitHub Actions. Learn how to set up workflows that run your tests automatically with each commit and
+              getting clear and concise results.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">Whether you are an experienced developer or just taking your
+              first steps in this field, this talk will give you the tools and knowledge you need to take your
+              performance testing skills to the next level.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-dan" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-dan" class="agenda-session">
+            <p class="agenda-title font-title-2">Visualizing Your Build with the Maven Timeline Plugin</p>
+            <p class="agenda-speaker-name font-stronger">Dan Haywood, Haywood Associates, LTD</p>
+            <p class="agenda-description font-subtitle-2">You're working on a big app, but the build takes too long.
+              You've already split it into separate modules, and you're using mvn -T1C to build, which definitely speeds
+              things up even if the log output is a mess; in fact you even discovered mvndaemon, so now the build looks
+              rather pretty, and it goes a little bit faster too.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">You realise also that with a maven multi-module buiild, module
+              B will only start to compile once all the tests in module A have passed. So you could definitely make your
+              overall build faster by moving A's tests to its own module which could then be executed in parallel with
+              B's build.
+              Is it worth the effort, though?
+
+            </p>
+            <p class="agenda-description font-subtitle-2">Using the maven timeline extension, you can run your maven
+              build and end up with a browseable website that will show the timings of each phase of the build. So you
+              can also see if running with more or fewer cores, you can see if it's worth pulling out module A's tests,
+              you can see if it's there are any bottlenecks.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-emily" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-emily" class="agenda-session">
+            <p class="agenda-title font-title-2">Hybrid Cloud Application Built with Pure Openness</p>
+            <p class="agenda-speaker-name font-stronger">Emily Jiang, IBM</p>
+            <p class="agenda-description font-subtitle-2">Do you want your cloud native applications to work with hybrid
+              cloud without vendor lock in? Come to this session to learn the how! This session will prepare you to
+              achieve your goal by introducing key open source technologies like Open Liberty, MicroProfile and Jakarta
+              EE. We'll investigate how these technologies can be integrated with cloud native infrastructure including
+              Knative and developer environments to enable a rapid application development without vendor lock-in and
+              prepare for the cloud deployment including Serverless enablement with a live demo using Azure Cloud. The
+              journey to the hybrid cloud and serverless is unlocked!</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-lize" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-lize" class="agenda-session">
+            <p class="agenda-title font-title-2">Data Privacy Concerns and Solutions When using LLMs in Production</p>
+            <p class="agenda-speaker-name font-stronger">Lize Raes, OpenTide</p>
+            <p class="agenda-description font-subtitle-2">When using AI for internal processes and in production,
+              businesses face challenges with the privacy of employee and customer data, as well as trade secrets. As AI
+              legislation is only just beginning to take shape, this session will explore key considerations such as
+              model provider terms, regulatory environments, and GDPR. Depending on the stringency of your data privacy
+              concerns, we will outline approaches like local prompt filtering, automated anonymization, and the use of
+              local models to reduce or eliminate risks.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-mark" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-mark" class="agenda-session">
+            <p class="agenda-title font-title-2">What’s new in Jakarta Concurrency 3.1?</p>
+            <p class="agenda-speaker-name font-stronger">Mark Swatosh, IBM</p>
+            <p class="agenda-description font-subtitle-2">There are a lot of exciting changes coming the latest version
+              of Jakarta Concurrency. This lightening talk will cover the new changes coming in Jakarta Concurrency 3.1,
+              including support for Virtual Threads and the Java Flow APIs.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-martin" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-martin" class="agenda-session">
+            <p class="agenda-title font-title-2">Spring Tools Live - All the Great New Things</p>
+            <p class="agenda-speaker-name font-stronger">Martin Lippert, Broadcom</p>
+            <p class="agenda-description font-subtitle-2">As the lead of the Spring Tools, Martin will walk the audience
+              through all the latest and greatest new features and improvements of the Spring Tools for Visual Studio
+              Code.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">He will discuss the new Spring Boot version validations that
+              the Spring Tools provide, automated Spring Boot upgrades using OpenRewrite, providing live information
+              from running applications directly in source code, the latest performance improvement while typing and
+              running validations, and much more.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">Enjoy this session filled up with live coding, tips and
+              tricks, and insights from under the hood of the Spring Tools.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-mary" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-mary" class="agenda-session">
+            <p class="agenda-title font-title-2">Enter the Brave New World of GenAI with Vector Search</p>
+            <p class="agenda-speaker-name font-stronger">Mary Grygleski, DataStax</p>
+            <p class="agenda-description font-subtitle-2">With ChatGPT taking center stage since the beginning of 2023,
+              developers who have not had a chance to work with any forms of Artificial Intelligence or Machine Learning
+              systems may find themselves either intrigued by the “maze” of new terminologies, or some may be eager to
+              learn more, while perhaps a smaller group may not actually want to get themselves into an unknown
+              territory.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">The truth is that, whether we like it or not, we have all been
+              “thrust” into this new era of computing. Instead of procrastinating, let’s start by learning about
+              Generative AI specifically with this presentation. We will go over the history and evolution of AI and ML,
+              then look at how it has evolved to where it is today. We will touch upon as many new concepts that have
+              popped up, which include: Generative AI (GenAI), ChatGPT, Large Language Models (LLMs), Natural Language
+              Processing (NLP), Vector DB, and Vector Search. We will then look at a demo on how Vector Search is being
+              done behind the scenes.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-nagarjuna" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-nagarjuna" class="agenda-session">
+            <p class="agenda-title font-title-2">Azure Load Testing - An overview</p>
+            <p class="agenda-speaker-name font-stronger">Nagarjuna Vipparthi, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">This session will introduce Azure Load Testing - a fully
+              managed service for performance testing. This lightning talk will give an overview of the service
+              capabilities and how it can simplify the end-to-end performance testing process. It briefly covers the
+              process to set up a load test and analyze the test results using Azure Load Testing. It also covers how to
+              integrate load tests with CI/CD pipelines for continuous performance validation.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-otavio1" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-otavio1" class="agenda-session">
+            <p class="agenda-title font-title-2">Unlocking Data Access Excellence with Jakarta Data: Simplifying
+              Persistence for Modern Cloud-Native</p>
+            <p class="agenda-speaker-name font-stronger">Otavio Santana, Otaviojava</p>
+            <p class="agenda-description font-subtitle-2">The Jakarta Data specification revolutionizes data access for
+              Java developers by providing a powerful API that bridges the gap between diverse database types, from
+              relational to NoSQL. It empowers developers to streamline data access and manipulation while adhering to a
+              domain-centric architecture. Discover how Jakarta Data can simplify the complexities of persistence
+              integrations and enhance your application's data management capabilities.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-otavio2" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-otavio2" class="agenda-session">
+            <p class="agenda-title font-title-2">Polyglot Persistence Unleashed: Mastering Enterprise Java Architecture
+              with NoSQL Databases</p>
+            <p class="agenda-speaker-name font-stronger">Otavio Santana, Otaviojava</p>
+            <p class="agenda-description font-subtitle-2">Unlock the Power of Polyglot Persistence with ‘Polyglot
+              Persistence Unleashed.’ This comprehensive guide takes you on a transformative journey through integrating
+              MongoDB, Cassandra, Neo4J, Redis, and Couchbase within Enterprise Java Architecture. Dive into NoSQL
+              databases, Jakarta EE, and Microprofile, equipping yourself with the knowledge and skills to architect and
+              implement advanced data storage solutions for robust and scalable Java applications. From comprehensive
+              coverage to hands-on approaches, optimization techniques, and cutting-edge insights, this book is your
+              definitive resource for revolutionizing how you build and manage data in your Java applications.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-patrick" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-patrick" class="agenda-session">
+            <p class="agenda-title font-title-2">Insights From a Spring Boot Leisure Project for Everyday Developer Life
+            </p>
+            <p class="agenda-speaker-name font-stronger">Patrick Baumgartner, 42talents</p>
+            <p class="agenda-description font-subtitle-2">New gadgets and slow mobile apps tempt many a developer to
+              spend the Christmas holidays reverse engineering, hacking and coding to put their world back together.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">Join a motivated developer on his journey to successfully
+              implement his idea. Along the way, he is surprised at how much or how little effort is involved in each
+              step, and what he learns along the way. We dive into the world of Android apps, Spring Boot, Buildpacks,
+              GitHub Actions, Docker containers, GraphQL and API breaking changes.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">A thriller in three acts.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-reza" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-reza" class="agenda-session">
+            <p class="agenda-title font-title-2">Hyperscale Jakarta EE PaaS on Azure</p>
+            <p class="agenda-speaker-name font-stronger">Reza Rahman, Microsoft</p>
+            <p class="agenda-description font-subtitle-2">Azure is the only top tier public cloud with a fully managed
+              Jakarta EE service - JBoss EAP on App Service.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">In this fast-faced, demo-heavy, and mostly slide-free session
+              we will show first-hand how to run Jakarta EE on Azure using JBoss EAP on App Service. We will demo in
+              real time how to stand up an instance very quickly and deploy a realistic Jakarta EE application that
+              integrates with some services on the cloud such as database, directory server, cache or log aggregator. We
+              will also see how things like load-balancing, automatic redeployment, auto-scaling, and monitoring work in
+              a hyperscale PaaS.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">At the end of the session, you will have all the demos
+              available on GitHub so you can explore them on your own!</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-sami" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-sami" class="agenda-session">
+            <p class="agenda-title font-title-2">You Can Build Web UI Using Java Only</p>
+            <p class="agenda-speaker-name font-stronger">Sami Ekblad, Vaadin</p>
+            <p class="agenda-description font-subtitle-2">In the fast-evolving landscape of web development, Java
+              remains a cornerstone for robust backend systems. However, its potential in frontend development is often
+              overshadowed by JavaScript-dominated frameworks. This session aims to shift this perspective by
+              introducing Vaadin, a Java-based framework designed for building modern web user interfaces.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">The session will commence with a brief introduction to Java's
+              role in current web development scenarios, highlighting its stability, scalability, and security features.
+              We will then pivot to an in-depth exploration of Vaadin, showcasing how this innovative framework
+              leverages Java's strengths to create efficient, responsive, and visually appealing web UIs.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-timo" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-timo" class="agenda-session">
+            <p class="agenda-title font-title-2">Going Serverless With Spring’s Support for GraalVM, Project CraC & More
+            </p>
+            <p class="agenda-speaker-name font-stronger">Timo Salm, Tanzu by Broadcom</p>
+            <p class="agenda-description font-subtitle-2">Serverless applications are event-driven and take advantage of
+              modern cloud computing capabilities and abstractions to allow developers to shift focus to writing
+              business logic while not dealing with the complexity of the infrastructure their code runs on.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">To get the full potential of a Serverless runtime,
+              applications must be disposable, which means they can be started or stopped rapidly. If your application
+              starts slowly, it might mean that it cannot scale or recover fast enough to handle a sudden increase in
+              demand, and if it consumes many resources (memory, CPU, etc) and scales to a large degree, that means
+              increased cost.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">Fortunately, there are several new solutions available in the
+              Java ecosystem, like GraalVM Native Images and Project CraC, that provide almost instant startup times and
+              reduced memory consumption.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">This session will teach you how they compare to each other and
+              how to use them with Spring.</p>
+          </section>
+        </div>
+        <p class="agenda-group-title font-title-2">
+          <span section id="od-yk" class="session-ondemand">On-demand</span>
+        </p>
+        <div role="presentation" class="agenda-group-gradient-line"></div>
+        <!-- Session Details -->
+        <div class="agenda-group-sessions-container">
+          <section id="od-yk" class="agenda-session">
+            <p class="agenda-title font-title-2">Fast and Easy Cloud-Native Java Application with Jakarta EE and
+              MicroProfile</p>
+            <p class="agenda-speaker-name font-stronger">YK Chang, IBM</p>
+            <p class="agenda-description font-subtitle-2">Jakarta EE is "building an open source ecosystem for cloud
+              native architectures with enterprise Java" while MicroProfile is "optimizing enterprise Java for a
+              microservices architecture". Jakarta EE and MicroProfile complement each other and offer developers a
+              healthy and open set of Java APIs to build cloud-native applications.
+
+            </p>
+            <p class="agenda-description font-subtitle-2">In these few minutes, we will watch Jakarta EE and
+              MicroProfile in action with Open Liberty, a lightweight open-source Java runtime that is both Jakarta EE
+              and MicroProfile compatible, and see how developers can rapidly iterate and build cloud-native Java
+              applications fast and easy.</p>
+          </section>
+        </div>
+      </section>
+    </section>
+
+    <!-- Session -->
+  </main>
+  <footer>
+    <section id="socials" class="social-container">
+      <p>Follow us on the web</p>
+      <div class="social-icons">
+        <!-- GitHub Icon -->
+        <a href="https://github.com/openjdk/" class="social" target="_blank" aria-label="Follow us on GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+          </svg>
+        </a>
+        <!-- Twitter Icon -->
+        <a href="https://twitter.com/JavaAtMicrosoft" class="social" target="_blank" aria-label="Follow us on Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter-x"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+          </svg>
+        </a>
+        <!-- LinkedIn Icon -->
+        <a href="https://www.linkedin.com/showcase/microsoft-developers/" class="social" target="_blank"
+          aria-label="Follow us on LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+          </svg>
+        </a>
+        <!-- YouTube Icon -->
+        <a href="https://www.youtube.com/c/JavaonAzure" class="social" target="_blank"
+          aria-label="Follow us on YouTube">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1090_8939)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 0C1.79086 0 0 1.79086 0 4V20C0 22.2091 1.79086 24 4 24H20C22.2091 24 24 22.2091 24 20V4C24 1.79086 22.2091 0 20 0H4ZM16.7929 10.7596L8.56807 5.08237C7.90472 4.62449 7 5.09932 7 5.90535V17.121C7 17.9218 7.89431 18.3978 8.55855 17.9505L16.7834 12.412C17.3679 12.0184 17.3728 11.1599 16.7929 10.7596Z"
+                fill="CurrentColor"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_1090_8939">
+                <rect width="24" height="24" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <section id="copyright">
+          <div><a href="https://privacy.microsoft.com/en-us/privacystatement">Privacy Policy</a> © 2024 Microsoft</div>
+        </section>
+      </div>
+    </section>
+    <!-- <p><a href="https://go.microsoft.com/fwlink/?LinkId=246338">Terms of use</a></p>
+        <p>Designed with <a href="https://github.com">GitHub</a></p>
+        -->
+  </footer>
+</body>
+
+</html>
