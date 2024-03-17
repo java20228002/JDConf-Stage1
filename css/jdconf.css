@@ -168,8 +168,19 @@ a:hover {
 @media (max-width: 768px) {
 	.hero-image {
 		width: 100%;
-		height: auto;
+		height: 100%;
 		background-image: url('/JDConf-Stage1/images/banners/JDConf2024-hero-portrait.png');
+		/* Optional: Initial background image */
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		overflow: hidden;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 }
 
