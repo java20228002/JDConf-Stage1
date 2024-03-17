@@ -1,4 +1,22 @@
 
+document.addEventListener('DOMContentLoaded', function() {
+  const images = [
+    'images/banners/JDConf2024-hero-landscape.png',
+    'images/banners/JDConf2024-hero-landscape.png',
+    'images/banners/JDConf2024-hero-landscape.png',
+  ];
+  let currentIndex = 0;
+
+  function changeHeroImage() {
+    document.getElementById('hero-banner').style.backgroundImage = `url('${images[currentIndex]}')`;
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  // Change image every 5 seconds
+  changeHeroImage(); // Change immediately on load
+  setInterval(changeHeroImage, 5000);
+});
+
 
 function getTimeZoneInfo() {
   // Get the current date and time
