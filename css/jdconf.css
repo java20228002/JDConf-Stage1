@@ -52,11 +52,11 @@
 @keyframes slideFade {
 	0%, 100% { opacity: 0; }
 	5%, 30%  { opacity: 1; z-index: 1; } /* First slide */
-	31%, 34% { opacity: 0.8;}
+	31%, 34% { opacity: 0.9; z-index: 1;}
 	35%, 60% { opacity: 1; z-index: 2; } /* Second slide */
-	61%, 64% { opacity: 0.8;}
+	61%, 64% { opacity: 0.9; z-index: 2;}
 	65%, 95% { opacity: 1; z-index: 3; } /* Third slide */
-	96%, 99% { opacity: 0.8;}
+	96%, 99% { opacity: 0.9; z-index:3; }
 }  
 
 .banner-slide:nth-child(1) { animation-delay: 0s; }
