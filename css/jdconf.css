@@ -42,17 +42,21 @@
 	height: 100%;
 	opacity: 0;
 	z-index: 1;
-	/* Ensure slides are stacked below the active one */
-	animation: slideFade 21s infinite;
-	/* Adjust timing as needed */
+	animation-name: slideFade;
+	animation-timing-function:ease-in-out;
+	animation-duration: 21s;
+	animation-iteration-count: infinite;
 }
 
 /* Keyframes to fade slides in and out */
 @keyframes slideFade {
 	0%, 100% { opacity: 0; }
-	5%, 30% { opacity: 1; z-index: 2; } /* First slide */
-	33%, 60% { opacity: 1; z-index: 2; } /* Second slide */
+	5%, 30%  { opacity: 1; z-index: 1; } /* First slide */
+	31%, 34% { opacity: 0.8;}
+	35%, 60% { opacity: 1; z-index: 2; } /* Second slide */
+	61%, 64% { opacity: 0.8;}
 	65%, 95% { opacity: 1; z-index: 3; } /* Third slide */
+	96%, 99% { opacity: 0.8;}
 }  
 
 .banner-slide:nth-child(1) { animation-delay: 0s; }
@@ -1196,6 +1200,7 @@ main {
 .navbar-link.dropdown {
 	position: relative;
 	display: inline-block;
+	z-index: 1000 !important;
 }
 
 /* Remove default list styling and padding */
