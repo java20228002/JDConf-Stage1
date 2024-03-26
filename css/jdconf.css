@@ -2332,6 +2332,23 @@ h6,
 		height: 100%; /* Ensure card content fills the card */
 	}
 
-
+	.card-live {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		/* Makes sure the card uses the full width of the grid column */
+		overflow: hidden;
+		/* Keeps the content within the borders */
+		border: 1px solid var(--color-neutrals-additionals-grey-80);
+		/* Border color for the card */
+		border-radius: 8px;
+		/* Rounded corners for the card */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		/* Simple shadow for depth */
+		transition: transform 0.2s;
+		/* Smooth transition for hover effect */
+		height: 50vh; /* Adjust the card height */
+	}
+	
 }
 }
