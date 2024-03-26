@@ -2317,4 +2317,21 @@ h6,
 		grid-template-columns: 1fr;
 		/* Stacks the cards on smaller screens */
 	}
+
+	/* Responsive adjustments */
+@media (max-width: 600px) {
+	.grid-container4-live {
+		grid-template-columns: 1fr;
+		/* Stacks the cards on smaller screens */
+	}
+
+	.card-content-live {
+		display: flex;
+		flex-direction: column;
+		gap: 0px;
+		height: 100%; /* Ensure card content fills the card */
+	}
+
+
+}
 }
