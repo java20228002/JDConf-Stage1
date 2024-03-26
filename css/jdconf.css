@@ -2332,6 +2332,10 @@ h6,
 		height: 100%; /* Ensure card content fills the card */
 	}
 
+	.chat-container {
+		display:none;
+	}
+
 	.card-live {
 		display: flex;
 		flex-direction: column;
