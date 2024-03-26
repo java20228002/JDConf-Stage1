@@ -254,7 +254,7 @@ function startCountdownAmericas() {
   }
   // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
   var countDownDate = new Date("March 27, 2024 08:30:00 GMT-0700").getTime();
-
+  
   // Update the count down every 1 second
   var x = setInterval(function () {
 
@@ -297,7 +297,7 @@ function startCountdownAsia() {
   }
 
   // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
-  var countDownDate = new Date("March 27, 2024 15:00:00 GMT-0700").getTime();
+  var countDownDate = new Date("March 28, 2024 10:00:00 GMT+0800").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function () {
@@ -342,7 +342,7 @@ function startCountdownEurope() {
   }
 
   // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
-  var countDownDate = new Date("March 28, 2024 04:00:00 GMT-0700").getTime();
+  var countDownDate = new Date("March 28, 2024 09:00:00 GMT-0000").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function () {
