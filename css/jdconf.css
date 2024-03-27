@@ -42,7 +42,7 @@
 	height: 98%;
 	opacity: 0;
 	z-index: 1;
-	animation-timing-function:ease-in-out;
+	animation-timing-function: ease-in-out;
 	animation-name: slideFade;
 	animation-duration: 21s;
 	animation-iteration-count: infinite;
@@ -55,32 +55,111 @@
 	width: 100%;
 	height: 98%;
 	z-index: 0;
-	animation-timing-function:ease-in;
-	background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-	opacity: 0; /* Start invisible */
-	animation: fadeOverlay 21s infinite; /* Match the slide transition duration */
-  }
+	animation-timing-function: ease-in;
+	background: rgba(0, 0, 0, 0.5);
+	/* Semi-transparent black overlay */
+	opacity: 0;
+	/* Start invisible */
+	animation: fadeOverlay 21s infinite;
+	/* Match the slide transition duration */
+}
 
 /* Keyframes to fade slides in and out */
 @keyframes slideFade {
-	0%, 100% { opacity: 0; }
-	5%, 30%  { opacity: 1; z-index: 1; } /* First slide */
-	31%, 35% { opacity: 0.95; z-index: 2; background: rgba(0, 0, 0, 0.5);}
-	36%, 60% { opacity: 1; z-index: 3; } /* Second slide */
-	61%, 65% { opacity: 0.95; z-index: 4; background: rgba(0, 0, 0, 0.5);}
-	65%, 95% { opacity: 1; z-index: 5; } /* Third slide */
-	96%, 100% { opacity: 0.95; z-index:6; background: rgba(0, 0, 0, 0.5);}
-}  
+
+	0%,
+	100% {
+		opacity: 0;
+	}
+
+	5%,
+	30% {
+		opacity: 1;
+		z-index: 1;
+	}
+
+	/* First slide */
+	31%,
+	35% {
+		opacity: 0.95;
+		z-index: 2;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	36%,
+	60% {
+		opacity: 1;
+		z-index: 3;
+	}
+
+	/* Second slide */
+	61%,
+	65% {
+		opacity: 0.95;
+		z-index: 4;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	65%,
+	95% {
+		opacity: 1;
+		z-index: 5;
+	}
+
+	/* Third slide */
+	96%,
+	100% {
+		opacity: 0.95;
+		z-index: 6;
+		background: rgba(0, 0, 0, 0.5);
+	}
+}
 
 @keyframes fadeOverlay {
-	0%, 100% { opacity: 0; }
-	5%, 30%, 36%, 60%, 65%, 95% { opacity: 0; z-index: 0;} /* Invisible during slide visibility */
-	31%, 35%, 61%, 65%, 96%, 100% { opacity: 1; z-index: 5;} /* Quick fade in/out at transition points */
-  }
 
-.banner-slide:nth-child(1) { animation-delay: 0s; }
-.banner-slide:nth-child(2) { animation-delay: -7s; } /* Starts after the first slide has been visible for 5s */
-.banner-slide:nth-child(3) { animation-delay: -14s; } /* Starts after the second slide has been visible for 5s */
+	0%,
+	100% {
+		opacity: 0;
+	}
+
+	5%,
+	30%,
+	36%,
+	60%,
+	65%,
+	95% {
+		opacity: 0;
+		z-index: 0;
+	}
+
+	/* Invisible during slide visibility */
+	31%,
+	35%,
+	61%,
+	65%,
+	96%,
+	100% {
+		opacity: 1;
+		z-index: 5;
+	}
+
+	/* Quick fade in/out at transition points */
+}
+
+.banner-slide:nth-child(1) {
+	animation-delay: 0s;
+}
+
+.banner-slide:nth-child(2) {
+	animation-delay: -7s;
+}
+
+/* Starts after the first slide has been visible for 5s */
+.banner-slide:nth-child(3) {
+	animation-delay: -14s;
+}
+
+/* Starts after the second slide has been visible for 5s */
 
 
 body {
@@ -1638,24 +1717,29 @@ h6,
 
 /* Video stream container */
 .video-stream-container {
-    flex: 3; /* 3/4 of the space */
-    position: relative;
-    height: 75vh; /* Adjust based on viewport height */
+	flex: 3;
+	/* 3/4 of the space */
+	position: relative;
+	height: 75vh;
+	/* Adjust based on viewport height */
 }
 
 /* Chat container */
 .chat-container {
-    flex: 1; /* 1/4 of the space */
-    position: relative;
-    height: 75vh; /* Keep consistent with video container */
+	flex: 1;
+	/* 1/4 of the space */
+	position: relative;
+	height: 75vh;
+	/* Keep consistent with video container */
 }
 
-.video-stream-container iframe, .chat-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.video-stream-container iframe,
+.chat-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 
@@ -2223,10 +2307,11 @@ h6,
 }
 
 .grid-container4-live {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
-    gap: 20px;
-    padding: 20px 0; /* Corrected padding syntax */
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+	gap: 20px;
+	padding: 20px 0;
+	/* Corrected padding syntax */
 }
 
 /* Grid item */
@@ -2279,10 +2364,11 @@ h6,
 }
 
 .card-content-live {
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    height: 100%; /* Ensure card content fills the card */
+	display: flex;
+	flex-direction: row;
+	gap: 0px;
+	height: 100%;
+	/* Ensure card content fills the card */
 }
 
 .card-live {
@@ -2300,7 +2386,8 @@ h6,
 	/* Simple shadow for depth */
 	transition: transform 0.2s;
 	/* Smooth transition for hover effect */
-	height: 75vh; /* Adjust the card height */
+	height: 75vh;
+	/* Adjust the card height */
 }
 
 /* Responsive adjustments */
@@ -2312,8 +2399,9 @@ h6,
 }
 
 .chat-container-mobile {
-	display:none;
+	display: none;
 }
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
 	.grid-container2 {
@@ -2322,42 +2410,54 @@ h6,
 	}
 
 	/* Responsive adjustments */
-@media (max-width: 600px) {
-	.grid-container4-live {
-		grid-template-columns: 1fr;
-		/* Stacks the cards on smaller screens */
-	}
+	@media (max-width: 600px) {
+		.grid-container4-live {
+			grid-template-columns: 1fr;
+			/* Stacks the cards on smaller screens */
+		}
 
-	.card-content-live {
-		display: flex;
-		flex-direction: column;
-		gap: 0px;
-		height: 100%; /* Ensure card content fills the card */
-	}
+		.card-content-live {
+			display: flex;
+			flex-direction: column;
+			gap: 0px;
+			height: 100%;
+			/* Ensure card content fills the card */
+		}
 
-	.chat-container {
-		display:none;
+		.chat-container {
+			display: none;
+		}
+
+		.chat-container-mobile {
+			display: block !important;
+			/* Keeps the content within the borders */
+			border: 1px solid var(--color-neutrals-additionals-grey-80);
+			/* Border color for the card */
+			border-radius: 8px;
+			/* Rounded corners for the card */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			/* Simple shadow for depth */
+			transition: transform 0.2s;
+		}
+
+		.card-live {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			/* Makes sure the card uses the full width of the grid column */
+			overflow: hidden;
+			/* Keeps the content within the borders */
+			border: 1px solid var(--color-neutrals-additionals-grey-80);
+			/* Border color for the card */
+			border-radius: 8px;
+			/* Rounded corners for the card */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			/* Simple shadow for depth */
+			transition: transform 0.2s;
+			/* Smooth transition for hover effect */
+			height: 30vh;
+			/* Adjust the card height */
+		}
+
 	}
-	.chat-container-mobile {
-		display:block !important;
-	}
-	.card-live {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		/* Makes sure the card uses the full width of the grid column */
-		overflow: hidden;
-		/* Keeps the content within the borders */
-		border: 1px solid var(--color-neutrals-additionals-grey-80);
-		/* Border color for the card */
-		border-radius: 8px;
-		/* Rounded corners for the card */
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		/* Simple shadow for depth */
-		transition: transform 0.2s;
-		/* Smooth transition for hover effect */
-		height: 30vh; /* Adjust the card height */
-	}
-	
-}
 }
