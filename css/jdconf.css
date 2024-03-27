@@ -2311,6 +2311,9 @@ h6,
 	}
 }
 
+.chat-container-mobile {
+	display:none;
+}
 /* Responsive adjustments */
 @media (max-width: 600px) {
 	.grid-container2 {
@@ -2335,7 +2338,9 @@ h6,
 	.chat-container {
 		display:none;
 	}
-
+	.chat-container-mobile {
+		display:block !important;
+	}
 	.card-live {
 		display: flex;
 		flex-direction: column;
@@ -2351,7 +2356,7 @@ h6,
 		/* Simple shadow for depth */
 		transition: transform 0.2s;
 		/* Smooth transition for hover effect */
-		height: 50vh; /* Adjust the card height */
+		height: 30vh; /* Adjust the card height */
 	}
 	
 }

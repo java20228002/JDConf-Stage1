@@ -231,7 +231,7 @@ function startCountdownAmericas2() {
     document.getElementById("americas2-countdown").innerHTML = days + "d " + hours + "h "
       + minutes + "m " + seconds + "s ";
     document.getElementById("americas2-countdown").innerHTML = "Event countdown: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
-    document.getElementById("americas2-countdown").innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
+    document.getElementById("americas2-countdown").innerHTML = hours + "h : " + minutes + "m : " + seconds + "s";
 
     // If the count down is finished, write some text 
     if (distance < 0) {
@@ -274,7 +274,7 @@ function startCountdownAmericas() {
     document.getElementById("americas-countdown").innerHTML = days + "d " + hours + "h "
       + minutes + "m " + seconds + "s ";
     document.getElementById("americas-countdown").innerHTML = "Event countdown: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
-    document.getElementById("americas-countdown").innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
+    document.getElementById("americas-countdown").innerHTML = hours + "h : " + minutes + "m : " + seconds + "s";
 
     // If the count down is finished, write some text 
     if (distance < 0) {
@@ -318,7 +318,7 @@ function startCountdownAsia() {
     document.getElementById("asia-countdown").innerHTML = days + "d " + hours + "h " +
       minutes + "m " + seconds + "s ";
     document.getElementById("asia-countdown").innerHTML = "Event countdown: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
-    document.getElementById("asia-countdown").innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
+    document.getElementById("asia-countdown").innerHTML = hours + "h : " + minutes + "m : " + seconds + "s";
 
     // If the count down is finished, write some text 
     if (distance < 0) {
