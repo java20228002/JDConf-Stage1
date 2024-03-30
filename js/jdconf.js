@@ -236,12 +236,12 @@ function startCountdownAmericas2() {
     // If the count down is finished, write some text 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("americas2-countdown").innerHTML = "EVENT STARTED";
+      document.getElementById("americas2-countdown").innerHTML = "EVENT ENDED";
     }
   }, 1000);
 }
 // Call the function to start the countdown
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   startCountdownAmericas2();
 });
 
@@ -254,7 +254,7 @@ function startCountdownAmericas() {
   }
   // Set the date we're counting down to (Pacific Daylight Time, UTC-7)
   var countDownDate = new Date("March 27, 2024 08:30:00 GMT-0700").getTime();
-  
+
   // Update the count down every 1 second
   var x = setInterval(function () {
 
@@ -279,12 +279,12 @@ function startCountdownAmericas() {
     // If the count down is finished, write some text 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("americas-countdown").innerHTML = "EVENT STARTED";
+      document.getElementById("americas-countdown").innerHTML = "EVENT ENDED";
     }
   }, 1000);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   startCountdownAmericas();
 });
 
@@ -323,15 +323,43 @@ function startCountdownAsia() {
     // If the count down is finished, write some text 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("asia-countdown").innerHTML = "EVENT STARTED";
+      document.getElementById("asia-countdown").innerHTML = "EVENT ENDED";
     }
   }, 1000);
 }
 
 // Call the function to start the countdown
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   startCountdownAsia();
 })
+
+function openStream(evt, streamName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  if (document.getElementById(streamName)) {
+    document.getElementById(streamName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  else {
+    // Show the default tab (video)
+    document.getElementById("stream1").style.display = "block";
+    document.getElementsByClassName("tablinks")[0].className += " active";
+  }
+}
+
+// Call the function to start the countdown
+document.addEventListener('DOMContentLoaded', function () {
+  openStream();
+})
+
 
 function startCountdownEurope() {
 
@@ -363,18 +391,18 @@ function startCountdownEurope() {
     document.getElementById("europe-countdown").innerHTML = days + "d " + hours + "h " +
       minutes + "m " + seconds + "s ";
     document.getElementById("europe-countdown").innerHTML = "Event countdown: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
-    document.getElementById("europe-countdown").innerHTML = days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
+    document.getElementById("europe-countdown").innerHTML = hours + "h : " + minutes + "m : " + seconds + "s";
 
     // If the count down is finished, write some text 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("europe-countdown").innerHTML = "EVENT STARTED";
+      document.getElementById("europe-countdown").innerHTML = "EVENT ENDED";
     }
   }, 1000);
 }
 
 // Call the function to start the countdown
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   startCountdownEurope();
 })
 

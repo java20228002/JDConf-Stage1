@@ -31,14 +31,14 @@
         content="Join the Microsoft JDConf 2024 free virtual Java developer conference on March 27-28. Learn about the newest developments in Java, Cloud and AI. Mark your calendar!" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@jdconf">
-    <link rel="stylesheet" href="css/jdconf.css?v=1.6">
+    <link rel="stylesheet" href="css/jdconf.css?v=1.7">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
 </head>
 
 <body onload="startCountdownAmericas(); startCountdownAsia(); startCountdownEurope();">
 
-    <script src="js/jdconf.js?v=1.6"></script>
+    <script src="js/jdconf.js?v=1.9"></script>
 
     <header class="navbar grid">
         <a class="navbar-title font-title-2" href="/">JDConf 2024</a>
@@ -79,27 +79,19 @@
         <h4 class="font-title-5 text-center"><img src="images/livestream.svg" alt="Livestream Icon"
                 class="icon-livestream">Americas</h4>
         <div id="americas-countdown" class="font-title-5 text-center"></div>
-        <h4 class="font-title-5 text-center"><a href="https://developer.microsoft.com/en-us/reactor/events/21593/"
-                target="_blank" class="button">RSVP Now</a></h4>
         <br>
-         <div id="grid-section-2" class="padding-block-md">
+        <div id="grid-section-2" class="padding-block-md">
             <div class="section-home">
-                <div class="grid-container4-live">
+                <div class="grid-container4">
                     <div class="grid-item">
-                        <article class="card-live">
-                            <div class="card-content-live">
+                        <article class="card">
+                            <div class="card-content">
                                 <!-- Embed YouTube Video Here -->
-                                <div class="video-stream-container">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/i2mS5RKnS7g?si=5savEgPsO5Rus9iQ?rel=0"
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/i2mS5RKnS7g?si=5savEgPsO5Rus9iQ?rel=0"
                                         frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
-                                </div>
-                                <!-- Embed YouTube Live Chat Here -->
-                                <div class="chat-container">
-                                    <iframe
-                                        src="https://www.youtube.com/live_chat?v=i2mS5RKnS7g&embed_domain=jdconf.com"></iframe>
                                 </div>
                             </div>
                         </article>
@@ -107,7 +99,7 @@
                 </div>
             </div>
         </div>
-        
+
         <section id="sectionToHide" class="font-subtitle-2 section-home">
             <div class="agenda">
                 <section id="americas"> </section>
@@ -115,26 +107,27 @@
                     <h1 class="font-title-4 text-center">Agenda</h1>
                     <div class="live-stream-nav font-title-3 text-center">
                     </div>
-
                     <div id="timeZoneInfoDiv"></div>
                     <div class="agenda-table font-subtitle-3">
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Schedule</th>
+                                    <th>Watch on demand</th>
                                     <th>Session</th>
                                     <th class="session-speaker">Speakers</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="session-time">27-Mar-24 08:30 08:35 AM</td>
+                                    <td class="session-ondemand"><a
+                                            href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=153s">Watch Now</a></td>
                                     <td class="session-title">
                                         <a href="agenda.html#brunob-welcome">Welcome to JDConf Americas</a>
                                     </td>
                                     <td class="session-speaker">Host: Bruno Borges, Microsoft</td>
                                 </tr>
-                                <td class="session-time">27-Mar-24 08:35 09:00 AM</td>
+                                <td class="session-ondemand"><a
+                                        href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=8m14s">Watch Now</a></td>
                                 <td class="session-title"><a href="agenda.html#americas-keynote-session">JDConf
                                         Technical Keynote</a>
                                 </td>
@@ -145,14 +138,18 @@
                                 </td>
                                 </tr>
                                 <tr>
-                                    <td class="session-time">27-Mar-24 09:00 09:30 AM</td>
+                                    <td class="session-ondemand"><a
+                                            href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=37m14s">Watch Now</a>
+                                    </td>
                                     <td class="session-title"><a href="agenda.html#theresam-session">Cache Me If You
                                             Can: Speed Up Your
                                             JVM With Project Valhalla</a></td>
                                     <td class="session-speaker">Theresa Mammarella, IBM</td>
                                 </tr>
                                 <tr>
-                                    <td class="session-time">27-Mar-24 09:30 10:00 AM</td>
+                                    <td class="session-ondemand"><a
+                                            href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=1h2m14s">Watch Now</a>
+                                    </td>
                                     <td class="session-title"><a href="agenda.html#danielo-session">Empowering
                                             Quarkus Applications with
                                             AI and OpenTelemetry on Kubernetes</a></td>
@@ -162,35 +159,45 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="session-time">27-Mar-24 10:00 10:30 AM</td>
+                                    <td class="session-ondemand"><a
+                                            href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=1h33m11s">Watch Now</a>
+                                    </td>
                                     <td class="session-title"><a href="agenda.html#markh-session">Paving a Painless
                                             Path to Production
                                             AI in Your Java Applications</a></td>
                                     <td class="session-speaker">Mark Heckler, Microsoft</td>
                                 </tr>
                                 <tr>
-                                    <td class="session-time">27-Mar-24 10:30 11:00 AM</td>
+                                    <td class="session-ondemand"><a
+                                            href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=2h3m0s">Watch Now</a>
+                                    </td>
                                     <td class="session-title"><a href="agenda.html#loianeg-session">From Zero to
                                             Java Hero: Visual
                                             Studio Code Mastery</a></td>
                                     <td class="session-speaker">Loiane Groner, Citibank</td>
                                 </tr>
                                 <tr>
-                                    <td class="session-time">27-Mar-24 11:00 11:30 AM</td>
+                                    <td class="session-ondemand"><a
+                                            href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=2h32m27s">Watch Now</a>
+                                    </td>
                                     <td class="session-title"><a href="agenda.html#simonr-session">Instant Coffee:
                                             How to Eliminate Java
                                             Performance Warmup</a></td>
                                     <td class="session-speaker">Simon Ritter, Azul Systems</td>
                                 </tr>
                                 <tr>
-                                    <td class="session-time">27-Mar-24 11:30 11:55 AM</td>
+                                    <td class="session-ondemand"><a
+                                            href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=3h4m2s">Watch Now</a>
+                                    </td>
                                     <td class="session-title"><a href="agenda.html#markp-session">Spring AI:
                                             Streamlining Java
                                             Enterprise AI Development and Deployment</a></td>
                                     <td class="session-speaker">Mark Pollack, Broadcom</td>
                                 </tr>
                                 <tr>
-                                    <td class="session-time">27-Mar-24 11:55 11:59 AM </td>
+                                    <td class="session-ondemand"><a
+                                            href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=3h32m39s">Watch Now</a>
+                                    </td>
                                     <td class="session-title"><a href="agenda.html#brunob-close">Closing Remarks</a>
                                     </td>
                                     <td class="session-speaker">Bruno Borges, Microsoft</td>

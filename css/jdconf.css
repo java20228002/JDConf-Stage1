@@ -1,3 +1,29 @@
+/* Style the tab buttons */
+.tab button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 15px;
+	transition: 0.3s;
+}
+
+/* Change background color of active tab button */
+.tab button.active {
+	background-color: #000;
+	color: white;
+}
+
+/* Hide all tab content by default */
+.tabcontent {
+	display: none;
+}
+
+/* Show the selected tab */
+.tabcontent.show {
+	display: block;
+}
+
 .banner-container {
 	width: 100%;
 	position: relative;
