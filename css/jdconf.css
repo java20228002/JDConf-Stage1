@@ -6,6 +6,7 @@
 	cursor: pointer;
 	padding: 10px 15px;
 	transition: 0.3s;
+	border-radius: 5px;
 }
 
 /* Change background color of active tab button */
@@ -23,6 +24,8 @@
 .tabcontent.show {
 	display: block;
 }
+
+
 
 .banner-container {
 	width: 100%;
@@ -2391,9 +2394,9 @@ h6,
 
 .card-content-live {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: 0px;
-	height: 100%;
+	
 	/* Ensure card content fills the card */
 }
 
@@ -2412,7 +2415,6 @@ h6,
 	/* Simple shadow for depth */
 	transition: transform 0.2s;
 	/* Smooth transition for hover effect */
-	height: 75vh;
 	/* Adjust the card height */
 }
 
