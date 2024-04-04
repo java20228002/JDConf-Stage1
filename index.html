@@ -38,7 +38,7 @@
 
 <body onload="startCountdownAmericas(); startCountdownAsia(); startCountdownEurope();">
 
-  <script src="js/jdconf.js?v=1.11"></script>
+  <script src="js/jdconf.js?v=1.20"></script>
 
   <header class="navbar grid">
     <a class="navbar-title font-title-2" href="/">JDConf 2024</a>
@@ -53,7 +53,7 @@
       <ul class="navbar-links">
         <li class="navbar-link"><a href="/">Home</a></li>
         <li class="navbar-link dropdown">
-          <a>Livestream</a>
+          <a>On-Demand</a>
           <ul class="dropdown-content">
             <li><a href="americas.html"><img src="images/livestream.svg" alt="Livestream Icon"
                   class="icon-livestream">Americas</a></li>
@@ -61,7 +61,7 @@
                   class="icon-livestream">Asia-Pacific</a></li>
             <li><a href="emea.html"><img src="images/livestream.svg" alt="Livestream Icon"
                   class="icon-livestream">Europe, Middle East, and Africa</a></li>
-            <li><a href="ondemand.html">On-demand</a></li>
+            <li><a href="ondemand.html">Pre-recorded</a></li>
           </ul>
         </li>
         <li class="navbar-link"><a href="agenda.html">Agenda</a></li>
@@ -98,7 +98,6 @@
     <!-- Add more slides as needed -->
   </div>
 
-
   <main>
     <h4>Missed JDConf? Explore the sessions on-demand!</h4>
 
@@ -128,7 +127,7 @@
         </div>
       </div>
 
-      <div id="grid-section-2" class="padding-block-md">
+      <div id="grid-section-2" class="padding-block-md hidden">
         <div class="section-home">
           <div class="grid-container4">
             <div class="tab">
@@ -195,10 +194,7 @@
               <li><a href="#ondemand" style="text-decoration:none">On-demand</a></li>
             </ul>
           </div>
-          <h3>
-            <div id="americas-countdown" class="font-subtitle-5 text-center"></div>
-          </h3>
-          <div id="timeZoneInfoDiv"></div>
+          <br>
           <div class="agenda-table font-subtitle-3">
             <table>
               <thead>
@@ -232,7 +228,11 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=37m14s">Watch
-                      Now</a></td>
+                      Now</a>
+                    <a href="downloads\JDConf2024-Cache Me If You Can-Mammarella.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#theresam-session">Cache Me If You
                       Can: Speed Up Your
                       JVM With Project Valhalla</a></td>
@@ -240,7 +240,12 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=1h2m14s">Watch
-                      Now</a></td>
+                      Now</a> <a
+                      href="downloads/JDConf 2024 - Empowering Quarkus Applications with AI and OpenTelemetry on Kubernetes - Benz.pdf"
+                      class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#danielo-session">Empowering
                       Quarkus Applications with
                       AI and OpenTelemetry on Kubernetes</a></td>
@@ -251,7 +256,11 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=1h33m11s">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-Paving A Painless PathTo Production AI-Heckler.pdf"
+                      class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#markh-session">Paving a Painless
                       Path to Production
                       AI in Your Java Applications</a></td>
@@ -259,7 +268,10 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=2h3m0s">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024_From Zero to Java Hero-Groner.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#loianeg-session">From Zero to
                       Java Hero: Visual
                       Studio Code Mastery</a></td>
@@ -267,7 +279,12 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=2h32m27s">Watch
-                      Now</a></td>
+                      Now</a> <a
+                      href="downloads/JDConf2024-Instant Coffee How to Eliminate Java Performance Warmup-Ritter.pdf"
+                      class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#simonr-session">Instant Coffee:
                       How to Eliminate Java
                       Performance Warmup</a></td>
@@ -275,7 +292,8 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=3h4m2s">Watch
-                      Now</a></td>
+                      Now</a> 
+                  </td>
                   <td class="session-title"><a href="agenda.html#markp-session">Spring AI:
                       Streamlining Java
                       Enterprise AI Development and Deployment</a></td>
@@ -283,7 +301,8 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=i2mS5RKnS7g&t=3h32m39s">Watch
-                      Now</a></td>
+                      Now</a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#brunob-close">Closing Remarks</a>
                   </td>
                   <td class="session-speaker">Bruno Borges, Microsoft</td>
@@ -304,17 +323,13 @@
               <li><a href="#ondemand" style="text-decoration:none">On-demand</a></li>
             </ul>
           </div>
-
-          <h3>
-            <div id="asia-countdown" class="font-subtitle-5 text-center"></div>
-          </h3>
-          <div id="timeZoneInfoDiv2"></div>
+          <br>
           <div id="asia-countdown" class="font-subtitle-2 hidden">Asia-Pacific event will start in: </div>
           <div class="agenda-table font-subtitle-3">
             <table>
               <thead>
                 <tr>
-                  <th>Watch on demand</th>
+                  <th>On demand</th>
                   <th>Session</th>
                   <th class="session-speaker">Speakers</th>
                 </tr>
@@ -322,7 +337,7 @@
               <tbody>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=m85dv53dsa4&t=2m">Watch
-                      Now</a></td>
+                      Now</a> </td>
                   <td class="session-title"><a href="agenda.html#roryp-welcome">Welcome to JDConf
                       Asia-Pacific</a>
                   </td>
@@ -330,21 +345,26 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=m85dv53dsa4&t=7m20s">Watch
-                      Now</a></td>
+                      Now</a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#joshl-session">Bootiful Spring Boot
                       3</a></td>
                   <td class="session-speaker">Josh Long, Broadcom</td>
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=m85dv53dsa4&t=34m11s">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-Virtual Threads in Action-Kec.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#danielk-session">Virtual Threads in
                       Action</a></td>
                   <td class="session-speaker">Daniel Kec, Oracle</td>
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=m85dv53dsa4&t=1h3m45s">Watch
-                      Now</a></td>
+                      Now</a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#manish-session">Building Generative
                       AI Applications
                       with Azure Cosmos DB and Java</a></td>
@@ -352,7 +372,8 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=m85dv53dsa4&t=1h31m34s">Watch
-                      Now</a></td>
+                      Now</a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#seanl-session">Maximize Azure
                       Container Apps for
                       Seamless Deployment and Execution</a></td>
@@ -360,7 +381,8 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=m85dv53dsa4&t=1h59m20s">Watch
-                      Now</a></td>
+                      Now</a> 
+                  </td>
                   <td class="session-title"><a href="agenda.html#yoshiot-session">Leveraging
                       Generative AI for Java
                       Service Enhancement</a></td>
@@ -368,7 +390,10 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=m85dv53dsa4&t=2h32m39s">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf 2024-Improving HotSpot Scalar Replacement-Soares.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#cesars-session">Improving HotSpot
                       Scalar
                       Replacement</a></td>
@@ -376,7 +401,8 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=m85dv53dsa4&t=3h0m12s">Watch
-                      Now</a></td>
+                      Now</a> 
+                  </td>
                   <td class="session-title"><a href="agenda.html#nikitan-session">Optimize Java Apps
                       for High Traffic
                       Scenarios</a></td>
@@ -387,7 +413,8 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=m85dv53dsa4&t=3h26m30s">Watch
-                      Now</a></td>
+                      Now</a> 
+                  </td>
                   <td class="session-title"><a href="agenda.html#roryp-close">Closing Remarks</a></td>
                   <td class="session-speaker">Rory Preddy, Microsoft</td>
                 </tr>
@@ -407,17 +434,13 @@
               <li><a href="#ondemand" style="text-decoration:none">On-demand</a></li>
             </ul>
           </div>
-
-          <h3>
-            <div id="europe-countdown" class="font-subtitle-5 text-center"></div>
-          </h3>
-          <div id="timeZoneInfoDiv3"></div>
+          <br>
           <div id="europe-countdown" class="font-subtitle-2 hidden">EMEA event will start in: </div>
           <div class="agenda-table font-subtitle-3">
             <table>
               <thead>
                 <tr>
-                  <th>Watch on demand</th>
+                  <th>On demand</th>
                   <th>Session</th>
                   <th class="session-speaker">Speakers</th>
                 </tr>
@@ -425,20 +448,27 @@
               <tbody>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=8Fxx2nb1F2w&t=2m">Watch
-                      Now</a></td>
+                      Now</a> 
+                  </td>
                   <td class="session-title"><a href="agenda.html#sandraa-welcome">Welcome to JDConf EMEA</a></td>
                   <td class="session-speaker">Host: Sandra Ahlgrimm, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=8Fxx2nb1F2w&t=6m50s">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf 2024-Java meets AI-Raes.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#lizer-session">Java Meets AI: How to Build
                       LLM-Powered Applications with LangChain4j</a></td>
                   <td class="session-speaker">Lize Raes, Open Tide</td>
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=8Fxx2nb1F2w&t=35m12s">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf 2024-Sparking Developer Joy Elevating Developer Experience with VS Code Java-Suman.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#nickz-session">Sparking Developer Joy: Elevating
                       Developer Experience with VSCode Java</a></td>
                   <td class="session-speaker">
@@ -449,41 +479,55 @@
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=8Fxx2nb1F2w&t=1h5m30s">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf 2024-Mastering Testcontainers-Selajev.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#olegs-session">Mastering Testcontainers for Better
                       Integration Tests</a></td>
                   <td class="session-speaker">Oleg Šelajev, AtomicJar</td>
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=8Fxx2nb1F2w&t=1h34m59s">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf 2024-Semantic Kernel for Java-Preddy.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#roryp-session">Semantic Kernel for Java</a></td>
                   <td class="session-speaker">Rory Preddy, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=8Fxx2nb1F2w&t=2h1m55s">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-What's Coming in Jakarta EE 11-Rahman.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#rezar-session">What's Coming in Jakarta EE 11?</a>
                   </td>
                   <td class="session-speaker">Reza Rahman, Microsoft</td>
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=8Fxx2nb1F2w&t=2h29m40s">Watch
-                      Now</a></td>
+                      Now</a> 
+                  </td>
                   <td class="session-title"><a href="agenda.html#alinay-session">Fast And Lightweight Spring Boot
                       Applications With GraalVM</a></td>
                   <td class="session-speaker">Alina Yurenko, Oracle</td>
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=8Fxx2nb1F2w&t=3h1m34s">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-How to keep your Spring Boot projects up-to-date-Lippert.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#martinl-session">How to Keep Your Spring Boot
                       Projects Up-to-Date</a></td>
                   <td class="session-speaker">Martin Lippert, Broadcom</td>
                 </tr>
                 <tr>
                   <td class="session-ondemand"><a href="https://www.youtube.com/watch?v=8Fxx2nb1F2w&t=3h27m37s">Watch
-                      Now</a></td>
+                      Now</a> 
+                  </td>
                   <td class="session-title"><a href="agenda.html#sandraa-close">Closing Remarks</a></td>
                   <td class="session-speaker">Sandra Ahlgrimm, Microsoft</td>
                 </tr>
@@ -502,9 +546,7 @@
               <li><a href="#ondemand" style="text-decoration:underline">On-demand</a></li>
             </ul>
           </div>
-
-
-          <div id="timeZoneInfoDiv4"></div>
+          <br>
           <div class="agenda-table font-subtitle-3 hidden">
             <table>
               <thead>
@@ -630,7 +672,11 @@
               </thead>
               <tbody>
                 <tr class="hidden">
-                  <td class="session-ondemand"><a href="https://jdconf.com/ondemand">Watch Now</a></td>
+                  <td class="session-ondemand"><a href="https://jdconf.com/ondemand">Watch Now</a> <a
+                      href="downloads\JDConf2024-Cache Me If You Can-Mammarella.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-barkha">Realtime Analytics
                       Unleashed: Unlocking the Potential of Data at Scale</a></td>
                   <td class="session-speaker">Barkha Herman, StarTree</td>
@@ -638,7 +684,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=_Y97fo0pFNU&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=15">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf 2024-Create a Change Data Stream in Minutes-Spendolini.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-brian">Create a change data stream
                       in minutes with Java, Azure SQL, and Azure Functions</a></td>
                   <td class="session-speaker">Brian Spendolini, Microsoft</td>
@@ -646,7 +695,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=_9FWaEv936M&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=14">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-Simple and Scalable Performance Testing with JMeter DSL-Gauto.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-carlos">Simple and scalable
                       performance testing with JMeter DSL</a></td>
                   <td class="session-speaker">Carlos Gauto, Mercado Libre</td>
@@ -654,7 +706,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=MDSkJPMh-uE&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=7">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-Visualizing Your Build with the Maven Timeline Plugin-Haywood.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-dan">Visualizing Your Build with
                       the Maven Timeline Plugin</a></td>
                   <td class="session-speaker">Dan Haywood, Haywood Associates, LTD</td>
@@ -662,7 +717,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=qeo296RXB0E&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=22">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf 2024-Hybrid Cloud Development With Pure Openness-Jiang.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-emily">Hybrid Cloud Application
                       Built with Pure Openness</a></td>
                   <td class="session-speaker">Emily Jiang, IBM</td>
@@ -670,7 +728,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=33E_UXKJg7o&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=9">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf 2024- Data Privacy Concerns and Solutions When using LLMs in Production-Raes.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-lize">Data Privacy Concerns and
                       Solutions When using LLMs in Production</a></td>
                   <td class="session-speaker">Lize Raes, OpenTide</td>
@@ -678,7 +739,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=jtNqZz-WkDk&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=4">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-Whats New In Jakarta Concurrency 31-Swatosh.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-mark">What’s new in Jakarta
                       Concurrency 3.1?</a></td>
                   <td class="session-speaker">Mark Swatosh, IBM</td>
@@ -686,7 +750,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=Hp6V5fWC3eo&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=10">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf 2024-Spring Tools Live - All The Great New Things-Lippert.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-martin">Spring Tools Live - All
                       the Great New Things</a></td>
                   <td class="session-speaker">Martin Lippert, Broadcom</td>
@@ -694,7 +761,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=mfWi2ClGUzg&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=20">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-Enter Brave New World of Gen AI-Grygleski.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-mary">Enter the Brave New World of
                       GenAI with Vector Search</a></td>
                   <td class="session-speaker">Mary Grygleski, DataStax</td>
@@ -702,7 +772,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=g7kJczmqQt0&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=8">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-Azure Load Testing An Overview-Vipparthi.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-nagarjuna">Azure Load Testing - An
                       overview</a></td>
                   <td class="session-speaker">Nagarjuna Vipparthi, Microsoft</td>
@@ -710,7 +783,8 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=LbmXvd-4p3U&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=11">Watch
-                      Now</a></td>
+                      Now</a> 
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-otavio1">Unlocking Data Access
                       Excellence with Jakarta Data: Simplifying Persistence for Modern
                       Cloud-Native</a></td>
@@ -719,7 +793,8 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=qDGhIJ4KmBw&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=21">Watch
-                      Now</a></td>
+                      Now</a> 
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-otavio2">Polyglot Persistence
                       Unleashed: Mastering Enterprise Java Architecture with NoSQL Databases</a>
                   </td>
@@ -728,7 +803,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=gHXtuVqHk9w&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=19">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-Insights from a Spring Boot Leisure Project-Baumgartner.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-patrick">Insights From a Spring
                       Boot Leisure Project for Everyday Developer Life</a></td>
                   <td class="session-speaker">Patrick Baumgartner, 42talents</td>
@@ -736,7 +814,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=dlmajeMxAnw&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=17">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-Hyperscale Jararta EE PaaS on Azure-Rahman.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-reza">Hyperscale Jakarta EE PaaS
                       on Azure</a></td>
                   <td class="session-speaker">Reza Rahman, Microsoft</td>
@@ -744,7 +825,8 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=FpC28QNskBo&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=5">Watch
-                      Now</a></td>
+                      Now</a> 
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-sami">You Can Build Web UI Using
                       Java Only</a></td>
                   <td class="session-speaker">Sami Ekblad, Vaadin</td>
@@ -752,7 +834,10 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=ZQ1Dr1v363Y&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=13">Watch
-                      Now</a></td>
+                      Now</a> <a href="downloads/JDConf2024-Going Serverless with Spring Support-Salm.pdf" class="pdf-link">
+                      <img src="images/pdf_icon.png" width="30" height="30" alt="PDF Icon">
+                    </a>
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-timo">Going Serverless With
                       Spring’s Support for GraalVM, Project CraC & More</a></td>
                   <td class="session-speaker">Timo Salm, Tanzu by Broadcom</td>
@@ -760,7 +845,8 @@
                 <tr>
                   <td class="session-ondemand"><a
                       href="https://www.youtube.com/watch?v=_hR9QCy41Yk&list=PLPeZXlCR7ew8-u0pfe2d3MlSTfi6yBPSc&index=16">Watch
-                      Now</a></td>
+                      Now</a> 
+                  </td>
                   <td class="session-title"><a href="agenda.html#od-yk">Fast and Easy Cloud-Native
                       Java Application with Jakarta EE and MicroProfile</a></td>
                   <td class="session-speaker">YK Chang, IBM</td>

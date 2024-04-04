@@ -1,4 +1,10 @@
-/* Style the tab buttons */
+.pdf-link {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  /* Style the tab buttons */
 .tab button {
 	background-color: inherit;
 	border: none;
